@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2cbda44c-bbb3-46f8-845d-2459b20d1f97" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/atis/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/atis/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,8 +18,17 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/atis" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Разработка\portfolio\b-612.github.io\atis" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -45,6 +55,7 @@
       <workItem from="1576181239869" duration="396000" />
       <workItem from="1576181791039" duration="938000" />
       <workItem from="1576316493030" duration="33000" />
+      <workItem from="1576361186547" duration="233000" />
     </task>
     <servers />
   </component>
