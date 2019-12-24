@@ -38,6 +38,14 @@
     "title": "Не пожалеете",
     "description": "Вы никогда не пожалеете, что воспользовались нашими услугами",
     "buttonLink": "#",
+    "buttonText": "",
+    "slideUrl": "img/slide-1-desk.png"
+  },
+  {
+    "title": "Не пожалеете",
+    "description": "",
+    "buttonLink": "#",
+    "buttonText": "",
     "slideUrl": "img/slide-1-desk.png"
   }
 ]
