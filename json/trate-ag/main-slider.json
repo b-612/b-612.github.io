@@ -11,34 +11,34 @@
     "description": "Хирургический набор с не универсальными свёрлами",
     "buttonText": "Купить",
     "buttonLink": "#",
-    "slideUrl": "img/slide-1-desk.jpg"
+    "slideUrl": "img/slide-2-desk.jpg"
   },
   {
     "title": "Лучшие в мире зубы",
     "description": "Закажите у нас лучшие в мире вставные зубы",
     "buttonText": "Заказать",
     "buttonLink": "#",
-    "slideUrl": "img/slide-1-desk.jpg"
+    "slideUrl": "img/slide-3-desk.jpg"
   },
   {
     "title": "Не стартовый набор",
     "description": "Хирургический набор с универсальными свёрлами",
     "buttonText": "Посмотреть",
     "buttonLink": "#",
-    "slideUrl": "img/slide-1-desk.jpg"
+    "slideUrl": "img/slide-4-desk.jpg"
   },
   {
     "title": "Вызвать врача на дом",
     "description": "",
     "buttonText": "Вызвать",
     "buttonLink": "#",
-    "slideUrl": "img/slide-1-desk.jpg"
+    "slideUrl": "img/slide-5-desk.jpg"
   },
   {
     "title": "Не пожалеете",
     "description": "Вы никогда не пожалеете, что воспользовались нашими услугами",
     "buttonLink": "#",
     "buttonText": "",
-    "slideUrl": "img/slide-1-desk.jpg"
+    "slideUrl": "img/slide-6-desk.jpg"
   }
 ]
