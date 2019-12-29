@@ -6,7 +6,8 @@
     "size": "big",
     "buttonText": "Заказать",
     "buttonLink": "#",
-    "slideUrl": "img/new-product-1.png"
+    "slideUrl": "img/new-product-1.png",
+    "detail": "detail"
   },
   {
     "title": "SDLB",
@@ -15,7 +16,8 @@
     "size": "small",
     "buttonText": "Заказать",
     "buttonLink": "#",
-    "slideUrl": "img/new-product-2.png"
+    "slideUrl": "img/new-product-2.png",
+    "detail": "detail"
   },
   {
     "title": "SDLB",
@@ -24,7 +26,8 @@
     "size": "small",
     "buttonText": "Заказать",
     "buttonLink": "#",
-    "slideUrl": "img/new-product-3.png"
+    "slideUrl": "img/new-product-3.jpg",
+    "detail": ""
   },
   {
     "title": "SDLB",
@@ -33,7 +36,8 @@
     "size": "small",
     "buttonText": "Заказать",
     "buttonLink": "#",
-    "slideUrl": "img/new-product-4.png"
+    "slideUrl": "img/new-product-4.jpg",
+    "detail": ""
   },
   {
     "title": "SDLB",
@@ -42,7 +46,8 @@
     "size": "small",
     "buttonText": "Заказать",
     "buttonLink": "#",
-    "slideUrl": "img/new-product-5.png"
+    "slideUrl": "img/new-product-5.png",
+    "detail": "detail"
   },
   {
     "title": "SDTE",
@@ -51,7 +56,8 @@
     "size": "small",
     "buttonText": "Заказать",
     "buttonLink": "#",
-    "slideUrl": "img/new-product-3.png"
+    "slideUrl": "img/new-product-3.jpg",
+    "detail": ""
   },
   {
     "title": "DLB",
@@ -60,7 +66,8 @@
     "size": "small",
     "buttonText": "Заказать",
     "buttonLink": "#",
-    "slideUrl": "img/new-product-5.png"
+    "slideUrl": "img/new-product-5.png",
+    "detail": "detail"
   },
   {
     "title": "LB",
@@ -69,7 +76,8 @@
     "size": "small",
     "buttonText": "Заказать",
     "buttonLink": "#",
-    "slideUrl": "img/new-product-4.png"
+    "slideUrl": "img/new-product-4.jpg",
+    "detail": ""
   },
   {
     "title": "SDL",
@@ -78,7 +86,8 @@
     "size": "small",
     "buttonText": "Предзаказ",
     "buttonLink": "#",
-    "slideUrl": "img/new-product-2.png"
+    "slideUrl": "img/new-product-2.png",
+    "detail": "detail"
   },
   {
     "title": "ILB",
@@ -87,7 +96,8 @@
     "size": "small",
     "buttonText": "Заказать",
     "buttonLink": "#",
-    "slideUrl": "img/new-product-2.png"
+    "slideUrl": "img/new-product-2.png",
+    "detail": "detail"
   },
   {
     "title": "SDT",
@@ -96,7 +106,8 @@
     "size": "small",
     "buttonText": "Предзаказ",
     "buttonLink": "#",
-    "slideUrl": "img/new-product-3.png"
+    "slideUrl": "img/new-product-3.jpg",
+    "detail": ""
   },
   {
     "title": "TrNT",
@@ -105,7 +116,8 @@
     "size": "big",
     "buttonText": "Заказать",
     "buttonLink": "#",
-    "slideUrl": "img/new-product-1.png"
+    "slideUrl": "img/new-product-1.png",
+    "detail": "detail"
   },
   {
     "title": "SPiN",
@@ -114,7 +126,8 @@
     "size": "big",
     "buttonText": "Заказать",
     "buttonLink": "#",
-    "slideUrl": "img/new-product-1.png"
+    "slideUrl": "img/new-product-1.png",
+    "detail": "detail"
   },
   {
     "title": "IRIT",
@@ -123,7 +136,8 @@
     "size": "big",
     "buttonText": "Предзаказ",
     "buttonLink": "#",
-    "slideUrl": "img/new-product-1.png"
+    "slideUrl": "img/new-product-1.png",
+    "detail": "detail"
   },
   {
     "title": "OpGh",
@@ -132,7 +146,8 @@
     "size": "big",
     "buttonText": "Предзаказ",
     "buttonLink": "#",
-    "slideUrl": "img/new-product-1.png"
+    "slideUrl": "img/new-product-1.png",
+    "detail": "detail"
   },
   {
     "title": "ILB",
@@ -141,7 +156,8 @@
     "size": "small",
     "buttonText": "Заказать",
     "buttonLink": "#",
-    "slideUrl": "img/new-product-2.png"
+    "slideUrl": "img/new-product-2.png",
+    "detail": "detail"
   },
   {
     "title": "SDT",
@@ -150,7 +166,8 @@
     "size": "small",
     "buttonText": "Предзаказ",
     "buttonLink": "#",
-    "slideUrl": "img/new-product-3.png"
+    "slideUrl": "img/new-product-3.jpg",
+    "detail": ""
   },
   {
     "title": "TrNT",
@@ -159,7 +176,8 @@
     "size": "big",
     "buttonText": "Заказать",
     "buttonLink": "#",
-    "slideUrl": "img/new-product-1.png"
+    "slideUrl": "img/new-product-1.png",
+    "detail": "detail"
   },
   {
     "title": "ILB",
@@ -168,7 +186,8 @@
     "size": "small",
     "buttonText": "Заказать",
     "buttonLink": "#",
-    "slideUrl": "img/new-product-2.png"
+    "slideUrl": "img/new-product-2.png",
+    "detail": "detail"
   },
   {
     "title": "SDT",
@@ -177,7 +196,8 @@
     "size": "small",
     "buttonText": "Предзаказ",
     "buttonLink": "#",
-    "slideUrl": "img/new-product-3.png"
+    "slideUrl": "img/new-product-3.jpg",
+    "detail": ""
   },
   {
     "title": "TrNT",
@@ -186,7 +206,8 @@
     "size": "big",
     "buttonText": "Заказать",
     "buttonLink": "#",
-    "slideUrl": "img/new-product-1.png"
+    "slideUrl": "img/new-product-1.png",
+    "detail": "detail"
   },
   {
     "title": "TrKK",
@@ -195,7 +216,8 @@
     "size": "big",
     "buttonText": "Заказать",
     "buttonLink": "#",
-    "slideUrl": "img/new-product-1.png"
+    "slideUrl": "img/new-product-1.png",
+    "detail": "detail"
   },
   {
     "title": "TrNT",
@@ -204,7 +226,8 @@
     "size": "big",
     "buttonText": "Заказать",
     "buttonLink": "#",
-    "slideUrl": "img/new-product-1.png"
+    "slideUrl": "img/new-product-1.png",
+    "detail": "detail"
   },
   {
     "title": "TrKK",
@@ -213,7 +236,8 @@
     "size": "big",
     "buttonText": "Заказать",
     "buttonLink": "#",
-    "slideUrl": "img/new-product-1.png"
+    "slideUrl": "img/new-product-1.png",
+    "detail": "detail"
   },
   {
     "title": "TrNT",
@@ -222,7 +246,8 @@
     "size": "big",
     "buttonText": "Заказать",
     "buttonLink": "#",
-    "slideUrl": "img/new-product-1.png"
+    "slideUrl": "img/new-product-1.png",
+    "detail": "detail"
   },
   {
     "title": "ILB",
@@ -231,7 +256,8 @@
     "size": "small",
     "buttonText": "Заказать",
     "buttonLink": "#",
-    "slideUrl": "img/new-product-2.png"
+    "slideUrl": "img/new-product-2.png",
+    "detail": "detail"б
   },
   {
     "title": "SDYT",
@@ -240,7 +266,8 @@
     "size": "small",
     "buttonText": "Предзаказ",
     "buttonLink": "#",
-    "slideUrl": "img/new-product-3.png"
+    "slideUrl": "img/new-product-3.jpg",
+    "detail": ""
   },
   {
     "title": "ILB",
@@ -249,7 +276,8 @@
     "size": "small",
     "buttonText": "Заказать",
     "buttonLink": "#",
-    "slideUrl": "img/new-product-2.png"
+    "slideUrl": "img/new-product-2.png",
+    "detail": "detail"
   },
   {
     "title": "OJT",
@@ -258,7 +286,8 @@
     "size": "small",
     "buttonText": "Предзаказ",
     "buttonLink": "#",
-    "slideUrl": "img/new-product-3.png"
+    "slideUrl": "img/new-product-3.jpg",
+    "detail": ""
   },
   {
     "title": "SDT",
@@ -267,6 +296,7 @@
     "size": "small",
     "buttonText": "Предзаказ",
     "buttonLink": "#",
-    "slideUrl": "img/new-product-3.png"
+    "slideUrl": "img/new-product-3.jpg",
+    "detail": ""
   }
 ]
