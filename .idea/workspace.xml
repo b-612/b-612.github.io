@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2cbda44c-bbb3-46f8-845d-2459b20d1f97" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/trate-ag/events.json" beforeDir="false" afterPath="$PROJECT_DIR$/json/trate-ag/events.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -71,7 +72,7 @@
       <workItem from="1577900700981" duration="688000" />
       <workItem from="1577946068223" duration="1421000" />
       <workItem from="1577971106762" duration="692000" />
-      <workItem from="1578005910374" duration="2915000" />
+      <workItem from="1578005910374" duration="3115000" />
     </task>
     <servers />
   </component>
