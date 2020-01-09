@@ -2672,7 +2672,7 @@ img {
 .product__order::before {
   content: "";
   position: absolute;
-  top: 11px;
+  top: 8px;
   left: 15px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
