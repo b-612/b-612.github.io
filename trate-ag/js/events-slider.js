@@ -4,7 +4,7 @@
   var COUNTER_INCR = 3;
 
   var containerClass = 'events__slider';
-  var listClass = 'events-slider__list';
+  var listClass = 'events__slider-list';
 
   var eventTemplate = document.querySelector('#event');
   var eventExample = eventTemplate.content.querySelector('.event');
@@ -34,7 +34,7 @@
     return allEvents;
   };
 
-  var pushItemsInSlide = function (maxR, element, i, allSlides, slListItem, itemClass, counterIncr) {
+  var pushItemsInSlide = function (maxR, element, i, allSlides, slListItem, section, counterIncr) {
     if (i === 0) {
       window.util.RATE = 0;
       window.util.RATE_COUNTER = 0;
@@ -46,7 +46,7 @@
       var slList = window.util.slideItem.querySelector('ul');
       window.util.slList = slList;
       allSlides.push(window.util.slideItem);
-      window.util.slList.classList.add(itemClass + '__list');
+      window.util.slList.classList.add(section.className + '__list');
       window.util.RATE_COUNTER = 0;
     }
 
@@ -61,12 +61,20 @@
     var allItems = makeEventsNews(itemsData, itemClass, itemExample);
     var allSlides = [];
 
-    window.util.MAX_RATE = screen.width >= window.util.DESKTOP_MIN_WIDTH ?
-      window.util.DESK_SLIDER_RATE : window.util.TABLET_SLIDER_RATE;
+    switch (true) {
+      case screen.width >= window.util.DESKTOP_MIN_WIDTH :
+        window.util.MAX_RATE = window.util.DESK_SLIDER_RATE;
+        break;
+      case screen.width >= window.util.TABLET_MIN_WIDTH :
+        window.util.MAX_RATE = window.util.TABLET_SLIDER_RATE;
+        break;
+      default :
+        window.util.MAX_RATE = window.util.MOBILE_SLIDER_RATE;
+    }
 
-    if (window.util.MAX_RATE === window.util.DESK_SLIDER_RATE) {
+    if (window.util.MAX_RATE === window.util.DESK_SLIDER_RATE || window.util.MAX_RATE === window.util.TABLET_SLIDER_RATE) {
       allItems.forEach(function (it, i) {
-        pushItemsInSlide(window.util.MAX_RATE, it, i, allSlides, slListItem, itemClass, counterIncr);
+        pushItemsInSlide(window.util.MAX_RATE, it, i, allSlides, slListItem, section, counterIncr);
       });
     } else {
       allItems.forEach(function (it) {

@@ -24,11 +24,30 @@
     if (itemImgData) {
       var style = '<style>'
         +
-        '@media (max-width: ' + window.util.MOBILE_MAX_WIDTH + 'px) {\n'
+          '@media (max-width: ' + window.util.MOBILE_MAX_WIDTH + 'px) {\n'
+        +
+          '  .' + itemMixClass + (i + 1) + ' {\n'
+        +
+          '    background-image: url("' + itemImgData.slice(0, -9) + '-mob@1x.jpg");\n'
+        +
+          '  }\n\n'
+        +
+          '    @media (min-resolution: ' + window.util.RETINA_DPPX + '), (min-resolution: ' + window.util.RETINA_DPPX + ') {\n'
+        +
+          '  .' + itemMixClass + (i + 1) + ' {\n'
+        +
+          '      background-image: url("' + itemImgData.slice(0, -9) + '-mob@2x.jpg");\n'
+        +
+          '    }\n' +
+          '  }\n'
+        +
+          '}\n\n'
+        +
+        '@media (min-width: ' + window.util.TABLET_MIN_WIDTH + 'px) and (max-width: ' + window.util.TABLET_MAX_WIDTH + 'px) {\n'
         +
         '  .' + itemMixClass + (i + 1) + ' {\n'
         +
-        '    background-image: url("' + itemImgData.slice(0, -9) + '-mob@1x.jpg");\n'
+        '    background-image: url("' + itemImgData.slice(0, -9) + '-tab@1x.jpg");\n'
         +
         '  }\n\n'
         +
@@ -36,22 +55,22 @@
         +
         '  .' + itemMixClass + (i + 1) + ' {\n'
         +
-        '      background-image: url("' + itemImgData.slice(0, -9) + '-mob@2x.jpg");\n'
+        '      background-image: url("' + itemImgData.slice(0, -9) + '-tab@2x.jpg");\n'
         +
         '    }\n' +
         '  }\n'
         +
         '}\n\n'
         +
-        '@media (min-width: ' + window.util.DESKTOP_MIN_WIDTH + 'px) {\n'
+          '@media (min-width: ' + window.util.DESKTOP_MIN_WIDTH + 'px) {\n'
         +
-        '  .' + itemMixClass + (i + 1) + ' {\n'
+          '  .' + itemMixClass + (i + 1) + ' {\n'
         +
-        '    background-image: url("' + itemImgData + '");\n'
+          '    background-image: url("' + itemImgData + '");\n'
         +
-        '  }\n'
+          '  }\n'
         +
-        '}</style>';
+          '}</style>';
 
       item.insertAdjacentHTML('afterbegin', style);
     }

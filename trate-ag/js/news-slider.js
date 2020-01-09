@@ -4,7 +4,7 @@
   var COUNTER_INCR = 2;
 
   var containerClass = 'news__slider';
-  var listClass = 'news-slider__list';
+  var listClass = 'news__slider-list';
 
   var newsItemTemplate = document.querySelector('#news-item');
   var newsItemExample = newsItemTemplate.content.querySelector('.news-item');

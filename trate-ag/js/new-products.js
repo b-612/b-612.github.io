@@ -6,7 +6,7 @@
 
   var containerClass = 'new-products__slider';
   var itemListClass = 'new-products__list';
-  var listClass = 'new-products-slider__list';
+  var listClass = 'new-products__slider-list';
 
   var newProductTemplate = document.querySelector('#new-product');
   var productExample = newProductTemplate.content.querySelector('.product');

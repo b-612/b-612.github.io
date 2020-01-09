@@ -22,16 +22,13 @@
     mainNavList: mainNav.querySelector('.main-nav__list')
   };
 
-  var Animations = {
-    listAnimationDesk: 'nesting-list-animation-desk',
-    listAnimationMobile: 'nesting-list-animation-mobile',
-    linkAnimation: 'nesting-link-animation',
-    linkAnimationClose: 'nesting-link-animation-close',
-    listAnimationCloseMobile: 'nesting-list-animation-mobile-close'
-  };
-
   var itemsLists = Array.from(ToggleElements.mainNavList.querySelectorAll('.main-nav__item'));
   var nestingLists = Array.from(ToggleElements.mainNavList.querySelectorAll('.main-nav__nesting-list'));
+  var mainNavLinks = Array.from(mainNav.querySelector('.main-nav__link--list'));
+
+  mainNavLinks.forEach(function (it) {
+    it.preventDefault();
+  });
 
   var toggleClasses = function (element, addClass, removingEnd) {
     var elementClasses = Array.from(element.classList);
@@ -47,8 +44,15 @@
       element.classList.remove(removingClass);
     }
 
-    if (element === ToggleElements.navToggle && !element.classList.contains('nav-toggle--with-js')) {
-      element.classList.add('nav-toggle--with-js');
+    if (element === ToggleElements.navToggle) {
+      element.classList.add('visually-hidden');
+      window.setTimeout(function () {
+        element.classList.remove('visually-hidden');
+      }, 500);
+
+      if (!element.classList.contains('nav-toggle--with-js')) {
+        element.classList.add('nav-toggle--with-js');
+      }
     }
 
     element.classList.add(addClass);
@@ -61,10 +65,12 @@
 
   var closeNav = function () {
     window.setTimeout(function () {
-      ToggleElements.mainNavList.classList.add('hidden');
-    }, 450);
+      if (screen.width <= window.util.MOB_NAV_MAX_WIDTH) {
+        ToggleElements.mainNavList.classList.add('hidden');
+      }
+    }, 500);
 
-    hideLists(nestingLists, Animations.listAnimationMobile);
+    hideLists(nestingLists);
 
     for (var key in ToggleElements) {
       if (ToggleElements.hasOwnProperty(key)) {
@@ -76,20 +82,22 @@
   };
 
   var openNav = function () {
-
     for (var key in ToggleElements) {
       if (ToggleElements.hasOwnProperty(key)) {
         toggleClasses(ToggleElements[key], elementNavOpenedMap[key], '--closed');
       }
     }
 
-    ToggleElements.mainNav.focus();
     body.style = 'overflow-y: hidden';
     ToggleElements.mainNavList.classList.remove('hidden');
   };
 
   var toggleNav = function () {
     window.navToggle.toggleElement(window.navToggle.checkIsElemClosed(ToggleElements.navToggle, 'nav-toggle--closed'), openNav, closeNav, ToggleElements.navToggle);
+
+    window.setTimeout(function () {
+      ToggleElements.navToggle.focus();
+    }, 405);
   };
 
   var toggleNavFromResize = function () {
@@ -98,111 +106,117 @@
     }
 
     toggleNav();
+
+    if (screen.width > window.util.MOB_NAV_MAX_WIDTH) {
+      ToggleElements.mainNavList.classList.remove('hidden');
+    }
   };
 
   var onNavToggleClick = function () {
     toggleNav();
   };
 
-  var removeAnimation = function (element, listAnimation) {
-    var animatedItems = Array.from(element.children);
-    var animatedLinks = Array.from(element.querySelectorAll('.' + Animations.linkAnimation));
-    var animatedElements = animatedItems.concat(animatedLinks);
-
-    animatedElements.push(element);
-
-    animatedElements.forEach(function (current) {
-      switch (true) {
-        case current.classList.contains(Animations.linkAnimation) :
-          current.classList.remove(Animations.linkAnimation);
-          break;
-        case current.classList.contains(listAnimation) :
-          current.classList.remove(listAnimation);
-          break;
-      }
-    });
-  };
-
-  var hideLists = function (lists, listAnimation) {
+  var hideLists = function (lists) {
     lists.forEach(function (current) {
       if (!current.classList.contains('visually-hidden')) {
         current.classList.add('visually-hidden');
-        removeAnimation(current, listAnimation);
       }
     });
   };
 
-  var hideList = function (list, listAnimationOpen, listAnimationClose) {
-    var nestingLinks = Array.from(list.querySelectorAll('.main-nav__nesting-link'));
-    var nestingItems = Array.from(list.querySelectorAll('.main-nav__nesting-item'));
-    var animationArray = nestingLinks.concat(nestingItems);
-
-    animationArray.forEach(function (it) {
-      it.classList.remove(Animations.linkAnimation);
-      it.classList.add(Animations.linkAnimationClose);
-    });
-
-    list.classList.add(listAnimationClose);
-
-    removeAnimation(list, listAnimationOpen);
-    window.setTimeout(function () {
-      list.classList.add('visually-hidden');
-    }, 600);
-  };
-
-  var openList = function (evt, listAnimation) {
-    if (evt.currentTarget.classList.contains('main-nav__item--list')) {
-      var nestingList = evt.currentTarget.querySelector('.main-nav__nesting-list');
-      var nestingItems = Array.from(nestingList.querySelectorAll('.main-nav__nesting-item'));
-      var nestingLinks = Array.from(nestingList.querySelectorAll('.main-nav__nesting-link'));
-      var animationArray = nestingItems.concat(nestingLinks);
-
-      animationArray.push(nestingList);
-      nestingList.classList.remove('visually-hidden');
-      nestingList.classList.remove(Animations.listAnimationCloseMobile);
-
-      animationArray.forEach(function (current) {
-        if (current.classList.contains('main-nav__nesting-link')) {
-          current.classList.remove(Animations.linkAnimationClose);
-          current.classList.add(Animations.linkAnimation);
-        } else {
-          current.classList.add(listAnimation);
+  var hideList = function (list) {
+    if (screen.width <= window.util.TABLET_MAX_WIDTH) {
+      var items = Array.from(list.querySelectorAll('.main-nav__nesting-item'));
+      items.forEach(function (it) {
+        if (it.classList.contains('main-nav__nesting-item--open-anim')) {
+          it.classList.remove('main-nav__nesting-item--open-anim');
         }
+
+        it.classList.add('main-nav__nesting-item--close-anim');
       });
+
+      if (list.classList.contains('main-nav__nesting-list--open-anim')) {
+        list.classList.remove('main-nav__nesting-list--open-anim');
+      }
+
+      list.classList.add('main-nav__nesting-list--close-anim');
+
+      window.setTimeout(function () {
+        list.classList.add('visually-hidden');
+      }, 400);
+    } else {
+      list.classList.add('visually-hidden');
     }
   };
 
-  var toggleList = function (evt, lists, listAnimation) {
+  var openList = function (evt) {
+    if (evt.currentTarget.classList.contains('main-nav__item--list')) {
+      var nestingList = evt.currentTarget.querySelector('.main-nav__nesting-list');
+      var items = Array.from(nestingList.querySelectorAll('.main-nav__nesting-item'));
+
+      if (screen.width > window.util.MOBILE_MAX_WIDTH && screen.width < window.util.DESKTOP_MIN_WIDTH) {
+        nestingLists.forEach(function (it) {
+          it.classList.add('visually-hidden');
+        });
+      }
+
+      nestingList.classList.remove('visually-hidden');
+
+      if (screen.width <= window.util.TABLET_MAX_WIDTH) {
+        items.forEach(function (it) {
+          if (it.classList.contains('main-nav__nesting-item--close-anim')) {
+            it.classList.remove('main-nav__nesting-item--close-anim');
+          }
+
+          it.classList.add('main-nav__nesting-item--open-anim');
+        });
+
+        if (nestingList.classList.contains('main-nav__nesting-list--close-anim')) {
+          nestingList.classList.remove('main-nav__nesting-list--close-anim');
+        }
+
+        nestingList.classList.add('main-nav__nesting-list--open-anim');
+      } else {
+        items.forEach(function (it) {
+          it.classList.remove('main-nav__nesting-item--close-anim');
+        });
+
+        nestingList.classList.remove('main-nav__nesting-list--close-anim');
+      }
+    }
+  };
+
+  var toggleList = function (evt) {
     if (evt.target.nextElementSibling) {
       if (evt.target.nextElementSibling.classList.contains('visually-hidden')) {
-        openList(evt, listAnimation);
+        openList(evt);
       } else {
-        hideList(evt.target.nextElementSibling, Animations.listAnimationMobile, Animations.listAnimationCloseMobile);
+        hideList(evt.target.nextElementSibling);
       }
     }
   };
 
   var onItemHoverDesk = function (evt) {
-    hideLists(nestingLists, Animations.listAnimationDesk);
+    hideLists(nestingLists);
     blurElement();
-    openList(evt, Animations.listAnimationDesk);
+    openList(evt);
   };
 
   var onItemClickMobile = function (evt) {
-    toggleList(evt, nestingLists, Animations.listAnimationMobile);
+    toggleList(evt, nestingLists);
   };
 
   var onItemFocusDesk = function (evt) {
-    hideLists(nestingLists, Animations.listAnimationDesk);
-    openList(evt, Animations.listAnimationDesk);
+    hideLists(nestingLists);
+    openList(evt);
   };
 
   var onItemFocusMobile = function (evt) {
-    openList(evt, Animations.listAnimationMobile);
+    openList(evt);
   };
 
   var onItemMouseoutDesk = function () {
-    hideLists(nestingLists, Animations.listAnimationDesk);
+    hideLists(nestingLists);
   };
 
   var addDesktopListeners = function () {
@@ -215,14 +229,14 @@
 
   var addMobileListeners = function () {
     itemsLists.forEach(function (current) {
-      current.addEventListener('click', onItemClickMobile);
+      current.addEventListener('mousedown', onItemClickMobile);
       current.addEventListener('focusin', onItemFocusMobile);
     });
   };
 
   var removeMobileListeners = function () {
     itemsLists.forEach(function (current) {
-      current.removeEventListener('click', onItemClickMobile);
+      current.removeEventListener('mousedown', onItemClickMobile);
       current.removeEventListener('focusin', onItemFocusMobile);
     });
   };
