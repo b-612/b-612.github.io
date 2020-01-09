@@ -1,26 +1,3 @@
-@charset "UTF-8";
-/* Ширины дисплеев */
-/* Ретина */
-/* Шрифты */
-/* Переходы */
-/* Глобальная область */
-/* Верхняя полоса хедера */
-/* Иконки соц. сетей */
-/* Инфо блок в хедере */
-/* Кнопка (ссылка) с обводкой */
-/* Номера телефонов */
-/* Оформить заявку */
-/* Главное меню */
-/* Примеры имплантов в шапке */
-/* Слайдер предложений */
-/* Новинки */
-/* Карточка продукта в новых продуктах */
-/* Ближайшие мероприятия */
-/* Мероприятие отдельно */
-/* О компании */
-/* Контент из админки */
-/* Новости */
-/* Футер */
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -146,6 +123,19 @@ img {
     height: 69px;
     display: block;
     background-color: #e33439;
+  }
+}
+
+@media (max-width: 767px) {
+  .page-header__examples {
+    margin-left: -15px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1339px) {
+  .page-header__examples {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -293,21 +283,6 @@ img {
   margin-left: auto;
 }
 
-@media (max-width: 767px) {
-  .top-line__socials {
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    width: 48%;
-  }
-}
-
-@media (min-width: 1340px) {
-  .top-line__socials {
-    max-width: 406px;
-  }
-}
-
 .socials {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -317,6 +292,21 @@ img {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+}
+
+@media (max-width: 767px) {
+  .socials {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    width: 48%;
+  }
+}
+
+@media (min-width: 1340px) {
+  .socials {
+    max-width: 406px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1392,7 +1382,6 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-left: -15px;
   }
 }
 
@@ -2191,9 +2180,6 @@ img {
 
 @media (min-width: 1340px) {
   .new-products__product {
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
     margin-right: 32px;
   }
 }
@@ -2319,6 +2305,9 @@ img {
 
 @media (min-width: 1340px) {
   .product {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
     width: 405px;
   }
 }
@@ -2748,6 +2737,12 @@ img {
   }
 }
 
+@media (min-width: 1340px) {
+  .events__event:not(:last-child) {
+    margin-right: 24px;
+  }
+}
+
 .events__title {
   color: #ffffff;
   text-align: center;
@@ -2838,12 +2833,6 @@ img {
   .event {
     width: 628px;
     background-size: 628px 233px;
-  }
-}
-
-@media (min-width: 1340px) {
-  .event:not(:last-child) {
-    margin-right: 24px;
   }
 }
 
@@ -3530,13 +3519,6 @@ img {
 
 @media (min-width: 768px) and (max-width: 1339px) {
   .page-footer__nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 728px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 40px;
@@ -3617,6 +3599,18 @@ img {
 @media (max-width: 767px) {
   .footer-nav {
     display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1339px) {
+  .footer-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 728px;
   }
 }
 
