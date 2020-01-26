@@ -1,0 +1,28 @@
+[
+  {
+    "title": "Утро",
+    "isTimeLimit": true,
+    "startTime": "11:00",
+    "endTime": "16:00",
+    "price": "1300",
+    "orderLink": "#"
+  },
+
+  {
+    "title": "Безлимит",
+    "isTimeLimit": false,
+    "startTime": "",
+    "endTime": "",
+    "price": "2800",
+    "orderLink": "#"
+  },
+
+  {
+    "title": "Вечер",
+    "isTimeLimit": true,
+    "startTime": "17:00",
+    "endTime": "21:00",
+    "price": "2000",
+    "orderLink": "#"
+  }
+]
