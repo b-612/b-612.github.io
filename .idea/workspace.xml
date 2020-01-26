@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2cbda44c-bbb3-46f8-845d-2459b20d1f97" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/yoga/directions.json" beforeDir="false" afterPath="$PROJECT_DIR$/json/yoga/directions.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -90,7 +89,7 @@
       <workItem from="1578728660981" duration="1273000" />
       <workItem from="1579900034843" duration="593000" />
       <workItem from="1579959031491" duration="6544000" />
-      <workItem from="1580041550164" duration="304000" />
+      <workItem from="1580041550164" duration="1011000" />
     </task>
     <servers />
   </component>
