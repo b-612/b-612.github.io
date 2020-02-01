@@ -17,7 +17,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/json/dvd" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/slider" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -26,6 +26,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Разработка\portfolio\b-612.github.io\slider" />
       <recent name="D:\Разработка\portfolio\b-612.github.io\json\dvd" />
       <recent name="D:\Разработка\portfolio\b-612.github.io\other" />
       <recent name="D:\Разработка\portfolio\b-612.github.io\trate-ag" />
@@ -90,6 +91,8 @@
       <workItem from="1579900034843" duration="593000" />
       <workItem from="1579959031491" duration="6544000" />
       <workItem from="1580041550164" duration="6708000" />
+      <workItem from="1580072762556" duration="195000" />
+      <workItem from="1580555952933" duration="476000" />
     </task>
     <servers />
   </component>
