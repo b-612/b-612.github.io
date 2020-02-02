@@ -3,6 +3,43 @@
 (function () {
   var MOB_MAX = 768;
 
+  var $slide = $('.slide');
+
+  var hideSlideContent = function () {
+    $slide.find('.slide__title, .slide__text, .slide__btn').addClass('visually-hidden');
+  };
+
+  var disableConedSlides = function () {
+    window.setTimeout(function () {
+      $('.slide.slick-cloned').find('.slide__title, .slide__text, .slide__btn').addClass('visually-hidden');
+    }, 300);
+  };
+
+  var showCurrentContent = function () {
+    var $currentSlide = $('.slide.slick-current');
+
+    $currentSlide.find('.slide__title, .slide__text, .slide__btn').removeClass('visually-hidden');
+  };
+
+  var removeAnimation = function () {
+    $slide.find('.slide__title').removeClass('animated faster fadeInUp');
+    $slide.find('.slide__text, .slide__btn').removeClass('animated fast fadeInDown');
+  };
+
+  var addAnimation = function () {
+    var $currentSlide = $('.slide.slick-current');
+    $currentSlide.find('.slide__title').addClass('animated faster fadeInUp');
+    $currentSlide.find('.slide__text, .slide__btn').addClass('animated fast fadeInDown');
+  };
+
+  var animateSlideContent = function () {
+    hideSlideContent();
+    removeAnimation();
+    showCurrentContent();
+    addAnimation();
+    disableConedSlides();
+  };
+
   var activateSlider = function () {
     $('.slider').slick({
       infinite: true,
@@ -36,6 +73,10 @@
         }
       ]
     });
+
+    hideSlideContent();
+    showCurrentContent();
+    disableConedSlides();
   };
 
   var activateCustomPagination = function () {
@@ -59,8 +100,10 @@
   var onSlideChange = function () {
     var $currentSlideClass = $('.slider .slick-current').attr('class').split('--')[1].split(' ')[0];
 
+
     $('.slider-pagination__nav-item').removeClass('slick-current');
     $('.slider-pagination__nav-item' + '--' + $currentSlideClass).addClass('slick-current');
+    animateSlideContent();
   };
 
   var disablePagination = function () {
@@ -77,8 +120,10 @@
     if ($(window).width() >= MOB_MAX) {
       disablePagination();
       activateCustomPagination();
+      console.log('desk');
     } else {
       disablePagination();
+      console.log('mob');
     }
   }));
 })();
