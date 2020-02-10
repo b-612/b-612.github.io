@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2cbda44c-bbb3-46f8-845d-2459b20d1f97" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/json/yoga/reviews.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -99,7 +98,7 @@
       <workItem from="1580696247850" duration="1134000" />
       <workItem from="1581089016147" duration="371000" />
       <workItem from="1581273453315" duration="5591000" />
-      <workItem from="1581347603209" duration="634000" />
+      <workItem from="1581347603209" duration="1592000" />
     </task>
     <servers />
   </component>
