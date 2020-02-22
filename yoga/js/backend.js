@@ -11,17 +11,26 @@
   };
 
   $.ajaxSetup({
-    type: requestParam.GET_REQUEST,
+    method: requestParam.GET_REQUEST,
     timeout: requestParam.REQUEST_TIMEOUT,
     dataType: requestParam.GET_DATA_TYPE
   });
 
-  var getItems = function (url, onSuccess, onError, makeItem, section, listClass) {
-    $.ajax(url, {
+  var getItems = function (itemParams) {
+    $.ajax(itemParams.URL, {
       success: function (resp) {
-        onSuccess(resp, makeItem, section, listClass);
+        itemParams.ON_SUCCESS.makeItems(resp, itemParams.MAKE_ITEM, itemParams.SECTION, itemParams.LIST_CLASS, itemParams.MAKE_SLIDER);
+
+        if (itemParams.ON_SUCCESS.setTheBest) {
+          itemParams.ON_SUCCESS.setTheBest();
+        }
+
+        if (itemParams.ON_SUCCESS.setItemsListeners) {
+          itemParams.ON_SUCCESS.setItemsListeners();
+        }
       },
-      error: onError
+
+      error: itemParams.ON_ERROR(itemParams.SECTION)
     })
   };
 

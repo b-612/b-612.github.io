@@ -18,7 +18,7 @@
   var onToggleClick = function () {
     $mainNav.toggleClass('nav--opened');
     $body.toggleClass('body-anim-on');
-    $body.attr('style', 'overflow: hidden');
+    $body.attr('style', 'overflow-x: hidden');
     $navList.toggleClass('nav__list--animation-on');
 
     if (onToggleClick.isClicked) {
@@ -45,11 +45,9 @@
   var onSwipe = function (evt) {
     if ($mainNav.hasClass('nav--opened') && touchX.touchStartX > touchX.touchEndX) {
       onToggleClick();
+      onToggleClick.isClicked = false;
     } else if (!$mainNav.hasClass('nav--opened') && touchX.touchStartX < touchX.touchEndX  && touchX.touchStartX <= 40) {
       onToggleClick();
-    }
-
-    if (!onToggleClick.isClicked) {
       onToggleClick.isClicked = true;
     }
   };

@@ -11,10 +11,10 @@
 
   var makeTime = function (subscriptionData, textElem, timeElem) {
     if (subscriptionData.isTimeLimit) {
-      $(timeElem)[0].textContent = 'с ' + subscriptionData.startTime + ' до ' + subscriptionData.endTime;
+      timeElem.text('с ' + subscriptionData.startTime + ' до ' + subscriptionData.endTime);
     } else {
-      $(textElem)[0].textContent = 'Посещение не ограничено по времени';
-      $(timeElem)[0].remove();
+      textElem.text('Посещение не ограничено по времени');
+      timeElem.remove();
     }
   };
 
@@ -28,27 +28,71 @@
       ORDER_LINK: $($subscriptionCard).find('.subscription__link')
     };
 
-    window.items.makeElemOrAttr($($subscriptionParam.TITLE)[0], [subscriptionData.title], ['textContent']);
+    window.items.makeText($subscriptionParam.TITLE, subscriptionData.title);
     makeTime(subscriptionData, $subscriptionParam.TEXT, $subscriptionParam.TIME);
-    window.items.makeElemOrAttr($($subscriptionParam.PRICE)[0], [subscriptionData.price], ['textContent']);
-    window.items.makeElemOrAttr($($subscriptionParam.ORDER_LINK)[0], [subscriptionData.orderLink], ['href']);
+    window.items.makeText($subscriptionParam.PRICE, subscriptionData.price);
+    window.items.makeHref($subscriptionParam.ORDER_LINK, subscriptionData.orderLink);
 
     return $($subscriptionCard)[0];
+  };
+
+  var onItemHover = function (evt) {
+    if ($(evt.currentTarget).hasClass('subscription')) {
+      $('.subscription').not(this)
+        .removeClass('subscription--best')
+        .find('.subscription__link').fadeOut(300, function () {
+          $(this).hide();
+        });
+      $(evt.currentTarget).addClass('subscription--best')
+        .find('.subscription__link')
+        .fadeIn(300, function () {
+          $(this).show();
+        });
+    }
+  };
+
+  var setItemsListeners = function () {
+    $('.subscription').hover(onItemHover);
+    $('.subscription').focus(onItemHover);
+  };
+
+  var setBestSubscr = function () {
+    $('.subscription:eq(1)').addClass('subscription--best');
+  };
+
+  var InquiryParam = {
+    URL: SUBSCRIPTIONS_URL_ONE_MONTH,
+    ON_SUCCESS: {
+      makeItems: window.items.makeItems,
+      setTheBest: setBestSubscr,
+      setItemsListeners: setItemsListeners
+    },
+    ON_ERROR: window.items.removeSection,
+    MAKE_ITEM: makeSubscription,
+    SECTION: section,
+    LIST_CLASS: 'subscriptions__list',
+    MAKE_SLIDER: null
   };
 
   var onTimeBtnClick = function (evt) {
     switch (true) {
       case $(evt.target).hasClass('subscriptions__time-btn--one-month') :
-        window.backend.getItems(SUBSCRIPTIONS_URL_ONE_MONTH, window.items.makeItems, window.items.removeSection(section), makeSubscription, section, 'subscriptions__list');
+        InquiryParam.URL = SUBSCRIPTIONS_URL_ONE_MONTH;
+        window.backend.getItems(InquiryParam);
+        setBestSubscr();
       break;
 
       case $(evt.target).hasClass('subscriptions__time-btn--six-months') :
-        window.backend.getItems(SUBSCRIPTIONS_URL_SIX_MONTH, window.items.makeItems, window.items.removeSection(section), makeSubscription, section, 'subscriptions__list');
-        break;
+        InquiryParam.URL = SUBSCRIPTIONS_URL_SIX_MONTH;
+        window.backend.getItems(InquiryParam);
+        setBestSubscr();
+      break;
 
       case $(evt.target).hasClass('subscriptions__time-btn--year') :
-        window.backend.getItems(SUBSCRIPTIONS_URL_YEAR, window.items.makeItems, window.items.removeSection(section), makeSubscription, section, 'subscriptions__list');
-        break;
+        InquiryParam.URL = SUBSCRIPTIONS_URL_YEAR;
+        window.backend.getItems(InquiryParam);
+        setBestSubscr();
+      break;
     }
 
     window.subscriptions.onTimeBtnClickCounter++;

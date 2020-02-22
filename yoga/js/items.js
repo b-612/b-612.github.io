@@ -12,6 +12,22 @@
     }
   };
 
+  var makeText = function (element, data) {
+    if (data) {
+      element.text(data);
+    } else {
+      element.remove();
+    }
+  };
+
+  var makeHref = function (element, data) {
+    if (data) {
+      element.attr('href', data);
+    } else {
+      element.remove();
+    }
+  };
+
   var makeSources = function (deviceVersions, imageData, imgFormats) {
     if (imageData) {
       var sources = [];
@@ -82,7 +98,7 @@
     return picture;
   };
 
-  var makeItems = function (itemsData, makeItem, section, listClass) {
+  var makeItems = function (itemsData, makeItem, section, listClass, makeSlider) {
     var fragment = window.util.fragment;
     var list = section.find('.' + listClass);
 
@@ -90,11 +106,17 @@
       fragment.append(makeItem(this));
     });
 
-    if (section.hasClass('subscriptions') && window.subscriptions.onTimeBtnClickCounter > 1) {
-      list.empty().fadeOut(5);
-      list.append(fragment).fadeIn(1000);
-    } else {
-      section.find('.' + listClass).empty().append(fragment);
+    switch (true) {
+      case section.hasClass('subscriptions') && window.subscriptions.onTimeBtnClickCounter > 1 :
+        list.empty().fadeOut(5);
+        list.append(fragment).fadeIn(1000);
+        break;
+      case listClass === 'members-slider' || listClass === 'reviews-slider' :
+        section.find('.' + listClass).empty().append(fragment);
+        makeSlider();
+        break;
+      default :
+        section.find('.' + listClass).empty().append(fragment);
     }
   };
 
@@ -105,7 +127,8 @@
   };
 
   window.items = {
-    makeElemOrAttr: makeElemOrAttr,
+    makeText: makeText,
+    makeHref: makeHref,
     makeItemImage: makeItemImage,
     setImgAttr: setImgAttr,
     removeSection: removeSection,

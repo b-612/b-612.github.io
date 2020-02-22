@@ -3,6 +3,28 @@
   <component name="ChangeListManager">
     <list default="true" id="2cbda44c-bbb3-46f8-845d-2459b20d1f97" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/yoga/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga/css/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/yoga/css/style.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga/css/style.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/yoga/css/style.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga/img/header-bg-mobile@1x.webp" beforeDir="false" afterPath="$PROJECT_DIR$/yoga/img/header-bg-mobile@1x.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga/img/header-bg-tablet@1x.webp" beforeDir="false" afterPath="$PROJECT_DIR$/yoga/img/header-bg-tablet@1x.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/yoga/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga/js/backend.js" beforeDir="false" afterPath="$PROJECT_DIR$/yoga/js/backend.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga/js/backend.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/yoga/js/backend.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga/js/directions.js" beforeDir="false" afterPath="$PROJECT_DIR$/yoga/js/directions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga/js/directions.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/yoga/js/directions.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga/js/items.js" beforeDir="false" afterPath="$PROJECT_DIR$/yoga/js/items.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga/js/items.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/yoga/js/items.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga/js/main-nav.js" beforeDir="false" afterPath="$PROJECT_DIR$/yoga/js/main-nav.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga/js/main-nav.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/yoga/js/main-nav.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga/js/reviews.js" beforeDir="false" afterPath="$PROJECT_DIR$/yoga/js/reviews.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga/js/reviews.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/yoga/js/reviews.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga/js/subscription.js" beforeDir="false" afterPath="$PROJECT_DIR$/yoga/js/subscription.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga/js/subscription.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/yoga/js/subscription.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga/js/team.js" beforeDir="false" afterPath="$PROJECT_DIR$/yoga/js/team.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga/js/team.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/yoga/js/team.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga/js/util.js" beforeDir="false" afterPath="$PROJECT_DIR$/yoga/js/util.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga/js/util.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/yoga/js/util.min.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -99,6 +121,8 @@
       <workItem from="1581089016147" duration="371000" />
       <workItem from="1581273453315" duration="5591000" />
       <workItem from="1581347603209" duration="4388000" />
+      <workItem from="1581430421360" duration="1294000" />
+      <workItem from="1582400125311" duration="498000" />
     </task>
     <servers />
   </component>

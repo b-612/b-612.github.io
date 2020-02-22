@@ -8,13 +8,13 @@
   var $directionCardTemp = $.parseHTML($('#direction').html());
 
   var makeScheduleItems = function (DOMElem, dataSchedule, scheduleList) {
-    $(scheduleList)[0].textContent = '';
+    $(scheduleList).empty();
 
     dataSchedule.forEach(function (it) {
       var days = it.days.join(', ');
 
       var scheduleItem = DOMElem.clone();
-      $(scheduleItem)[0].textContent = days + ' – с ' + it.startTime + ' до ' + it.endTime;
+      scheduleItem.text(days + ' – с ' + it.startTime + ' до ' + it.endTime);
       scheduleList.append(scheduleItem);
     });
   };
@@ -32,15 +32,27 @@
 
     window.items.setImgAttr($directionParam.IMAGE, directionData.image, directionData.title);
     $directionParam.LINK.before(window.items.makeItemImage($directionParam.IMAGE, directionData.image, window.util.deviceVersion, IMG_FORMATS));
-    window.items.makeElemOrAttr($($directionParam.TITLE)[0], [directionData.title], ['textContent']);
+    window.items.makeText($directionParam.TITLE, directionData.title);
     makeScheduleItems($directionParam.SCHEDULE_ITEM, directionData.schedule, $directionParam.SCHEDULE_LIST);
-    window.items.makeElemOrAttr($($directionParam.TEACHER_NAME)[0], [directionData.teacher], ['textContent']);
-    window.items.makeElemOrAttr($($directionParam.LINK)[0], [directionData.link], ['href']);
+    window.items.makeText($directionParam.TEACHER_NAME, directionData.teacher);
+    window.items.makeHref($directionParam.LINK, directionData.link);
 
     return $($directionCard)[0];
   };
 
+  // url, onSuccess, onError, makeItem, section, listClass, makeSlider
 
+  var InquiryParam = {
+    URL: DIRECTIONS_URL,
+    ON_SUCCESS: {
+      makeItems: window.items.makeItems
+    },
+    ON_ERROR: window.items.removeSection,
+    MAKE_ITEM: makeDirection,
+    SECTION: section,
+    LIST_CLASS: 'directions__list',
+    MAKE_SLIDER: null
+  };
 
-  window.backend.getItems(DIRECTIONS_URL, window.items.makeItems, window.items.removeSection(section), makeDirection, section, 'directions__list');
+  window.backend.getItems(InquiryParam);
 })();
