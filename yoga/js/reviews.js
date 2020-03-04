@@ -103,28 +103,25 @@
       accessibility: true,
       zIndex: 1000,
       speed: 300,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      appendArrows: '.reviews__nav',
+      slidesToShow: 2,
+      slidesToScroll: 2,
 
       responsive: [
         {
-          breakpoint: window.util.screenWidth.MOB_MAX,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2,
-            infinite: true,
-            dots: false
-          }
-        },
-        {
           breakpoint: window.util.screenWidth.MOB_MID,
           settings: {
+            appendArrows: '.reviews__nav',
             slidesToShow: 1,
             slidesToScroll: 1,
             infinite: true,
             dots: false,
             draggable: true
+          }
+        },
+        {
+          breakpoint: window.util.screenWidth.TAB_MAX + 1,
+          settings: {
+            appendArrows: '.reviews__nav'
           }
         }
       ]

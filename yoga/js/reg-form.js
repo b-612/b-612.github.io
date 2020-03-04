@@ -28,16 +28,16 @@
   };
 
   var onTryBtnClick = function () {
-    console.log('Сработало');
     var $removingElements = $('.registration__send-icon, .registration__message-text-wrapper');
     var form = $('.registration__form')[0];
     var $startElements = $('.registration__form, .registration__title');
 
     $removingElements.fadeOut(300);
-    window.setTimeout(function () {
+    setTimeout(function () {
       $removingElements.remove();
       form.reset();
       $startElements.fadeIn(300);
+      $('.registration .container').removeAttr('style');
     }, 300)
   };
 
@@ -52,7 +52,7 @@
     var $icon = $('.registration__send-icon');
 
     $icon.fadeOut(300);
-    window.setTimeout(function () {
+    setTimeout(function () {
       $icon.removeClass('registration__send-icon--progress')
         .addClass('registration__send-icon--success')
         .fadeIn(300);
@@ -67,7 +67,7 @@
     var $icon = $('.registration__send-icon');
 
     $icon.fadeOut(300);
-    window.setTimeout(function () {
+    setTimeout(function () {
       $icon.removeClass('registration__send-icon--progress')
         .addClass('registration__send-icon--error')
         .fadeIn(300);
