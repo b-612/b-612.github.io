@@ -24,7 +24,6 @@ body {
   max-width: 1920px;
   margin: 0 auto;
   font-family: "Geometria", "Arial", "Helvetica", sans-serif;
-  font-size: 14px;
   line-height: 1.5;
   font-weight: normal;
   color: #8e80a9;
@@ -395,7 +394,7 @@ input:-webkit-autofill {
   }
 }
 
-@media (min-width: 1160px) {
+@media (min-width: 768px) {
   .page-header__nav {
     position: relative;
   }
@@ -515,7 +514,6 @@ input:-webkit-autofill {
     margin-top: -3px;
     margin-left: 53px;
     padding-left: 37px;
-    font-size: 10px;
   }
 }
 
@@ -1334,7 +1332,7 @@ input:-webkit-autofill {
 
 @media (min-width: 1160px) {
   .direction:first-of-type .direction__image {
-    min-height: 315px;
+    min-height: 249px;
   }
 }
 
@@ -1434,7 +1432,7 @@ input:-webkit-autofill {
 
 @media (min-width: 1160px) {
   .direction__image {
-    min-height: 181px;
+    min-height: 139px;
     margin-bottom: -6px;
   }
 }
@@ -2640,6 +2638,33 @@ input:-webkit-autofill {
   }
 }
 
+.reviews__nav {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+@media (max-width: 767px) {
+  .reviews__nav {
+    max-width: 230px;
+    margin: -6px auto 0;
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 1160px) {
+  .reviews__nav {
+    display: none;
+  }
+}
+
 @media (max-width: 767px) {
   .reviews__slider {
     margin-top: -35px;
@@ -2984,33 +3009,6 @@ input:-webkit-autofill {
 .review__social-icon {
   fill: #8b7eac;
   opacity: 0.65;
-}
-
-.reviews__nav {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
-
-@media (max-width: 767px) {
-  .reviews__nav {
-    max-width: 230px;
-    margin: -6px auto 0;
-    font-size: 12px;
-  }
-}
-
-@media (min-width: 1160px) {
-  .reviews__nav {
-    display: none;
-  }
 }
 
 .slider-arrow {
