@@ -240,7 +240,7 @@ input:-webkit-autofill {
 @media (min-width: 1160px) {
   .page-header {
     padding-top: 65px;
-    background-position: left bottom;
+    background-position: 0 100%;
     background-size: 100% auto;
   }
 }
@@ -1230,6 +1230,7 @@ input:-webkit-autofill {
     margin-left: auto;
     padding: 9px 20px 11px;
     text-align: center;
+    color: #8e80a9;
     background-color: #ffffff;
     -webkit-box-shadow: 0 4px 25px rgba(142, 128, 169, 0.2);
             box-shadow: 0 4px 25px rgba(142, 128, 169, 0.2);
@@ -1980,7 +1981,7 @@ input:-webkit-autofill {
 @media (min-width: 1160px) {
   .subscription__link {
     margin-top: 26px;
-    padding: 15px 15px 19px;
+    padding: 15px;
     font-size: 12px;
   }
 }
