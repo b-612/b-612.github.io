@@ -7,33 +7,25 @@
   var navToggle = mainNav.find('.nav__toggle');
   var headerTop = $body.find('.page-header__top');
   var $navItems = $('.nav__link');
-
   mainNav.removeClass('nav--no-js');
 
-  var onToggleClick = function () {
+  var onToggleClick = function onToggleClick() {
     var NAV_TIMEOUT = 500;
     var NAV_OPENED_MARGIN = 20;
-
     var topHeight = headerTop.height();
-
     headerTop.css('min-height', topHeight);
     mainNav.toggleClass('nav--opened');
     $body.toggleClass('body-anim-on').css('overflow-x', 'hidden');
-    navList.toggleClass('nav__list--animation-on')
-      .fadeIn(NAV_TIMEOUT, function () {
-        $(this).css('display', 'block');
+    navList.toggleClass('nav__list--animation-on').fadeIn(NAV_TIMEOUT, function () {
+      $(this).css('display', 'block');
     });
 
     if (onToggleClick.isClicked) {
       headerTop.css('min-height', '');
-      $body.toggleClass('body-anim-off')
-        .css('overflow-x', '')
-        .removeAttr('style');
-      navList.toggleClass('nav__list--animation-off')
-        .fadeOut(NAV_TIMEOUT, function () {
-          $(this).css('display', '');
+      $body.toggleClass('body-anim-off').css('overflow-x', '').removeAttr('style');
+      navList.toggleClass('nav__list--animation-off').fadeOut(NAV_TIMEOUT, function () {
+        $(this).css('display', '');
       });
-
       setTimeout(function () {
         $body.removeClass('body-anim-off');
         navList.removeClass('nav__list--animation-off');
@@ -77,21 +69,17 @@
     }
   };
 
-  var onNavLinkClick = function (evt) {
+  var onNavLinkClick = function onNavLinkClick(evt) {
     var SCROLL_DURATION = 700;
     var OFFSET_TOP_PLUS = -20;
-
     evt.preventDefault();
     onToggleClick();
     $('html, body').animate({
-      scrollTop: $(`.${$(evt.target).attr('id')}`)
-        .find('.section-title')
-        .offset().top + OFFSET_TOP_PLUS + 'px'
+      scrollTop: $(".".concat($(evt.target).attr('id'))).find('.section-title').offset().top + OFFSET_TOP_PLUS + 'px'
     }, SCROLL_DURATION);
   };
 
   $navItems.click(onNavLinkClick);
-
   navToggle.click(function () {
     onToggleClick();
 
@@ -100,3 +88,4 @@
     }
   });
 })();
+//# sourceMappingURL=main-nav.js.map

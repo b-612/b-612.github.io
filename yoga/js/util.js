@@ -10,18 +10,33 @@
     DESK_MIN: 1160,
     BODY_MAX: 1920
   };
-
   var deviceVersion = {
     'mob': '320px',
     'tab': '768px',
     'desk': '1160px'
   };
-
   var fragment = document.createDocumentFragment();
+
+  var debounce = function debounce(cb, interval) {
+    var lastTimeout = null;
+    return function () {
+      var parameters = arguments;
+
+      if (lastTimeout) {
+        window.clearTimeout(lastTimeout);
+      }
+
+      lastTimeout = window.setTimeout(function () {
+        cb.apply(null, parameters);
+      }, interval);
+    };
+  };
 
   window.util = {
     screenWidth: screenWidth,
     deviceVersion: deviceVersion,
-    fragment: fragment
+    fragment: fragment,
+    debounce: debounce
   };
 })();
+//# sourceMappingURL=util.js.map

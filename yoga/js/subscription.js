@@ -1,15 +1,15 @@
 'use strict';
 
 (function () {
+  var DEBOUNCE_INTERVAL = 200;
   var SUBSCRIPTIONS_URL_ONE_MONTH = 'https://b-612.github.io/json/yoga/subscriptionOneMonth.json';
   var SUBSCRIPTIONS_URL_SIX_MONTH = 'https://b-612.github.io/json/yoga/subscriptionSixMonths.json';
   var SUBSCRIPTIONS_URL_YEAR = 'https://b-612.github.io/json/yoga/subscriptionYear.json';
-
   var $section = $('.subscriptions');
   var $subscriptionCardTemp = $.parseHTML($('#subscription').html());
   var $subscriptionBtn = $('.subscriptions__time-btn');
 
-  var makeTime = function (subscriptionData, textElem, timeElem) {
+  var makeTime = function makeTime(subscriptionData, textElem, timeElem) {
     if (subscriptionData.isTimeLimit) {
       timeElem.text('с ' + subscriptionData.startTime + ' до ' + subscriptionData.endTime);
     } else {
@@ -18,7 +18,7 @@
     }
   };
 
-  var makeSubscription = function (subscriptionData) {
+  var makeSubscription = function makeSubscription(subscriptionData) {
     var $subscriptionCard = $($subscriptionCardTemp).clone();
     var $subscriptionParam = {
       TITLE: $($subscriptionCard).find('.subscription__title'),
@@ -27,44 +27,35 @@
       PRICE: $($subscriptionCard).find('.subscription__price-number'),
       ORDER_LINK: $($subscriptionCard).find('.subscription__link')
     };
-
     window.items.makeText($subscriptionParam.TITLE, subscriptionData.title);
     makeTime(subscriptionData, $subscriptionParam.TEXT, $subscriptionParam.TIME);
     window.items.makeText($subscriptionParam.PRICE, subscriptionData.price);
     window.items.makeHref($subscriptionParam.ORDER_LINK, subscriptionData.orderLink);
-
     return $($subscriptionCard)[0];
   };
 
-  var onItemHover = function (evt) {
+  var onItemHover = window.util.debounce(function (evt) {
     var ANIMATION_TIME = 300;
 
     if ($(evt.currentTarget).hasClass('subscription')) {
-      $('.subscription').not(this)
-        .removeClass('subscription--best')
-        .find('.subscription__link').hide();
-      $(evt.currentTarget).addClass('subscription--best')
-        .find('.subscription__link')
-        .slideDown(ANIMATION_TIME, function () {
-          $(this).show();
-        });
+      $('.subscription').not($(evt.currentTarget)).removeClass('subscription--best').find('.subscription__link').hide();
+      $(evt.currentTarget).addClass('subscription--best').find('.subscription__link').slideDown(ANIMATION_TIME, function () {
+        $(this).show();
+      });
     }
-  };
+  }, DEBOUNCE_INTERVAL);
 
-  var setItemsListeners = function () {
+  var setItemsListeners = function setItemsListeners() {
     if (screen.width >= window.util.screenWidth.TAB_MIN) {
-      $('.subscription').hover(onItemHover).focus(onItemHover);
+      $('.subscription').on('mouseenter', onItemHover).focus(onItemHover);
     }
   };
 
-  var setStartBest = function () {
+  var setStartBest = function setStartBest() {
     $('.subscription:eq(1)').addClass('subscription--best');
 
     if (screen.width >= window.util.screenWidth.TAB_MIN) {
-      $('.subscription')
-        .not('.subscription:eq(1)')
-        .find('.subscription__link')
-        .hide();
+      $('.subscription').not('.subscription:eq(1)').find('.subscription__link').hide();
     }
   };
 
@@ -74,7 +65,7 @@
       makeItems: window.items.makeItems,
       setTheBest: setStartBest,
       setItemsListeners: setItemsListeners,
-      setListHeight: function () {
+      setListHeight: function setListHeight() {
         var startHeight = $('.subscriptions__list').height();
         $('.subscriptions__list').css('min-height', startHeight);
       }
@@ -83,31 +74,31 @@
     MAKE_ITEM: makeSubscription,
     SECTION: $section,
     LIST_CLASS: 'subscriptions__list',
-    MAKE_SLIDER: null,
+    MAKE_SLIDER: null
   };
 
-  var onTimeBtnClick = function (evt) {
+  var onTimeBtnClick = function onTimeBtnClick(evt) {
     switch (true) {
-      case $(evt.target).hasClass('subscriptions__time-btn--one-month') :
+      case $(evt.target).hasClass('subscriptions__time-btn--one-month'):
         InquiryParam.URL = SUBSCRIPTIONS_URL_ONE_MONTH;
         window.backend.getItems(InquiryParam);
-      break;
+        break;
 
-      case $(evt.target).hasClass('subscriptions__time-btn--six-months') :
+      case $(evt.target).hasClass('subscriptions__time-btn--six-months'):
         InquiryParam.URL = SUBSCRIPTIONS_URL_SIX_MONTH;
         window.backend.getItems(InquiryParam);
-      break;
+        break;
 
-      case $(evt.target).hasClass('subscriptions__time-btn--year') :
+      case $(evt.target).hasClass('subscriptions__time-btn--year'):
         InquiryParam.URL = SUBSCRIPTIONS_URL_YEAR;
         window.backend.getItems(InquiryParam);
-      break;
+        break;
     }
 
     window.subscriptions.onTimeBtnClickCounter++;
   };
 
-  var setBtnsListeners = function () {
+  var setBtnsListeners = function setBtnsListeners() {
     $subscriptionBtn.click(function (evt) {
       evt.preventDefault();
       $subscriptionBtn.removeClass('subscriptions__time-btn--current');
@@ -116,39 +107,37 @@
     });
   };
 
-  var onWindowResize = function () {
+  var onWindowResize = function onWindowResize() {
     $('.subscriptions__list').css('min-height', '');
     $subscriptionBtn[0].click();
   };
 
   setBtnsListeners();
-
   $(window).resize(function () {
     switch (true) {
-      case screen.width >= window.util.screenWidth.TAB_MIN && window.subscriptions.lastWindowWidth < window.util.screenWidth.TAB_MIN :
-          onWindowResize();
-          break;
+      case screen.width >= window.util.screenWidth.TAB_MIN && window.subscriptions.lastWindowWidth < window.util.screenWidth.TAB_MIN:
+        onWindowResize();
+        break;
 
-      case screen.width < window.util.screenWidth.TAB_MIN && window.subscriptions.lastWindowWidth >= window.util.screenWidth.TAB_MIN :
-          onWindowResize();
-          break;
+      case screen.width < window.util.screenWidth.TAB_MIN && window.subscriptions.lastWindowWidth >= window.util.screenWidth.TAB_MIN:
+        onWindowResize();
+        break;
 
-      case screen.width <= window.util.screenWidth.TAB_MAX && window.subscriptions.lastWindowWidth > window.util.screenWidth.TAB_MAX && screen.width >= window.util.screenWidth.TAB_MIN :
-          onWindowResize();
-          break;
+      case screen.width <= window.util.screenWidth.TAB_MAX && window.subscriptions.lastWindowWidth > window.util.screenWidth.TAB_MAX && screen.width >= window.util.screenWidth.TAB_MIN:
+        onWindowResize();
+        break;
 
-      case screen.width > window.util.screenWidth.TAB_MAX && window.subscriptions.lastWindowWidth <= window.util.screenWidth.TAB_MAX :
+      case screen.width > window.util.screenWidth.TAB_MAX && window.subscriptions.lastWindowWidth <= window.util.screenWidth.TAB_MAX:
         onWindowResize();
         break;
     }
 
     window.subscriptions.lastWindowWidth = screen.width;
   });
-
   window.subscriptions = {
     onTimeBtnClickCounter: 0,
     lastWindowWidth: screen.width
   };
-
   $subscriptionBtn[0].click();
 })();
+//# sourceMappingURL=subscription.js.map

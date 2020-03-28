@@ -16,12 +16,11 @@
     '11': 'ноября',
     '12': 'декабря'
   };
-
   var section = $('.reviews');
   var $slider = $('.reviews__slider');
   var $reviewCardTemp = $.parseHTML($('#review').html());
 
-  var makeTime = function (timeElement, timeData) {
+  var makeTime = function makeTime(timeElement, timeData) {
     var day = timeData.substr(8);
     var month = monthMap[timeData.substr(5, 2)];
     var year = timeData.substr(0, 4);
@@ -34,20 +33,17 @@
     timeElement.text(day + ' ' + month + ' ' + year);
   };
 
-  var makeAuthorImage = function (imageElement, imageData) {
+  var makeAuthorImage = function makeAuthorImage(imageElement, imageData) {
     imageElement.attr('src', 'img/' + imageData + '@1x.jpg');
     imageElement.attr('srcset', 'img/' + imageData + '@2x.jpg 2x');
-
-    $(imageElement.parent())
-      .find('source[type="image/webp"]')
-      .attr('srcset', 'img/' + imageData + '@1x.webp 1x, img/' + imageData + '@2x.webp 2x');
+    $(imageElement.parent()).find('source[type="image/webp"]').attr('srcset', 'img/' + imageData + '@1x.webp 1x, img/' + imageData + '@2x.webp 2x');
   };
 
   window.team.resetSocialCounter();
 
-  var makeReview = function (reviewData) {
+  var makeReview = function makeReview(reviewData) {
     var $reviewCard = $($reviewCardTemp).clone();
-    var $reviewParam = {
+    var $ReviewParam = {
       AUTHOR_NAME: $($reviewCard).find('.review__author-name'),
       TIME: $($reviewCard).find('.review__time'),
       AUTHOR_IMAGE: $($reviewCard).find('.review__avatar'),
@@ -56,22 +52,20 @@
       TEXT: $($reviewCard).find('.review__text'),
       DESCRIPTION: $($reviewCard).find('.review__paragraph')
     };
-
-    window.items.makeText($reviewParam.AUTHOR_NAME, reviewData.authorName);
-    makeTime($reviewParam.TIME, reviewData.time);
-    makeAuthorImage($reviewParam.AUTHOR_IMAGE, reviewData.image);
+    window.items.makeText($ReviewParam.AUTHOR_NAME, reviewData.authorName);
+    makeTime($ReviewParam.TIME, reviewData.time);
+    makeAuthorImage($ReviewParam.AUTHOR_IMAGE, reviewData.image);
     $($reviewCard).find('.review__paragraph').remove();
-    window.team.makeDescription(reviewData.review, $($reviewParam.DESCRIPTION)[0]).forEach(function (current) {
-      $reviewParam.TEXT.append(current);
+    window.team.makeDescription(reviewData.review, $($ReviewParam.DESCRIPTION)[0]).forEach(function (current) {
+      $ReviewParam.TEXT.append(current);
     });
-    window.team.makeSocial($reviewParam.LINK_VK, reviewData.vk, 'Вконтакте', 'reviews', reviewData.authorName);
-    window.team.makeSocial($reviewParam.LINK_TWITTER, reviewData.twitter, 'в Твиттер', 'reviews', reviewData.authorName);
+    window.team.makeSocial($ReviewParam.LINK_VK, reviewData.vk, 'Вконтакте', 'reviews', reviewData.authorName);
+    window.team.makeSocial($ReviewParam.LINK_TWITTER, reviewData.twitter, 'в Твиттер', 'reviews', reviewData.authorName);
     window.team.makeSocial.counter++;
-
     return $($reviewCard)[0];
   };
 
-  var makePaginationCurrent = function (currentSlide) {
+  var makePaginationCurrent = function makePaginationCurrent(currentSlide) {
     var $currentPage = $('.reviews__nav-page--current');
 
     if (screen.width >= window.util.screenWidth.MOB_MID && currentSlide >= 2) {
@@ -81,10 +75,9 @@
     }
   };
 
-  var makePaginationAll = function () {
+  var makePaginationAll = function makePaginationAll() {
     var $allPages = $('.reviews__nav-page--all');
     var $slides = $('.reviews-slider__item-wrapper:not(.slick-cloned)');
-
     $allPages.text($slides.length);
 
     if (screen.width >= window.util.screenWidth.MOB_MID && $slides.length > 1) {
@@ -94,7 +87,7 @@
     }
   };
 
-  var makeReviewsSlider = function () {
+  var makeReviewsSlider = function makeReviewsSlider() {
     $('.reviews-slider').slick({
       dots: false,
       prevArrow: '<button class="reviews__btn reviews__btn--prev slider-arrow" type="button"><span class="visually-hidden">Предыдущий отзыв</span></button>',
@@ -105,28 +98,23 @@
       speed: 300,
       slidesToShow: 2,
       slidesToScroll: 2,
-
-      responsive: [
-        {
-          breakpoint: window.util.screenWidth.MOB_MID,
-          settings: {
-            appendArrows: '.reviews__nav',
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            infinite: true,
-            dots: false,
-            draggable: true
-          }
-        },
-        {
-          breakpoint: window.util.screenWidth.TAB_MAX + 1,
-          settings: {
-            appendArrows: '.reviews__nav'
-          }
+      responsive: [{
+        breakpoint: window.util.screenWidth.MOB_MID,
+        settings: {
+          appendArrows: '.reviews__nav',
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+          draggable: true
         }
-      ]
+      }, {
+        breakpoint: window.util.screenWidth.TAB_MAX + 1,
+        settings: {
+          appendArrows: '.reviews__nav'
+        }
+      }]
     });
-
     window.team.replaceClonedSocials('reviews', $slider, 'review__social-icon');
     makePaginationAll();
   };
@@ -142,14 +130,12 @@
     LIST_CLASS: 'reviews-slider',
     MAKE_SLIDER: makeReviewsSlider
   };
-
   window.backend.getItems(InquiryParam);
-
-  $slider.on('afterChange', function(event, slick, currentSlide) {
+  $slider.on('afterChange', function (evt, slick, currentSlide) {
     makePaginationCurrent(currentSlide);
   });
-
   $(window).resize(function () {
     makePaginationAll();
   });
 })();
+//# sourceMappingURL=reviews.js.map
