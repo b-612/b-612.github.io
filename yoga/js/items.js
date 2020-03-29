@@ -1,10 +1,10 @@
 'use strict';
 
 (function () {
-  var makeElemOrAttr = function makeElemOrAttr(itemElem, dataElemArr, itemElemOrAttrArr) {
+  var makeElemAttr = function makeElemAttr(itemElem, dataElemArr, itemElemOrAttrArr) {
     for (var i = 0; i < dataElemArr.length; i++) {
       if (dataElemArr[i]) {
-        itemElem[itemElemOrAttrArr[i]] = dataElemArr[i];
+        itemElem.setAttribute(itemElemOrAttrArr[i], dataElemArr[i]);
       } else {
         itemElem.remove();
         break;
@@ -37,13 +37,13 @@
 
           if (format === 'webp') {
             if (i !== 'mob') {
-              makeElemOrAttr(source, ['image/webp', '(min-width: ' + device + ')', 'img/' + imageData + '-' + i + '@1x.' + format + ' 1x, ' + 'img/' + imageData + '-' + i + '@2x.' + format + ' 2x'], ['type', 'media', 'srcset']);
+              makeElemAttr(source, ['image/webp', "(min-width: ".concat(device, ")"), "img/".concat(imageData, "-").concat(i, "@1x.").concat(format, " 1x, img/").concat(imageData, "-").concat(i, "@2x.").concat(format, " 2x")], ['type', 'media', 'srcset']);
             } else {
-              makeElemOrAttr(source, ['image/webp', 'img/' + imageData + '-' + i + '@1x.' + format + ' 1x, ' + 'img/' + imageData + '-' + i + '@2x.' + format + ' 2x'], ['type', 'srcset']);
+              makeElemAttr(source, ['image/webp', "img/".concat(imageData, "-").concat(i, "@1x.").concat(format, " 1x, img/").concat(imageData, "-").concat(i, "@2x.").concat(format, " 2x")], ['type', 'srcset']);
             }
           } else {
             if (i !== 'mob') {
-              makeElemOrAttr(source, ['(min-width: ' + device + ')', 'img/' + imageData + '-' + i + '@1x.' + format + ' 1x, ' + 'img/' + imageData + '-' + i + '@2x.' + format + ' 2x'], ['media', 'srcset']);
+              makeElemAttr(source, ['(min-width: ' + device + ')', "img/".concat(imageData, "-").concat(i, "@1x.").concat(format, " 1x, img/").concat(imageData, "-").concat(i, "@2x.").concat(format, " 2x")], ['media', 'srcset']);
             }
           }
 
@@ -59,8 +59,8 @@
   };
 
   var setImgAttr = function setImgAttr(imgElem, imgData, title) {
-    imgElem.attr('src', 'img/' + imgData + '-mob@1x.jpg');
-    imgElem.attr('srcset', 'img/' + imgData + '-mob@2x.jpg 2x');
+    imgElem.attr('src', "img/".concat(imgData, "-mob@1x.jpg"));
+    imgElem.attr('srcset', "img/".concat(imgData, "-mob@2x.jpg 2x"));
     imgElem.attr('alt', title);
     imgElem.attr('width', '250');
     imgElem.attr('height', '200');
@@ -83,15 +83,19 @@
     var fragment = window.util.fragment;
     var list = section.find('.' + listClass);
 
+    if (section.hasClass('directions') && !window.items.directionsData) {
+      window.items.directionsData = itemsData;
+    }
+
     if (section.hasClass('directions') && screen.width >= window.util.screenWidth.TAB_MIN) {
       var $itemsWrapper = $('<div>').addClass('directions__items-wrapper');
       var $btnLookMore = $('<a>', {
         href: '#'
       }).addClass('directions__watch-more').text('Смотреть больше');
-      var firstItem = makeItem(itemsData[0]);
+      var firstItem = makeItem(window.items.directionsData[0]);
 
-      for (var i = 1; i < itemsData.length; i += 1) {
-        var item = makeItem(itemsData[i]);
+      for (var i = 1; i < window.items.directionsData.length; i += 1) {
+        var item = makeItem(window.items.directionsData[i]);
         $(item).addClass('direction--small');
         $($itemsWrapper)[0].appendChild(item);
       }
@@ -100,6 +104,10 @@
       $(firstItem).addClass('direction--big');
       fragment.appendChild(firstItem);
       fragment.appendChild($($itemsWrapper)[0]);
+    } else if (section.hasClass('directions')) {
+      $.each(window.items.directionsData, function () {
+        fragment.appendChild(makeItem(this));
+      });
     } else {
       $.each(itemsData, function () {
         fragment.appendChild(makeItem(this));

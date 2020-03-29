@@ -20,7 +20,7 @@
   hasWebP().then(function () {
     $.noop();
   }, function () {
-    var elemsWithWebp = [$('.page-header'), $('.directions'), $('.subscriptions'), $('.team'), $('.page-footer')];
+    var elemsWithWebp = [$('.page-header'), $('.directions'), $('.subscriptions'), $('.team'), $('.registration'), $('.page-footer')];
     elemsWithWebp.forEach(function (current) {
       current.removeClass('webp').addClass('no-webp');
     });

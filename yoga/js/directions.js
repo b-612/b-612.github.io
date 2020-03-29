@@ -33,8 +33,7 @@
     window.items.makeText($DirectionParam.TEACHER_NAME, directionData.teacher);
     window.items.makeHref($DirectionParam.LINK, directionData.link);
     return $($directionCard)[0];
-  }; // url, onSuccess, onError, makeItem, section, listClass, makeSlider
-
+  };
 
   var InquiryParam = {
     URL: DIRECTIONS_URL,
@@ -48,5 +47,8 @@
     MAKE_SLIDER: null
   };
   window.backend.getItems(InquiryParam);
+  window.directions = {
+    makeDirection: makeDirection
+  };
 })();
 //# sourceMappingURL=directions.js.map

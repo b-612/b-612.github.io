@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="2cbda44c-bbb3-46f8-845d-2459b20d1f97" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga/img/yoga-23-desk@1x.webp" beforeDir="false" afterPath="$PROJECT_DIR$/yoga/img/yoga-23-desk@1x.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yoga/img/yoga-23-desk@2x.webp" beforeDir="false" afterPath="$PROJECT_DIR$/yoga/img/yoga-23-desk@2x.webp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -104,6 +106,9 @@
       <workItem from="1583329686547" duration="2201000" />
       <workItem from="1583410492198" duration="782000" />
       <workItem from="1583442666530" duration="16000" />
+      <workItem from="1584292159579" duration="120000" />
+      <workItem from="1585432636245" duration="138000" />
+      <workItem from="1585505702356" duration="598000" />
     </task>
     <servers />
   </component>

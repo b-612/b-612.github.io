@@ -37,7 +37,7 @@
     if (screen.width > window.util.screenWidth.TAB_MIN) {
       if (!onToggleClick.isClicked) {
         mainNav.animate({
-          left: -(mainNav.offset().left - NAV_OPENED_MARGIN) + 'px'
+          left: -(mainNav.offset().left - $('body').offset().left - NAV_OPENED_MARGIN) + 'px'
         }, NAV_TIMEOUT);
       } else {
         mainNav.animate({
@@ -53,7 +53,7 @@
         $body.off('scroll').css({
           overflow: 'hidden',
           position: 'fixed',
-          top: '-' + howScroll + 'px',
+          top: "-".concat(howScroll, "px"),
           left: '260px',
           width: '100%'
         });
@@ -74,9 +74,13 @@
     var OFFSET_TOP_PLUS = -20;
     evt.preventDefault();
     onToggleClick();
+    var $title = $(".".concat($(evt.target).attr('id'))).find('.section-title');
     $('html, body').animate({
-      scrollTop: $(".".concat($(evt.target).attr('id'))).find('.section-title').offset().top + OFFSET_TOP_PLUS + 'px'
+      scrollTop: $title.offset().top + OFFSET_TOP_PLUS + 'px'
     }, SCROLL_DURATION);
+    $title.attr('tabindex', '0').focus().blur(function () {
+      $(this).removeAttr('tabindex');
+    });
   };
 
   $navItems.click(onNavLinkClick);

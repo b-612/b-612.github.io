@@ -107,36 +107,15 @@
     });
   };
 
-  var onWindowResize = function onWindowResize() {
+  var resizeSubscr = function resizeSubscr() {
     $('.subscriptions__list').css('min-height', '');
     $subscriptionBtn[0].click();
   };
 
   setBtnsListeners();
-  $(window).resize(function () {
-    switch (true) {
-      case screen.width >= window.util.screenWidth.TAB_MIN && window.subscriptions.lastWindowWidth < window.util.screenWidth.TAB_MIN:
-        onWindowResize();
-        break;
-
-      case screen.width < window.util.screenWidth.TAB_MIN && window.subscriptions.lastWindowWidth >= window.util.screenWidth.TAB_MIN:
-        onWindowResize();
-        break;
-
-      case screen.width <= window.util.screenWidth.TAB_MAX && window.subscriptions.lastWindowWidth > window.util.screenWidth.TAB_MAX && screen.width >= window.util.screenWidth.TAB_MIN:
-        onWindowResize();
-        break;
-
-      case screen.width > window.util.screenWidth.TAB_MAX && window.subscriptions.lastWindowWidth <= window.util.screenWidth.TAB_MAX:
-        onWindowResize();
-        break;
-    }
-
-    window.subscriptions.lastWindowWidth = screen.width;
-  });
   window.subscriptions = {
     onTimeBtnClickCounter: 0,
-    lastWindowWidth: screen.width
+    resizeSubscr: resizeSubscr
   };
   $subscriptionBtn[0].click();
 })();
