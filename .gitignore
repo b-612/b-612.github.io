@@ -1,5 +1,5 @@
 .DS_Store
-.idea
+.idea/
 *.ai
 *.log
 *.pdf
@@ -10,3 +10,5 @@ node_modules/
 npm-debug.log*
 Thumbs.db
 .vscode/
+.gitignore
+idea/workspace.xml
