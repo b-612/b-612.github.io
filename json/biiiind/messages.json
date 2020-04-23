@@ -2,8 +2,7 @@
   {
     "authorId": "1",
     "authorName": "Елена",
-    "lastVisitDate": "2020-04-20",
-    "lastVisitTime": "21:00",
+    "lastVisitDate": "2020-04-20T21:00",
     "messages": [
       {
         "messageAuthor": "customer",
@@ -28,8 +27,7 @@
           }
         ],
         "messageStatus": "read",
-        "sendDate": "2020-04-20",
-        "sendTime": "20:00"
+        "sendDate": "2020-04-20T20:00"
       },
       {
         "messageAuthor": "customer",
@@ -38,8 +36,7 @@
         "text": "Как уже неоднократно упомянуто, реплицированные с зарубежных источников, современные исследования освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, превращены в посмешище, хотя само их существование приносит несомненную пользу обществу.",
         "files": [],
         "messageStatus": "unread",
-        "sendDate": "2020-04-20",
-        "sendTime": "20:15"
+        "sendDate": "2020-04-20T20:15"
       }
     ]
   },
@@ -47,8 +44,7 @@
   {
     "authorId": "2",
     "authorName": "Андрей",
-    "lastVisitDate": "2020-04-20",
-    "lastVisitTime": "16:00",
+    "lastVisitDate": "2020-04-20T16:00",
     "messages": [
       {
         "messageAuthor": "customer",
@@ -63,8 +59,7 @@
           }
           ],
         "messageStatus": "read",
-        "sendDate": "2020-04-20",
-        "sendTime": "14:00"
+        "sendDate": "2020-04-20T14:00"
       },
       {
         "messageAuthor": "customer",
@@ -79,8 +74,7 @@
           }
         ],
         "messageStatus": "read",
-        "sendDate": "2020-04-20",
-        "sendTime": "20:15"
+        "sendDate": "2020-04-20T20:15"
       },
       {
         "messageAuthor": "me",
@@ -89,8 +83,7 @@
         "text": "Привет! В какие сроки тебе нужно получить готовый вариант?",
         "files": [],
         "messageStatus": "read",
-        "sendDate": "2020-04-20",
-        "sendTime": "21:15"
+        "sendDate": "2020-04-20T21:15"
       },
       {
         "messageAuthor": "me",
@@ -99,8 +92,7 @@
         "text": "Я могу по-быстрому, но лучше не спешить и сделать качественно.",
         "files": [],
         "messageStatus": "delivered",
-        "sendDate": "2020-04-20",
-        "sendTime": "21:20"
+        "sendDate": "2020-04-20T21:20"
       }
     ]
   }
