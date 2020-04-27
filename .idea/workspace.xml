@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2cbda44c-bbb3-46f8-845d-2459b20d1f97" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/json/biiiind/messages.json" beforeDir="false" afterPath="$PROJECT_DIR$/json/biiiind/messages.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +101,9 @@
       <workItem from="1585432636245" duration="138000" />
       <workItem from="1585505702356" duration="598000" />
       <workItem from="1585517358059" duration="723000" />
-      <workItem from="1587652595927" duration="6086000" />
+      <workItem from="1587652595927" duration="20092000" />
+      <workItem from="1587722059563" duration="56000" />
+      <workItem from="1587722174671" duration="16000" />
     </task>
     <servers />
   </component>
@@ -119,5 +122,11 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2328" y="408" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587669920677">
+      <screen x="1920" y="0" width="1280" height="984" />
+    </state>
+    <state x="2328" y="408" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.0.1280.984@1920.0.1280.984" timestamp="1587669920677" />
   </component>
 </project>
