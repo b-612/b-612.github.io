@@ -3,7 +3,98 @@
   <component name="ChangeListManager">
     <list default="true" id="2cbda44c-bbb3-46f8-845d-2459b20d1f97" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/biiiind/messages.json" beforeDir="false" afterPath="$PROJECT_DIR$/json/biiiind/messages.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/.htaccess" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/app/api/catalog.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/app/css/app.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/app/fonts/Roboto-Black.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/app/fonts/Roboto-Black.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/app/fonts/Roboto-Bold.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/app/fonts/Roboto-Bold.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/app/fonts/Roboto-Medium.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/app/fonts/Roboto-Medium.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/app/fonts/Roboto-Regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/app/fonts/Roboto-Regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/app/icons/sprite.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/app/img/arrow-back.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/app/img/arrow-back.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/app/img/arrow.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/app/img/arrow2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/app/img/arrow3.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/app/img/avatar-andrew.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/app/img/avatar-andrew.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/app/img/avatar-eugene.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/app/img/avatar-eugene.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/app/img/avatar-kate.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/app/img/avatar-kate.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/app/img/avatar-maria.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/app/img/avatar-maria.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/app/img/avatar-me.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/app/img/avatar-me.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/app/img/avatar-woman.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/app/img/avatar-woman.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/app/img/avatar.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/app/img/avatar.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/app/img/avatar2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/app/img/avatar2.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/app/img/avatar3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/app/img/avatar3.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/app/img/case_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/app/img/case_1.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/app/img/case_2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/app/img/case_2.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/app/img/case_3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/app/img/case_3.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/app/img/case_4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/app/img/case_4.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/app/img/clip.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/app/img/fb-btn.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/app/img/ins-btn.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/app/img/neworder_item.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/app/img/neworder_item.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/app/img/od-btn.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/app/img/order.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/app/img/order.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/app/img/portfolio_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/app/img/portfolio_1.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/app/img/portfolio_big.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/app/img/portfolio_big.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/app/img/portfolio_big_2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/app/img/portfolio_big_2.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/app/img/preload.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/app/img/profile_avatar_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/app/img/profile_avatar_1.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/app/img/profiles_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/app/img/profiles_1.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/app/img/service_full.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/app/img/service_full.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/app/img/test-awakening.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/app/img/test-awakening.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/app/img/test1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/app/img/test1.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/app/img/user.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/app/img/user.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/app/img/vk-btn.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/app/img/warning.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/app/js/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/app/media/alla.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/app/media/security.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/app/media/test-awakening.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/app/media/video.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/catalog-auth.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/catalog.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/my-dialogs.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/myorder.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/neworder.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/profile-active.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/profile-after-reg.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/profile-another.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/profile-no-work.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/profile-service.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/search.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/service-deactive.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/biiiind/service.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +113,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/yoga" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/biiiind" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -31,11 +122,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Разработка\portfolio\b-612.github.io\biiiind" />
       <recent name="D:\Разработка\portfolio\b-612.github.io\yoga" />
       <recent name="D:\Разработка\portfolio\b-612.github.io\slider" />
       <recent name="D:\Разработка\portfolio\b-612.github.io\json\dvd" />
       <recent name="D:\Разработка\portfolio\b-612.github.io\other" />
-      <recent name="D:\Разработка\portfolio\b-612.github.io\trate-ag" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -104,6 +195,7 @@
       <workItem from="1587652595927" duration="20092000" />
       <workItem from="1587722059563" duration="56000" />
       <workItem from="1587722174671" duration="16000" />
+      <workItem from="1588015034185" duration="437000" />
     </task>
     <servers />
   </component>
