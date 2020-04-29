@@ -13,11 +13,13 @@
       "files": [
         {
           "name": "test-awakening.mp4",
+          "prevImage": "test-awakening",
           "type": "video",
           "size": "200 МБ"
         },
         {
           "name": "test-awakening.mp4",
+          "prevImage": "test-awakening",
           "type": "video",
           "size": "200 МБ"
         }
