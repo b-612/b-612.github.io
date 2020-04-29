@@ -9,6 +9,13 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="tsconfig.json" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -21,7 +28,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/json/biiiid" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -30,11 +37,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Разработка\portfolio\b-612.github.io\json\biiiid" />
       <recent name="D:\Разработка\portfolio\b-612.github.io" />
       <recent name="D:\Разработка\portfolio\b-612.github.io\biiiind" />
       <recent name="D:\Разработка\portfolio\b-612.github.io\yoga" />
       <recent name="D:\Разработка\portfolio\b-612.github.io\slider" />
-      <recent name="D:\Разработка\portfolio\b-612.github.io\json\dvd" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -104,7 +111,7 @@
       <workItem from="1587722059563" duration="56000" />
       <workItem from="1587722174671" duration="16000" />
       <workItem from="1588015034185" duration="3661000" />
-      <workItem from="1588045932535" duration="27819000" />
+      <workItem from="1588045932535" duration="28648000" />
     </task>
     <servers />
   </component>
@@ -125,6 +132,10 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
+    <state x="655" y="321" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1588161660140">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="655" y="321" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1588161660140" />
     <state x="2328" y="408" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587669920677">
       <screen x="1920" y="0" width="1280" height="984" />
     </state>
