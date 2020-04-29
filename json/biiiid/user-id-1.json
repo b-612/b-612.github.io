@@ -20,11 +20,6 @@
           "name": "test.doc",
           "type": "document",
           "size": "63 МБ"
-        },
-        {
-          "name": "video.mp4",
-          "type": "video",
-          "size": "123 МБ"
         }
       ],
       "status": "opened",
