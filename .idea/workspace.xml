@@ -3,31 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2cbda44c-bbb3-46f8-845d-2459b20d1f97" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/becrome-perfrormer-contacts.html" beforeDir="false" afterPath="$PROJECT_DIR$/becrome-perfrormer-contacts.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/becrome-perfrormer-end.html" beforeDir="false" afterPath="$PROJECT_DIR$/becrome-perfrormer-end.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/becrome-perfrormer-personal-data.html" beforeDir="false" afterPath="$PROJECT_DIR$/becrome-perfrormer-personal-data.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/becrome-perfrormer-socials.html" beforeDir="false" afterPath="$PROJECT_DIR$/becrome-perfrormer-socials.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog-auth.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog-auth.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-dialogs.html" beforeDir="false" afterPath="$PROJECT_DIR$/my-dialogs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myorder.html" beforeDir="false" afterPath="$PROJECT_DIR$/myorder.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neworder.html" beforeDir="false" afterPath="$PROJECT_DIR$/neworder.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notifications-mobile.html" beforeDir="false" afterPath="$PROJECT_DIR$/notifications-mobile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile-active.html" beforeDir="false" afterPath="$PROJECT_DIR$/profile-active.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile-after-reg.html" beforeDir="false" afterPath="$PROJECT_DIR$/profile-after-reg.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile-another.html" beforeDir="false" afterPath="$PROJECT_DIR$/profile-another.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile-no-work.html" beforeDir="false" afterPath="$PROJECT_DIR$/profile-no-work.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile-service.html" beforeDir="false" afterPath="$PROJECT_DIR$/profile-service.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile-settings-contacts.html" beforeDir="false" afterPath="$PROJECT_DIR$/profile-settings-contacts.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile-settings-notifications.html" beforeDir="false" afterPath="$PROJECT_DIR$/profile-settings-notifications.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile-settings-password.html" beforeDir="false" afterPath="$PROJECT_DIR$/profile-settings-password.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile-settings-personal-data.html" beforeDir="false" afterPath="$PROJECT_DIR$/profile-settings-personal-data.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/search.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-deactive.html" beforeDir="false" afterPath="$PROJECT_DIR$/service-deactive.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service.html" beforeDir="false" afterPath="$PROJECT_DIR$/service.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,7 +117,7 @@
       <workItem from="1588364361887" duration="4790000" />
       <workItem from="1588425688678" duration="3093000" />
       <workItem from="1588463875358" duration="1091000" />
-      <workItem from="1588519503584" duration="2411000" />
+      <workItem from="1588519503584" duration="2605000" />
     </task>
     <servers />
   </component>
