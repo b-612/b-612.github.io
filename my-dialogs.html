@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
     <title>Мои сообщения</title>
-    <link rel="stylesheet" href="/app/css/app.css?v=1588580270293">
+    <link rel="stylesheet" href="/app/css/app.css?v=1588679446107">
     <script>
         function canUseWebP(){var e=document.createElement("canvas");return!(!e.getContext||!e.getContext("2d"))&&0==e.toDataURL("image/webp").indexOf("data:image/webp")}var root=document.getElementsByTagName("html")[0];canUseWebP()?root.classList.add("ws"):root.classList.add("wn");
     </script>
@@ -1731,7 +1731,9 @@
                     </tr>
                 </table>
                 <div class="dialog__buttons-wrap">
-                    <button class="dialog__order-bth dialog__order-bth_cancel">Отменить</button>
+                    <button class="dialog__order-btn dialog__order-btn_cancel is-regular border-button border-button_light">
+                        <div class="dialog__text">Отменить</div>
+                    </button>
                 </div>
             </div>
         </TEMPLATE>
@@ -1754,8 +1756,10 @@
                     </tr>
                 </table>
                 <div class="dialog__buttons-wrap">
-                    <button class="dialog__order-bth dialog__order-bth_refuse">Отказаться</button>
-                    <button class="dialog__order-bth dialog__order-bth_accept">Принять</button>
+                    <button class="dialog__order-btn dialog__order-btn_cancel is-regular border-button border-button_light">
+                        <div class="dialog__text">Отказаться</div>
+                    </button>
+                    <button class="dialog__order-btn dialog__order-btn_accept btn is-regular">Принять</button>
                 </div>
             </div>
         </TEMPLATE>
@@ -1955,7 +1959,7 @@
         <div class="modals__form-resend-wrapper"></div>
     </div>
     <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="/app/js/app.js?v=1588580270412"></script>
+    <script src="/app/js/app.js?v=1588679446215"></script>
 </body>
 
 </html>
