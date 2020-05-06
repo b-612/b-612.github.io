@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
     <title>Уведомления мобильная версия</title>
-    <link rel="stylesheet" href="/app/css/app.css?v=1588701163836">
+    <link rel="stylesheet" href="/app/css/app.css?v=1588758631758">
     <script>
         function canUseWebP(){var e=document.createElement("canvas");return!(!e.getContext||!e.getContext("2d"))&&0==e.toDataURL("image/webp").indexOf("data:image/webp")}var root=document.getElementsByTagName("html")[0];canUseWebP()?root.classList.add("ws"):root.classList.add("wn");
     </script>
@@ -1541,8 +1541,58 @@
         <p class="modals__notification">Введенный код не верный</p>
         <div class="modals__form-resend-wrapper"></div>
     </div>
+    <div class="bill mfp-hide modals" id="bill">
+        <button class="bill__close-btn js-close-modal" type="button">
+            <SPAN class="visually-hidden">Закрыть</SPAN>
+        </button><b class="bill__bill-title h2">Опишите услугу</b>
+        <form class="bill__form" action="/" method="POST" autocomplete="off" enctype="multipart/form-data">
+            <div class="bill__textarea-wrap">
+                <div class="bill__textarea-field-wrap"><span class="bill__error-message bill__error-message_textarea">Обязательное поле для&nbsp;заполнения</span>
+                    <textarea class="bill__textarea p css-scrollbar" type="text" placeholder="Введите описание услуги" name="billDescription" rows="3"
+                    maxlength="300"></textarea>
+                </div>
+                <div class="bill__chars-counter"><span class="bill__chars-current">0</span>/<span class="bill__chars-max">300</span>
+                </div>
+            </div>
+            <div class="bill__params-wrap">
+                <div class="bill__params-content-wrap bill__params-content-wrap_deadlines"><span class="bill__params-slogan">Укажите сроки выполнения</span>
+                    <div class="bill__deadlines"><span class="bill__params-text p">Сроки</span>
+                        <div class="bill__form-row flex flex_vertical">
+                            <div class="bill__form-label bill__form-label_select-country flex">
+                                <div class="bill__form-select bill__form-select_quantity slct">
+                                    <select name="how-much" id="how-much-field">
+                                        <option selected value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                    </select>
+                                </div>
+                                <div class="bill__form-select bill__form-select_hours-days slct">
+                                    <select name="hours-days" id="hours-days-field">
+                                        <option selected value="День">День</option>
+                                        <option value="Час">Час</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bill__params-content-wrap bill__params-content-wrap_price"><span class="bill__params-slogan">Укажите стоимость работ</span>
+                    <label class="bill__price-label"><span class="bill__params-text p">Сумма</span>
+                        <div class="bill__price-input-wrap"><span class="bill__error-message bill__error-message_price">Обязательное поле для&nbsp;заполнения</span>
+                            <input class="bill__price-input p" type="text" name="billPrice" id="price-field" placeholder="500" inputmode="numeric" /><span class="bill__price-char p">₽</span>
+                        </div>
+                    </label>
+                </div>
+            </div>
+            <button class="bill__submit-btn p" type="submit">Отправить</button>
+        </form>
+    </div>
     <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="/app/js/app.js?v=1588701163918"></script>
+    <script src="/app/js/app.js?v=1588758631841"></script>
 </body>
 
 </html>
