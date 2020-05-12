@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
     <title>Настройки профиля (уведомления)</title>
-    <link rel="stylesheet" href="/app/css/app.css?v=1588787073755">
+    <link rel="stylesheet" href="/app/css/app.css?v=1589298331893">
     <script>
         function canUseWebP(){var e=document.createElement("canvas");return!(!e.getContext||!e.getContext("2d"))&&0==e.toDataURL("image/webp").indexOf("data:image/webp")}var root=document.getElementsByTagName("html")[0];canUseWebP()?root.classList.add("ws"):root.classList.add("wn");
     </script>
@@ -1401,8 +1401,13 @@
                 </div>
                 <div class="profile__cell profile__cell_right">
                     <div class="profile__block">
-                        <div class="profile__row flex flex_justify"></div>
-                        <h2 class="profile__block-title profile__block-title_main h2">Уведомления<a class="profile__back" href="#"><svg class="icon icon-chevronBack" viewBox="0 0 5 8"><use xlink:href="/app/icons/sprite.svg#chevronBack"></use></svg>На страницу профиля</a></h2>
+                        <div class="profile__row flex flex_justify">
+                            <h2 class="profile__block-title profile__block-title_main h2">Уведомления</h2>
+                            <a class="profile__back" href="#">
+                                <svg class="icon icon-chevronBack" viewBox="0 0 5 8">
+                                    <use xlink:href="/app/icons/sprite.svg#chevronBack"></use>
+                                </svg>На страницу профиля</a>
+                        </div>
                         <div class="profile__block-title-select">
                             <div class="profile__select slct">
                                 <select name="menu">
@@ -1687,7 +1692,7 @@
         </form>
     </div>
     <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="/app/js/app.js?v=1588787073834"></script>
+    <script src="/app/js/app.js?v=1589298331983"></script>
 </body>
 
 </html>
