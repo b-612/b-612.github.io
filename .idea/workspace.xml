@@ -28,7 +28,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/enterra" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -37,11 +37,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Разработка\portfolio\b-612.github.io\enterra" />
       <recent name="D:\Разработка\portfolio\b-612.github.io" />
       <recent name="D:\Разработка\portfolio\b-612.github.io\json\biiiid" />
       <recent name="D:\Разработка\portfolio\b-612.github.io\biiiind" />
       <recent name="D:\Разработка\portfolio\b-612.github.io\yoga" />
-      <recent name="D:\Разработка\portfolio\b-612.github.io\slider" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -130,6 +130,7 @@
       <workItem from="1589366836492" duration="17000" />
       <workItem from="1589398590515" duration="1491000" />
       <workItem from="1589631056233" duration="358000" />
+      <workItem from="1590464613297" duration="625000" />
     </task>
     <servers />
   </component>
