@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2cbda44c-bbb3-46f8-845d-2459b20d1f97" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/json/biiiid/order-messages-cancel.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/json/biiiid/order-messages-conclusion.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/json/biiiid/order-messages-create.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -142,7 +139,7 @@
       <workItem from="1592088062861" duration="10000" />
       <workItem from="1592131024231" duration="599000" />
       <workItem from="1592173452059" duration="9000" />
-      <workItem from="1592213996226" duration="3938000" />
+      <workItem from="1592213996226" duration="9907000" />
     </task>
     <servers />
   </component>
@@ -167,10 +164,11 @@
       <screen x="1920" y="0" width="1280" height="984" />
     </state>
     <state x="2152" y="149" key="#Notifications/0.0.1920.1040/1920.0.1280.984@1920.0.1280.984" timestamp="1589366845740" />
-    <state x="655" y="321" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1588161660140">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2319" y="304" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1592226666664">
+      <screen x="1920" y="0" width="1280" height="984" />
     </state>
     <state x="655" y="321" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1588161660140" />
+    <state x="2319" y="304" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1280.984@1920.0.1280.984" timestamp="1592226666664" />
     <state x="690" y="265" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1591114007595">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

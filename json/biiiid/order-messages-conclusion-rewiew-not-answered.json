@@ -1,0 +1,128 @@
+[
+  {
+    "orderType": "orderCreate",
+    "orderDate": "2020-04-20T20:00",
+    "usersMessages": {
+      "userId": "1",
+      "authorName": "Николай",
+      "userTime": "12:45",
+      "avatar": "avatar-eugene",
+      "messages": [
+        {
+          "messageAuthor": "me",
+          "messageId": "1",
+          "type": "inOrderCreate",
+          "text": "Привет, можете отправить пример того, что получится в итоге?",
+          "files": [],
+          "sendDate": "2020-04-20T20:00"
+        },
+        {
+          "messageAuthor": "customer",
+          "messageId": "2",
+          "type": "inOrderCreate",
+          "text": "Привет! Вот пример работы",
+          "files": [
+            {
+              "name": "test-awakening.mp4",
+              "prevImage": "test-awakening",
+              "type": "video",
+              "size": "200 МБ"
+            },
+            {
+              "name": "test-awakening.mp4",
+              "prevImage": "test-awakening",
+              "type": "video",
+              "size": "200 МБ"
+            }
+          ],
+          "sendDate": "2020-04-20T20:15"
+        }
+      ]
+    }
+  },
+
+  {
+    "orderType": "orderReady",
+    "orderDate": "2020-04-20T20:00",
+    "usersMessages": {
+      "userId": "1",
+      "authorName": "Николай",
+      "userTime": "12:45",
+      "avatar": "avatar-eugene",
+      "messages": [
+        {
+          "messageAuthor": "customer",
+          "messageId": "2",
+          "type": "inOrderReady",
+          "text": "Привет! Записал файлы",
+          "files": [
+            {
+              "name": "test-awakening.mp4",
+              "prevImage": "test-awakening",
+              "type": "video",
+              "size": "200 МБ"
+            },
+            {
+              "name": "test-awakening.mp4",
+              "prevImage": "test-awakening",
+              "type": "video",
+              "size": "200 МБ"
+            },
+            {
+              "name": "test-awakening.mp4",
+              "prevImage": "test-awakening",
+              "type": "video",
+              "size": "200 МБ"
+            }
+          ],
+          "sendDate": "2020-04-22T20:25"
+        }
+      ]
+    }
+  },
+
+  {
+    "orderType": "orderConclusion",
+    "orderDate": "2020-04-21T13:00",
+    "usersMessages": {
+      "userId": "1",
+      "authorName": "Николай",
+      "userTime": "12:45",
+      "avatar": "avatar-eugene",
+      "messages": []
+    }
+  },
+
+  {
+    "orderType": "orderFeedback",
+    "orderDate": "2020-04-21T13:00",
+    "usersMessages": {
+      "userId": "1",
+      "authorName": "Николай",
+      "userTime": "12:45",
+      "avatar": "avatar-eugene",
+      "messages": [
+        {
+          "messageAuthor": "me",
+          "messageId": "1",
+          "type": "inOrderReview",
+          "text": "Спасибо за работу, все было супер!",
+          "files": [],
+          "sendDate": "2020-04-23T20:25",
+          "rating": "5",
+          "answer": ""
+        },
+        {
+          "messageAuthor": "customer",
+          "messageId": "2",
+          "type": "inOrderReview",
+          "text": "Адекватный заказчик",
+          "files": [],
+          "sendDate": "2020-04-23T20:25",
+          "rating": "4",
+          "answer": ""
+        }
+      ]
+    }
+  }
+]
