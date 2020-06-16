@@ -110,7 +110,18 @@
           "files": [],
           "sendDate": "2020-04-23T20:25",
           "rating": "5",
-          "answer": ""
+          "answer": [
+            {
+              "text": "Спасибо, я старался",
+              "author": "customer",
+              "date": "2020-04-23T21:25"
+            },
+            {
+              "text": "Круто, буду и дальше у тебя заказывать!",
+              "author": "me",
+              "date": "2020-04-23T21:30"
+            }
+          ]
         },
         {
           "messageAuthor": "customer",
@@ -120,7 +131,7 @@
           "files": [],
           "sendDate": "2020-04-23T20:25",
           "rating": "4",
-          "answer": ""
+          "answer": []
         }
       ]
     }
