@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2cbda44c-bbb3-46f8-845d-2459b20d1f97" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/json/biiiid/order-messages-conclusion-rewiew-not-answered.json" beforeDir="false" afterPath="$PROJECT_DIR$/json/biiiid/order-messages-conclusion-rewiew-not-answered.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,7 +141,7 @@
       <workItem from="1592173452059" duration="9000" />
       <workItem from="1592213996226" duration="15102000" />
       <workItem from="1592297377000" duration="8934000" />
-      <workItem from="1592373615579" duration="1042000" />
+      <workItem from="1592373615579" duration="1821000" />
     </task>
     <servers />
   </component>
