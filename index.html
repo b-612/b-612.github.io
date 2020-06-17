@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Список всех старниц</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/app/css/app.css?v=1592402906033">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <style>
+        body{
+            background-color: #212122;
+        	color: #fff;
+        	min-height: 100vh;
+        	font-family: Arial;		
+        	padding-top: 40px;
+        }
+        
+        .box{
+        	padding: 20px 40px;
+        	background-color: #000;		
+        }
+        
+        a{
+        	color: #fff;
+        	position: relative;
+        	display: inline-block;
+        	text-decoration: none;
+        
+        
+        }
+        
+        a::before{
+        	content: "";
+        	display: block;
+        	position: absolute;
+        	left: 0;
+        	bottom: 0;
+        	height: 1px;
+        	width: 100%;
+        	background-color: #fff;
+        	transition: ease .2s;
+        	transform: scale(0,1);
+        
+        }
+        a:hover::before{
+        	transform: scale(1, 1);
+        }
+        a:visited {
+            color: #96fd8b;
+        }
+        a:visited::before{
+        	background-color: #96fd8b;
+        }
+        ol{
+        	-webkit-column-count: 3;
+        	-moz-column-count: 3;
+        	column-count: 3;
+        	counter-reset: heading;
+        	padding: 0;
+        	margin-top: 16px;
+        	margin-bottom: 25px;
+        	margin-left: -25px;			
+        }
+        
+        li{
+        	font-size: 16px;
+        	margin-bottom: 8px;
+        	position: relative;
+        	padding-left: 30px;
+        	list-style: none;
+        	page-break-inside: avoid;		
+        	counter-increment: heading;	
+        }
+        
+        li::before{
+        	position: absolute;
+        	left: 0;
+        	top: 0;
+        	content: counter(heading) ".";
+        	font-size: 14px;
+            color: rgba(241,241,241,.5);
+        	display: inline-block;
+        	width: 25px;
+        	margin-right: 5px;
+        	text-align: right;
+        }
+        
+        h3{
+        	margin-top: 24px;
+        	margin-bottom: 40px;
+        	font-size: 24px;
+        	line-height: 1.4em;
+            		
+        }
+        
+        a:hover{
+        	text-decoration: none;
+        }
+        
+        /* Media */
+        @media only screen and (max-width: 1023px) {
+        	ol {
+        		-webkit-column-count: 3;
+        		-moz-column-count: 3;
+        		-column-count: 3;
+        	}
+        }
+        
+        @media only screen and (max-width: 767px) {
+        	ol {
+        		-webkit-column-count: 2;
+        		-moz-column-count: 2;
+        		-column-count: 2;
+        	}
+        }
+        
+        @media only screen and (max-width: 479px) {
+        	ol {
+        		-webkit-column-count: 1;
+        		-moz-column-count: 1;
+        		-column-count: 1;
+        	}
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="box">
+            <h3> Страницы проекта <nobr>«biiiid»:</nobr></h3>
+            <ol><li><a href="/becrome-perfrormer-contacts.html" target="_blank">Стать исполнителем (контакты)</a></li><li><a href="/becrome-perfrormer-end.html" target="_blank">Стать исполнителем (подтвердить)</a></li><li><a href="/becrome-perfrormer-personal-data.html" target="_blank">Стать исполнителем (персональные данные)</a></li><li><a href="/becrome-perfrormer-socials.html" target="_blank">Стать исполнителем (соцсети)</a></li><li><a href="/catalog-auth.html" target="_blank">Каталог - авторизован</a></li><li><a href="/catalog.html" target="_blank">Каталог</a></li><li><a href="/my-dialogs.html" target="_blank">Мои сообщения</a></li><li><a href="/myorder.html" target="_blank">Мои заказы</a></li><li><a href="/neworder.html" target="_blank">Создание заказа</a></li><li><a href="/notifications-mobile.html" target="_blank">Уведомления мобильная версия</a></li><li><a href="/order-correspondence-client-cancel.html" target="_blank">Переписка по&nbsp;заказу на&nbsp;стороне заказчика (Заказ отменен)</a></li><li><a href="/order-correspondence-client-conclusion-1.html" target="_blank">Переписка по&nbsp;заказу на&nbsp;стороне заказчика (Отзывы 1)</a></li><li><a href="/order-correspondence-client-conclusion.html" target="_blank">Переписка по&nbsp;заказу на&nbsp;стороне заказчика (Отзывы)</a></li><li><a href="/order-correspondence-client-create-ready.html" target="_blank">Переписка по&nbsp;заказу на&nbsp;стороне заказчика (Заказ готов. Принять/Доработать)</a></li><li><a href="/order-correspondence-client-create.html" target="_blank">Переписка по&nbsp;заказу на&nbsp;стороне заказчика (Заказачик только оформил заказ)</a></li><li><a href="/order-dialog.html" target="_blank">Сообщения в&nbsp;заказе (солянка, временная страница)</a></li><li><a href="/profile-active.html" target="_blank">Профиль(Пустой профиль пользователя, который стал исполнитлем)</a></li><li><a href="/profile-after-reg.html" target="_blank">Профиль(после регистрации со&nbsp;стороны пользователя)</a></li><li><a href="/profile-another.html" target="_blank">Профиль (чужая страница)</a></li><li><a href="/profile-no-work.html" target="_blank">Профиль(не нажал стать исполнителем, но уже заказывал как заказчик)</a></li><li><a href="/profile-service.html" target="_blank">Профиль(Мои услуги)</a></li><li><a href="/profile-settings-contacts.html" target="_blank">Настройки профиля (контакты)</a></li><li><a href="/profile-settings-notifications.html" target="_blank">Настройки профиля (уведомления)</a></li><li><a href="/profile-settings-password.html" target="_blank">Настройки профиля (смена пароля)</a></li><li><a href="/profile-settings-personal-data.html" target="_blank">Настройки профиля (персональные данные)</a></li><li><a href="/search.html" target="_blank">Поиск</a></li><li><a href="/service-deactive.html" target="_blank">Услуга - неактивная</a></li><li><a href="/service.html" target="_blank">Услуга</a></li></ol>
+        </div>
+    </div>
+</body>
+
+</html>

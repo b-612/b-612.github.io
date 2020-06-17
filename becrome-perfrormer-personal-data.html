@@ -1,0 +1,1311 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <title>Стать исполнителем (персональные данные)</title>
+    <link rel="stylesheet" href="/app/css/app.css?v=1592402901804">
+    <script>
+        function canUseWebP(){var e=document.createElement("canvas");return!(!e.getContext||!e.getContext("2d"))&&0==e.toDataURL("image/webp").indexOf("data:image/webp")}var root=document.getElementsByTagName("html")[0];canUseWebP()?root.classList.add("ws"):root.classList.add("wn");
+    </script>
+</head>
+
+<body>
+    <div class="tooltip">
+        <div class="tooltip__item tprice js-reset-parent" id="price-tooltip">
+            <div class="tprice__top">
+                <div class="tprice__label p">Введите диапозон:</div>
+                <div class="range">
+                    <div class="range__top flex flex_justify">
+                        <div class="range__min small">1000</div>
+                        <div class="range__max small">50 000</div>
+                    </div>
+                    <div class="range__line"></div>
+                    <div class="range__row inline flex flex_justify">
+                        <div class="range__field">
+                            <input class="range__input range__input_center range__input_min js-number js-virtual-input" name="price_min" placeholder="0" autocomplete="off" type="text" />
+                            <div class="range__placeholder">₽</div>
+                        </div>
+                        <div class="range__field">
+                            <input class="range__input range__input_center range__input_max js-number js-virtual-input" name="price_max" placeholder="50000" autocomplete="off" type="text" />
+                            <div class="range__placeholder">₽</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tprice__bottom flex">
+                <div class="tprice__button transparent-button is-gray js-reset-filters"><span>Очистить</span>
+                </div>
+                <div class="tprice__button transparent-button js-send-filters"><span>Сохранить</span>
+                </div>
+            </div>
+        </div>
+        <div class="tooltip__item tprice js-reset-parent" id="time-tooltip">
+            <div class="tprice__top">
+                <ul class="tprice__list">
+                    <li class="tprice__list-item">
+                        <label class="tprice__radio radio">
+                            <input class="radio__input js-virtual-input" name="time" type="radio" value="До 1 дня" /><span class="radio__text"> До 1 дня<span class="radio__icon"><svg class="icon icon-check" viewBox="0 0 10 7"><use xlink:href="/app/icons/sprite.svg#check"></use></svg></span></span>
+                        </label>
+                    </li>
+                    <li class="tprice__list-item">
+                        <label class="tprice__radio radio">
+                            <input class="radio__input js-virtual-input" name="time" type="radio" value="До 2 дней" /><span class="radio__text"> До 2 дней<span class="radio__icon"><svg class="icon icon-check" viewBox="0 0 10 7"><use xlink:href="/app/icons/sprite.svg#check"></use></svg></span></span>
+                        </label>
+                    </li>
+                    <li class="tprice__list-item">
+                        <label class="tprice__radio radio">
+                            <input class="radio__input js-virtual-input" name="time" type="radio" value="До 3 дней" /><span class="radio__text"> До 3 дней<span class="radio__icon"><svg class="icon icon-check" viewBox="0 0 10 7"><use xlink:href="/app/icons/sprite.svg#check"></use></svg></span></span>
+                        </label>
+                    </li>
+                    <li class="tprice__list-item">
+                        <label class="tprice__radio radio">
+                            <input class="radio__input js-virtual-input" name="time" type="radio" value="До 10 дней" /><span class="radio__text"> До 10 дней<span class="radio__icon"><svg class="icon icon-check" viewBox="0 0 10 7"><use xlink:href="/app/icons/sprite.svg#check"></use></svg></span></span>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+            <div class="tprice__bottom flex">
+                <div class="tprice__button transparent-button is-gray js-reset-filters"><span>Очистить</span>
+                </div>
+                <div class="tprice__button transparent-button js-send-filters"><span>Сохранить</span>
+                </div>
+            </div>
+        </div>
+        <div class="tooltip__item tprice tprice_big js-reset-parent" id="details-tooltip">
+            <div class="tprice__top">
+                <div class="tprice__inner css-scrollbar">
+                    <div class="tprice__box">
+                        <div class="tprice__label p strong">Введите диапозон</div>
+                        <ul class="tprice__list tprice__list_w50">
+                            <li class="tprice__list-item">
+                                <label class="tprice__checkbox checkbox">
+                                    <input class="checkbox__input js-virtual-input" name="level" type="checkbox" value="Эксперт" /><span class="checkbox__text"> Эксперт<span class="checkbox__icon"><svg class="icon icon-check" viewBox="0 0 10 7"><use xlink:href="/app/icons/sprite.svg#check"></use></svg></span></span>
+                                </label>
+                            </li>
+                            <li class="tprice__list-item">
+                                <label class="tprice__checkbox checkbox">
+                                    <input class="checkbox__input js-virtual-input" name="level" type="checkbox" value="Новичок" /><span class="checkbox__text"> Новичок<span class="checkbox__icon"><svg class="icon icon-check" viewBox="0 0 10 7"><use xlink:href="/app/icons/sprite.svg#check"></use></svg></span></span>
+                                </label>
+                            </li>
+                            <li class="tprice__list-item">
+                                <label class="tprice__checkbox checkbox">
+                                    <input class="checkbox__input js-virtual-input" name="level" type="checkbox" value="Опытный" /><span class="checkbox__text"> Опытный <span class="checkbox__icon"><svg class="icon icon-check" viewBox="0 0 10 7"><use xlink:href="/app/icons/sprite.svg#check"></use></svg></span></span>
+                                </label>
+                            </li>
+                            <li class="tprice__list-item">
+                                <label class="tprice__checkbox checkbox">
+                                    <input class="checkbox__input js-virtual-input" name="level" type="checkbox" value="Недавно на&nbsp;сайте" /><span class="checkbox__text"> Недавно на&nbsp;сайте<span class="checkbox__icon"><svg class="icon icon-check" viewBox="0 0 10 7"><use xlink:href="/app/icons/sprite.svg#check"></use></svg></span></span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tprice__box js-more-box">
+                        <div class="tprice__label p strong">Родной язык</div>
+                        <ul class="tprice__list tprice__list_w50">
+                            <li class="tprice__list-item">
+                                <label class="tprice__checkbox checkbox">
+                                    <input class="checkbox__input js-virtual-input" name="lang" type="checkbox" value="Русский" /><span class="checkbox__text"> Русский<span class="checkbox__icon"><svg class="icon icon-check" viewBox="0 0 10 7"><use xlink:href="/app/icons/sprite.svg#check"></use></svg></span></span>
+                                </label>
+                            </li>
+                            <li class="tprice__list-item">
+                                <label class="tprice__checkbox checkbox">
+                                    <input class="checkbox__input js-virtual-input" name="lang" type="checkbox" value="Украинский" /><span class="checkbox__text"> Украинский<span class="checkbox__icon"><svg class="icon icon-check" viewBox="0 0 10 7"><use xlink:href="/app/icons/sprite.svg#check"></use></svg></span></span>
+                                </label>
+                            </li>
+                            <li class="tprice__list-item">
+                                <label class="tprice__checkbox checkbox">
+                                    <input class="checkbox__input js-virtual-input" name="lang" type="checkbox" value="Английский" /><span class="checkbox__text"> Английский<span class="checkbox__icon"><svg class="icon icon-check" viewBox="0 0 10 7"><use xlink:href="/app/icons/sprite.svg#check"></use></svg></span></span>
+                                </label>
+                            </li>
+                            <li class="tprice__list-item">
+                                <label class="tprice__checkbox checkbox">
+                                    <input class="checkbox__input js-virtual-input" name="lang" type="checkbox" value="Казахский" /><span class="checkbox__text"> Казахский<span class="checkbox__icon"><svg class="icon icon-check" viewBox="0 0 10 7"><use xlink:href="/app/icons/sprite.svg#check"></use></svg></span></span>
+                                </label>
+                            </li>
+                            <li class="tprice__list-item">
+                                <label class="tprice__checkbox checkbox">
+                                    <input class="checkbox__input js-virtual-input" name="lang" type="checkbox" value="Китайский" /><span class="checkbox__text"> Китайский<span class="checkbox__icon"><svg class="icon icon-check" viewBox="0 0 10 7"><use xlink:href="/app/icons/sprite.svg#check"></use></svg></span></span>
+                                </label>
+                            </li>
+                            <li class="tprice__list-item">
+                                <label class="tprice__checkbox checkbox">
+                                    <input class="checkbox__input js-virtual-input" name="lang" type="checkbox" value="Итальянский" /><span class="checkbox__text"> Итальянский<span class="checkbox__icon"><svg class="icon icon-check" viewBox="0 0 10 7"><use xlink:href="/app/icons/sprite.svg#check"></use></svg></span></span>
+                                </label>
+                            </li>
+                            <li class="tprice__list-item">
+                                <label class="tprice__checkbox checkbox">
+                                    <input class="checkbox__input js-virtual-input" name="lang" type="checkbox" value="Хинди" /><span class="checkbox__text"> Хинди<span class="checkbox__icon"><svg class="icon icon-check" viewBox="0 0 10 7"><use xlink:href="/app/icons/sprite.svg#check"></use></svg></span></span>
+                                </label>
+                            </li>
+                            <li class="tprice__list-item">
+                                <label class="tprice__checkbox checkbox">
+                                    <input class="checkbox__input js-virtual-input" name="lang" type="checkbox" value="Немецкий" /><span class="checkbox__text"> Немецкий<span class="checkbox__icon"><svg class="icon icon-check" viewBox="0 0 10 7"><use xlink:href="/app/icons/sprite.svg#check"></use></svg></span></span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="tprice__bottom flex">
+                <div class="tprice__button transparent-button is-gray js-reset-filters"><span>Очистить</span>
+                </div>
+                <div class="tprice__button transparent-button js-send-filters"><span>Сохранить</span>
+                </div>
+            </div>
+        </div>
+        <div class="tooltip__item tsort" id="sort-tooltip">
+            <div class="tsort__list">
+                <div class="tsort__list-item">
+                    <label class="tsort__box-chose chose">
+                        <input class="chose__input js-virtual-input js-send-input" name="sort" checked="" value="Цене" type="radio" /><span class="chose__text p">Цене</span>
+                    </label>
+                </div>
+                <div class="tsort__list-item p">
+                    <label class="tsort__box-chose chose">
+                        <input class="chose__input js-virtual-input js-send-input" name="sort" value="Рекомендованные" type="radio" /><span class="chose__text p">Рекомендованные</span>
+                    </label>
+                </div>
+                <div class="tsort__list-item p">
+                    <label class="tsort__box-chose chose">
+                        <input class="chose__input js-virtual-input js-send-input" name="sort" value="По рейтингу" type="radio" /><span class="chose__text p">По рейтингу</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="tooltip__item tsort tsort_big" id="search-cats-tooltip">
+            <div class="tsort__list">
+                <div class="tsort__list-item p">
+                    <div class="tsort__list-cell tsort__list-cell_fluid">Все категории</div>
+                    <div class="tsort__list-cell tsort__list-cell_static">(1345)</div>
+                </div>
+                <div class="tsort__list-item p">
+                    <div class="tsort__list-cell tsort__list-cell_fluid">Дикторская озвучка</div>
+                    <div class="tsort__list-cell tsort__list-cell_static">(123)</div>
+                </div>
+                <div class="tsort__list-item p">
+                    <div class="tsort__list-cell tsort__list-cell_fluid">Создание аудиороликов</div>
+                    <div class="tsort__list-cell tsort__list-cell_static">(23)</div>
+                </div>
+                <div class="tsort__list-item p">
+                    <div class="tsort__list-cell tsort__list-cell_fluid">Видео реклама</div>
+                    <div class="tsort__list-cell tsort__list-cell_static">(17)</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var api ={
+        	catalog: "/app/api/catalog.json",
+        	files: "/app/files/",
+        	mail: "/app/api/mail/"
+        }
+        
+        var categories = [
+        	{
+        		"name": "Дизайн",
+        		"link": "#",
+        		"list": [
+        			[
+        				{
+        					"boxName" : "Фирменный стиль",
+        					"boxlist" : [
+        						{
+        							"name": "Логотипы",
+        							"href": "#1",
+        							"help": '<div class="categories__help label label_small label_red">Хит</div>'
+        						},
+        						{
+        							"name": "Фирменные бланки",
+        							"href": "#2",
+        						},
+        						{
+        							"name": "Дизайн визиток",
+        							"href": "#3",
+        						},
+        						{
+        							"name": "Коммерческое предложение",
+        							"href": "#4",
+        						},
+        						{
+        							"name": "Печати и&nbsp;штампы",
+        							"href": "#5",
+        						}
+        					]
+        				},
+        				{
+        					"boxName" : "Веб и&nbsp;мобильный дизайн",
+        					"boxlist" : [
+        						{
+        							"name": "Дизайн сайтов",
+        							"href": "#1",
+        						},
+        						{
+        							"name": "Дизайн приложений",
+        							"href": "#2",
+        						},
+        						{
+        							"name": "Дизайн для&nbsp;соцсетей",
+        							"href": "#3",
+        						},
+        						{
+        							"name": "Рекламные баннеры",
+        							"href": "#4",
+        						},
+        						{
+        							"name": "Дизайн шаблонов Email",
+        							"href": "#5",
+        						}
+        					]
+        				},
+        				{
+        					"boxName" : "Упаковка и&nbsp;этикетка",
+        					"boxlist" : [
+        						{
+        							"name": "Дизайн упаковки",
+        							"href": "#1",
+        						}
+        					]
+        				}
+        			],
+        			[
+        				{
+        					"boxName" : "Фирменный стиль",
+        					"boxlist" : [
+        						{
+        							"name": "Логотипы",
+        							"href": "#1",
+        							"help": '<div class="categories__help label label_small label_red">Хит</div>'
+        						},
+        						{
+        							"name": "Фирменные бланки",
+        							"href": "#2",
+        						},
+        						{
+        							"name": "Дизайн визиток",
+        							"href": "#3",
+        						},
+        						{
+        							"name": "Коммерческое предложение",
+        							"href": "#4",
+        						},
+        						{
+        							"name": "Печати и&nbsp;штампы",
+        							"href": "#5",
+        						}
+        					]
+        				},
+        				{
+        					"boxName" : "Веб и&nbsp;мобильный дизайн",
+        					"boxlist" : [
+        						{
+        							"name": "Дизайн сайтов",
+        							"href": "#1",
+        						},
+        						{
+        							"name": "Дизайн приложений",
+        							"href": "#2",
+        						},
+        						{
+        							"name": "Дизайн для&nbsp;соцсетей",
+        							"href": "#3",
+        						},
+        						{
+        							"name": "Рекламные баннеры",
+        							"href": "#4",
+        						},
+        						{
+        							"name": "Дизайн шаблонов Email",
+        							"href": "#5",
+        						}
+        					]
+        				},
+        				{
+        					"boxName" : "Упаковка и&nbsp;этикетка",
+        					"boxlist" : [
+        						{
+        							"name": "Дизайн упаковки",
+        							"href": "#1",
+        						}
+        					]
+        				}
+        			],
+        			[
+        				{
+        					"boxName" : "Фирменный стиль",
+        					"boxlist" : [
+        						{
+        							"name": "Логотипы",
+        							"href": "#1",
+        							"help": '<div class="categories__help label label_small label_red">Хит</div>'
+        						},
+        						{
+        							"name": "Фирменные бланки",
+        							"href": "#2",
+        						},
+        						{
+        							"name": "Дизайн визиток",
+        							"href": "#3",
+        						},
+        						{
+        							"name": "Коммерческое предложение",
+        							"href": "#4",
+        						},
+        						{
+        							"name": "Печати и&nbsp;штампы",
+        							"href": "#5",
+        						}
+        					]
+        				},
+        				{
+        					"boxName" : "Веб и&nbsp;мобильный дизайн",
+        					"boxlist" : [
+        						{
+        							"name": "Дизайн сайтов",
+        							"href": "#1",
+        						},
+        						{
+        							"name": "Дизайн приложений",
+        							"href": "#2",
+        						},
+        						{
+        							"name": "Дизайн для&nbsp;соцсетей",
+        							"href": "#3",
+        						},
+        						{
+        							"name": "Рекламные баннеры",
+        							"href": "#4",
+        						},
+        						{
+        							"name": "Дизайн шаблонов Email",
+        							"href": "#5",
+        						}
+        					]
+        				},
+        				{
+        					"boxName" : "Упаковка и&nbsp;этикетка",
+        					"boxlist" : [
+        						{
+        							"name": "Дизайн упаковки",
+        							"href": "#1",
+        						}
+        					]
+        				}
+        			],
+        		]
+        	},
+        	{
+        		"name": "Тексты и&nbsp;переводы",
+        		"link": "#",
+        		"list": [
+        			[
+        				{
+        					"boxName" : "Фирменный стиль",
+        					"boxlist" : [
+        						{
+        							"name": "Логотипы",
+        							"href": "#1",
+        							"help": '<div class="categories__help label label_small label_red">Хит</div>'
+        						},
+        						{
+        							"name": "Фирменные бланки",
+        							"href": "#2",
+        						},
+        						{
+        							"name": "Дизайн визиток",
+        							"href": "#3",
+        						},
+        						{
+        							"name": "Коммерческое предложение",
+        							"href": "#4",
+        						},
+        						{
+        							"name": "Печати и&nbsp;штампы",
+        							"href": "#5",
+        						}
+        					]
+        				},
+        				{
+        					"boxName" : "Веб и&nbsp;мобильный дизайн",
+        					"boxlist" : [
+        						{
+        							"name": "Дизайн сайтов",
+        							"href": "#1",
+        						},
+        						{
+        							"name": "Дизайн приложений",
+        							"href": "#2",
+        						},
+        						{
+        							"name": "Дизайн для&nbsp;соцсетей",
+        							"href": "#3",
+        						},
+        						{
+        							"name": "Рекламные баннеры",
+        							"href": "#4",
+        						},
+        						{
+        							"name": "Дизайн шаблонов Email",
+        							"href": "#5",
+        						}
+        					]
+        				},
+        				{
+        					"boxName" : "Упаковка и&nbsp;этикетка",
+        					"boxlist" : [
+        						{
+        							"name": "Дизайн упаковки",
+        							"href": "#1",
+        						}
+        					]
+        				}
+        			],
+        			[
+        				{
+        					"boxName" : "Фирменный стиль",
+        					"boxlist" : [
+        						{
+        							"name": "Логотипы",
+        							"href": "#1",
+        							"help": '<div class="categories__help label label_small label_red">Хит</div>'
+        						},
+        						{
+        							"name": "Фирменные бланки",
+        							"href": "#2",
+        						},
+        						{
+        							"name": "Дизайн визиток",
+        							"href": "#3",
+        						},
+        						{
+        							"name": "Коммерческое предложение",
+        							"href": "#4",
+        						},
+        						{
+        							"name": "Печати и&nbsp;штампы",
+        							"href": "#5",
+        						}
+        					]
+        				},
+        				{
+        					"boxName" : "Веб и&nbsp;мобильный дизайн",
+        					"boxlist" : [
+        						{
+        							"name": "Дизайн сайтов",
+        							"href": "#1",
+        						},
+        						{
+        							"name": "Дизайн приложений",
+        							"href": "#2",
+        						},
+        						{
+        							"name": "Дизайн для&nbsp;соцсетей",
+        							"href": "#3",
+        						},
+        						{
+        							"name": "Рекламные баннеры",
+        							"href": "#4",
+        						},
+        						{
+        							"name": "Дизайн шаблонов Email",
+        							"href": "#5",
+        						}
+        					]
+        				},
+        				{
+        					"boxName" : "Упаковка и&nbsp;этикетка",
+        					"boxlist" : [
+        						{
+        							"name": "Дизайн упаковки",
+        							"href": "#1",
+        						}
+        					]
+        				}
+        			],
+        		]
+        	},
+        	{
+        		"name": "Работа со&nbsp;звуком",
+        		"link": "#",
+        		"list": [
+        			[
+        				{
+        					"boxName" : "Фирменный стиль",
+        					"boxlist" : [
+        						{
+        							"name": "Логотипы",
+        							"href": "#1",
+        							"help": '<div class="categories__help label label_small label_red">Хит</div>'
+        						},
+        						{
+        							"name": "Фирменные бланки",
+        							"href": "#2",
+        						},
+        						{
+        							"name": "Дизайн визиток",
+        							"href": "#3",
+        						},
+        						{
+        							"name": "Коммерческое предложение",
+        							"href": "#4",
+        						},
+        						{
+        							"name": "Печати и&nbsp;штампы",
+        							"href": "#5",
+        						}
+        					]
+        				},
+        				{
+        					"boxName" : "Веб и&nbsp;мобильный дизайн",
+        					"boxlist" : [
+        						{
+        							"name": "Дизайн сайтов",
+        							"href": "#1",
+        						},
+        						{
+        							"name": "Дизайн приложений",
+        							"href": "#2",
+        						},
+        						{
+        							"name": "Дизайн для&nbsp;соцсетей",
+        							"href": "#3",
+        						},
+        						{
+        							"name": "Рекламные баннеры",
+        							"href": "#4",
+        						},
+        						{
+        							"name": "Дизайн шаблонов Email",
+        							"href": "#5",
+        						}
+        					]
+        				},
+        				{
+        					"boxName" : "Упаковка и&nbsp;этикетка",
+        					"boxlist" : [
+        						{
+        							"name": "Дизайн упаковки",
+        							"href": "#1",
+        						}
+        					]
+        				}
+        			],
+        		]
+        	},
+        	{
+        		"name": "Сайты и&nbsp;приложения",
+        		"link": "#",
+        		"list": [
+        			[
+        				{
+        					"boxName" : "Фирменный стиль",
+        					"boxlist" : [
+        						{
+        							"name": "Логотипы",
+        							"href": "#1",
+        							"help": '<div class="categories__help label label_small label_red">Хит</div>'
+        						},
+        						{
+        							"name": "Фирменные бланки",
+        							"href": "#2",
+        						},
+        						{
+        							"name": "Дизайн визиток",
+        							"href": "#3",
+        						},
+        						{
+        							"name": "Коммерческое предложение",
+        							"href": "#4",
+        						},
+        						{
+        							"name": "Печати и&nbsp;штампы",
+        							"href": "#5",
+        						}
+        					]
+        				},
+        			],
+        			[
+        				{
+        					"boxName" : "Фирменный стиль",
+        					"boxlist" : [
+        						{
+        							"name": "Логотипы",
+        							"href": "#1",
+        							"help": '<div class="categories__help label label_small label_red">Хит</div>'
+        						},
+        						{
+        							"name": "Фирменные бланки",
+        							"href": "#2",
+        						},
+        						{
+        							"name": "Дизайн визиток",
+        							"href": "#3",
+        						},
+        						{
+        							"name": "Коммерческое предложение",
+        							"href": "#4",
+        						},
+        						{
+        							"name": "Печати и&nbsp;штампы",
+        							"href": "#5",
+        						}
+        					]
+        				},
+        				{
+        					"boxName" : "Веб и&nbsp;мобильный дизайн",
+        					"boxlist" : [
+        						{
+        							"name": "Дизайн сайтов",
+        							"href": "#1",
+        						},
+        						{
+        							"name": "Дизайн приложений",
+        							"href": "#2",
+        						},
+        						{
+        							"name": "Дизайн для&nbsp;соцсетей",
+        							"href": "#3",
+        						},
+        						{
+        							"name": "Рекламные баннеры",
+        							"href": "#4",
+        						},
+        						{
+        							"name": "Дизайн шаблонов Email",
+        							"href": "#5",
+        						}
+        					]
+        				},
+        				{
+        					"boxName" : "Упаковка и&nbsp;этикетка",
+        					"boxlist" : [
+        						{
+        							"name": "Дизайн упаковки",
+        							"href": "#1",
+        						}
+        					]
+        				}
+        			],
+        			[
+        				{
+        					"boxName" : "Фирменный стиль",
+        					"boxlist" : [
+        						{
+        							"name": "Логотипы",
+        							"href": "#1",
+        							"help": '<div class="categories__help label label_small label_red">Хит</div>'
+        						},
+        						{
+        							"name": "Фирменные бланки",
+        							"href": "#2",
+        						},
+        						{
+        							"name": "Дизайн визиток",
+        							"href": "#3",
+        						},
+        						{
+        							"name": "Коммерческое предложение",
+        							"href": "#4",
+        						},
+        						{
+        							"name": "Печати и&nbsp;штампы",
+        							"href": "#5",
+        						}
+        					]
+        				},
+        				{
+        					"boxName" : "Веб и&nbsp;мобильный дизайн",
+        					"boxlist" : [
+        						{
+        							"name": "Дизайн сайтов",
+        							"href": "#1",
+        						},
+        						{
+        							"name": "Дизайн приложений",
+        							"href": "#2",
+        						},
+        						{
+        							"name": "Дизайн для&nbsp;соцсетей",
+        							"href": "#3",
+        						},
+        						{
+        							"name": "Рекламные баннеры",
+        							"href": "#4",
+        						},
+        						{
+        							"name": "Дизайн шаблонов Email",
+        							"href": "#5",
+        						}
+        					]
+        				},
+        				{
+        					"boxName" : "Упаковка и&nbsp;этикетка",
+        					"boxlist" : [
+        						{
+        							"name": "Дизайн упаковки",
+        							"href": "#1",
+        						}
+        					]
+        				}
+        			],
+        		]
+        	},
+        	{
+        		"name": "Реклама и&nbsp;маркетинг",
+        		"link": "#",
+        		"list": [
+        			[
+        				{
+        					"boxName" : "Фирменный стиль",
+        					"boxlist" : [
+        						{
+        							"name": "Логотипы",
+        							"href": "#1",
+        							"help": '<div class="categories__help label label_small label_red">Хит</div>'
+        						},
+        						{
+        							"name": "Фирменные бланки",
+        							"href": "#2",
+        						},
+        						{
+        							"name": "Дизайн визиток",
+        							"href": "#3",
+        						},
+        						{
+        							"name": "Коммерческое предложение",
+        							"href": "#4",
+        						},
+        						{
+        							"name": "Печати и&nbsp;штампы",
+        							"href": "#5",
+        						}
+        					]
+        				},
+        				{
+        					"boxName" : "Веб и&nbsp;мобильный дизайн",
+        					"boxlist" : [
+        						{
+        							"name": "Дизайн сайтов",
+        							"href": "#1",
+        						},
+        						{
+        							"name": "Дизайн приложений",
+        							"href": "#2",
+        						},
+        						{
+        							"name": "Дизайн для&nbsp;соцсетей",
+        							"href": "#3",
+        						},
+        						{
+        							"name": "Рекламные баннеры",
+        							"href": "#4",
+        						},
+        						{
+        							"name": "Дизайн шаблонов Email",
+        							"href": "#5",
+        						}
+        					]
+        				},
+        				{
+        					"boxName" : "Упаковка и&nbsp;этикетка",
+        					"boxlist" : [
+        						{
+        							"name": "Дизайн упаковки",
+        							"href": "#1",
+        						}
+        					]
+        				}
+        			],
+        			[
+        				{
+        					"boxName" : "Фирменный стиль",
+        					"boxlist" : [
+        						{
+        							"name": "Логотипы",
+        							"href": "#1",
+        							"help": '<div class="categories__help label label_small label_red">Хит</div>'
+        						},
+        						{
+        							"name": "Фирменные бланки",
+        							"href": "#2",
+        						},
+        						{
+        							"name": "Дизайн визиток",
+        							"href": "#3",
+        						},
+        						{
+        							"name": "Коммерческое предложение",
+        							"href": "#4",
+        						},
+        						{
+        							"name": "Печати и&nbsp;штампы",
+        							"href": "#5",
+        						}
+        					]
+        				},
+        				{
+        					"boxName" : "Веб и&nbsp;мобильный дизайн",
+        					"boxlist" : [
+        						{
+        							"name": "Дизайн сайтов",
+        							"href": "#1",
+        						},
+        						{
+        							"name": "Дизайн приложений",
+        							"href": "#2",
+        						},
+        						{
+        							"name": "Дизайн для&nbsp;соцсетей",
+        							"href": "#3",
+        						},
+        						{
+        							"name": "Рекламные баннеры",
+        							"href": "#4",
+        						},
+        						{
+        							"name": "Дизайн шаблонов Email",
+        							"href": "#5",
+        						}
+        					]
+        				},
+        				{
+        					"boxName" : "Упаковка и&nbsp;этикетка",
+        					"boxlist" : [
+        						{
+        							"name": "Дизайн упаковки",
+        							"href": "#1",
+        						}
+        					]
+        				}
+        			],
+        		]
+        	},
+        	{
+        		"name": "Видео и&nbsp;анимация",
+        		"link": "#",
+        		"list": [
+        			[
+        				{
+        					"boxName" : "Фирменный стиль",
+        					"boxlist" : [
+        						{
+        							"name": "Логотипы",
+        							"href": "#1",
+        							"help": '<div class="categories__help label label_small label_red">Хит</div>'
+        						},
+        						{
+        							"name": "Фирменные бланки",
+        							"href": "#2",
+        						},
+        						{
+        							"name": "Дизайн визиток",
+        							"href": "#3",
+        						},
+        						{
+        							"name": "Коммерческое предложение",
+        							"href": "#4",
+        						},
+        						{
+        							"name": "Печати и&nbsp;штампы",
+        							"href": "#5",
+        						}
+        					]
+        				},
+        				{
+        					"boxName" : "Веб и&nbsp;мобильный дизайн",
+        					"boxlist" : [
+        						{
+        							"name": "Дизайн сайтов",
+        							"href": "#1",
+        						},
+        						{
+        							"name": "Дизайн приложений",
+        							"href": "#2",
+        						},
+        						{
+        							"name": "Дизайн для&nbsp;соцсетей",
+        							"href": "#3",
+        						},
+        						{
+        							"name": "Рекламные баннеры",
+        							"href": "#4",
+        						},
+        						{
+        							"name": "Дизайн шаблонов Email",
+        							"href": "#5",
+        						}
+        					]
+        				},
+        				{
+        					"boxName" : "Упаковка и&nbsp;этикетка",
+        					"boxlist" : [
+        						{
+        							"name": "Дизайн упаковки",
+        							"href": "#1",
+        						}
+        					]
+        				}
+        			],
+        			[
+        				{
+        					"boxName" : "Фирменный стиль",
+        					"boxlist" : [
+        						{
+        							"name": "Логотипы",
+        							"href": "#1",
+        							"help": '<div class="categories__help label label_small label_red">Хит</div>'
+        						},
+        						{
+        							"name": "Фирменные бланки",
+        							"href": "#2",
+        						},
+        						{
+        							"name": "Дизайн визиток",
+        							"href": "#3",
+        						},
+        						{
+        							"name": "Коммерческое предложение",
+        							"href": "#4",
+        						},
+        						{
+        							"name": "Печати и&nbsp;штампы",
+        							"href": "#5",
+        						}
+        					]
+        				},
+        				{
+        					"boxName" : "Веб и&nbsp;мобильный дизайн",
+        					"boxlist" : [
+        						{
+        							"name": "Дизайн сайтов",
+        							"href": "#1",
+        						},
+        						{
+        							"name": "Дизайн приложений",
+        							"href": "#2",
+        						},
+        						{
+        							"name": "Дизайн для&nbsp;соцсетей",
+        							"href": "#3",
+        						},
+        						{
+        							"name": "Рекламные баннеры",
+        							"href": "#4",
+        						},
+        						{
+        							"name": "Дизайн шаблонов Email",
+        							"href": "#5",
+        						}
+        					]
+        				},
+        				{
+        					"boxName" : "Упаковка и&nbsp;этикетка",
+        					"boxlist" : [
+        						{
+        							"name": "Дизайн упаковки",
+        							"href": "#1",
+        						}
+        					]
+        				}
+        			],
+        			[
+        				{
+        					"boxName" : "Фирменный стиль",
+        					"boxlist" : [
+        						{
+        							"name": "Логотипы",
+        							"href": "#1",
+        							"help": '<div class="categories__help label label_small label_red">Хит</div>'
+        						},
+        						{
+        							"name": "Фирменные бланки",
+        							"href": "#2",
+        						},
+        						{
+        							"name": "Дизайн визиток",
+        							"href": "#3",
+        						},
+        						{
+        							"name": "Коммерческое предложение",
+        							"href": "#4",
+        						},
+        						{
+        							"name": "Печати и&nbsp;штампы",
+        							"href": "#5",
+        						}
+        					]
+        				},
+        				{
+        					"boxName" : "Веб и&nbsp;мобильный дизайн",
+        					"boxlist" : [
+        						{
+        							"name": "Дизайн сайтов",
+        							"href": "#1",
+        						},
+        						{
+        							"name": "Дизайн приложений",
+        							"href": "#2",
+        						},
+        						{
+        							"name": "Дизайн для&nbsp;соцсетей",
+        							"href": "#3",
+        						},
+        						{
+        							"name": "Рекламные баннеры",
+        							"href": "#4",
+        						},
+        						{
+        							"name": "Дизайн шаблонов Email",
+        							"href": "#5",
+        						}
+        					]
+        				},
+        				{
+        					"boxName" : "Упаковка и&nbsp;этикетка",
+        					"boxlist" : [
+        						{
+        							"name": "Дизайн упаковки",
+        							"href": "#1",
+        						}
+        					]
+        				}
+        			],
+        		]
+        	},
+        ];
+    </script>
+    <section class="become-performer">
+        <div class="become-performer__header flex flex_bottom"><a class="become-performer__logo h2" href="/">bIIIId</a>
+            <div class="become-performer__step p">Шаг 1 из&nbsp;3. Давайте знакомиться</div>
+            <div class="become-performer__afterline" style="width: 25%"></div>
+        </div>
+        <div class="become-performer__wrapper">
+            <h2 class="become-performer__block-title h2">Личные данные</h2>
+            <p class="become-performer__block-subtitle p">Расскажите немного о&nbsp;себе. Эта информация будет отображаться в&nbsp;профиле,
+                <br>чтобы потенциальные покупатели узнали о&nbsp;вас больше</p>
+            <form class="become-performer__form">
+                <div class="become-performer__form-row flex flex_justify">
+                    <label class="become-performer__form-label" for="firstname">
+                        <p class="become-performer__form-text p b">Имя * <span>(не видно другим)<span></p><input class="become-performer__form-input p" type="text" id="firstname" name="firstname" placeholder="Как вас зовут" onfocus="this.placeholder=''" onblur="this.placeholder='Как вас зовут'"/></label><label class="become-performer__form-label" for="lastname"><p class="become-performer__form-text p b">Фамилия * <span>(не видно другим)<span></p><input class="become-performer__form-input p" type="text" id="lastname" name="lastname" placeholder="Настоящая фамилия" onfocus="this.placeholder=''" onblur="this.placeholder='Настоящая фамилия'"/></label></div><div class="profile become-performer__form-row"><label class="profile__form-label profile__form-label_fluid" for="file"><p class="profile__form-text p b">Фотография профиля *</p><input class="profile__form-input profile__form-input_file" type="file" id="file" name="avatar" accept=".jpg, .jpeg, .png"/><div class="profile__form-input profile__form-input_file-button"><p class="profile__form-input_file-p p">Загрузить фото</p><div class="backdrop-filter"></div><picture>
+		                            <source type="image/webp" srcset="/app/img/avatar-profile-setts.webp">
+		                            <img src="/app/img/avatar-profile-setts.png" class="profile__form-input_avatar" alt="" />
+		                        </picture></div></label></div><div class="profile become-performer__form-row"><label class="profile__form-label profile__form-label_fluid" for="about"><p class="profile__form-text p b">Обо мне *</p><textarea class="profile__form-input profile__form-input_textarea p" id="about" name="about" placeholder="Обо мне" minlength="0" maxlength="250" rows="8" onfocus="this.placeholder=''" onblur="this.placeholder='Обо мне'"></textarea><div class="profile__form-input profile__form-input_textarea-count">0/250</div></label></div><div class="become-performer__form-section"><p class="become-performer__form-text p b">Язык * <span>(укажите языки, на&nbsp;которых вы говорите)<span></p><div class="become-performer__form-row flex flex_justify"><label class="become-performer__form-label become-performer__form-label_select" for="language"><span class="become-performer__form-select slct"><select name="select-language" id="language"><option selected disabled hidden value="0">Ваш язык</option><option>Русский</option><option>Английский</option></select></span>
+                    </label>
+                    <label class="become-performer__form-label become-performer__form-label_select" for="level"><span class="become-performer__form-select slct"><select name="select-language-level" id="level"><option selected disabled hidden value="0">Ваш уровень</option><option>Базовый</option><option>Разговорный</option><option>Свободный</option><option>Родной</option></select></span>
+                    </label>
+                </div>
+        </div>
+        </form>
+        <div class="become-performer__row become-performer__row_submit flex flex_right">
+            <button class="become-performer__form-submit p">Сохранить</button>
+        </div>
+        </div>
+    </section>
+    <div class="modals modals_filter mfp-hide js-reset-parent" id="filters">
+        <div class="modals__top">
+            <div class="modals__title">Фильтры</div>
+        </div>
+        <div class="modals__center">
+            <div class="modals__inner css-scrollbar" id="desktop-filters"></div>
+        </div>
+        <div class="modals__bottom flex flex_justify flex_vertical">
+            <div class="modals__button transparent-button transparent-button_noscope is-gray js-reset-filters"><span>Очистить все</span>
+            </div>
+            <div class="modals__button transparent-button transparent-button_noscope js-send-filters"><span>Сохранить</span>
+            </div>
+        </div>
+    </div>
+    <div class="modals modals_service modals_right mfp-hide" id="service-order">
+        <div class="modals__name h2">Сообщение исполнителю</div>
+        <form class="modals__form form" action="/" enctype="multipart/form-data">
+            <div class="modals__input input">
+                <textarea class="input__field input__field_textarea" name="message" placeholder="Введите ваше сообщение"></textarea>
+            </div>
+            <div class="modals__dropzone dropzone js-dropzone">
+                <div class="dropzone__area">
+                    <input class="dropzone__file" name="file" type="file" multiple="multiple" />
+                    <div class="dropzone__preview">
+                        <div class="dropzone__item">
+                            <div class="dropzone__row flex flex_vertical">
+                                <div class="dropzone__icon">
+                                    <svg class="icon icon-doc" viewBox="0 0 16 16">
+                                        <use xlink:href="/app/icons/sprite.svg#doc"></use>
+                                    </svg>
+                                </div>
+                                <div class="dropzone__name"><span data-dz-name="data-dz-name"></span><span class="dropzone__size">&nbsp;(<span data-dz-size></span>)</span><span class="dropzone__status" data-dz-uploadprogress="data-dz-uploadprogress"><img class="dropzone__status-preload" src="/app/img/preload.svg" alt="" role="presentation"/><span class="progress-text"></span></span>
+                                    <span
+                                    class="dropzone__remove js-remove-file" data-dz-remove="data-dz-remove">
+                                        <svg class="icon icon-delete" viewBox="0 0 12 12">
+                                            <use xlink:href="/app/icons/sprite.svg#delete"></use>
+                                        </svg>
+                                        </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="dropzone__button border-button p strong js-dropzone-trigger" type="button">
+                    <div class="border-button__icon border-button__icon_clip">
+                        <img src="/app/img/clip.svg" alt="" role="presentation" />
+                    </div><span class="border-button__text">Прикрепить файл</span>
+                </button>
+            </div>
+            <button class="modals__button btn js-modal" data-modal="#service-thanks">
+                <div class="btn__text">Отправить</div>
+            </button>
+        </form>
+    </div>
+    <div class="modals modals_service modals_vertical modals_right mfp-hide" id="service-thanks">
+        <div class="modals__inside">
+            <div class="modals__check">
+                <svg class="icon icon-thanksCheck" viewBox="0 0 68 52">
+                    <use xlink:href="/app/icons/sprite.svg#thanksCheck"></use>
+                </svg>
+            </div>
+            <div class="modals__name modals__name_small h2">Сообщение успешно отправлено</div>
+            <div class="modals__content content is-gray">
+                <p>Вся переписка доступна
+                    <br>в&nbsp;разделе Сообщения</p>
+            </div>
+        </div>
+    </div>
+    <div class="modals modals_service modals_right mfp-hide" id="profile-order">
+        <div class="modals__name h2">Сообщение исполнителю</div>
+        <form class="modals__form form" action="/" enctype="multipart/form-data">
+            <div class="modals__input input">
+                <textarea class="input__field input__field_textarea" name="message" placeholder="Введите ваше сообщение"></textarea>
+            </div>
+            <div class="modals__dropzone dropzone js-dropzone">
+                <div class="dropzone__area">
+                    <input class="dropzone__file" name="file" type="file" multiple="multiple" />
+                    <div class="dropzone__preview">
+                        <div class="dropzone__item">
+                            <div class="dropzone__row flex flex_vertical">
+                                <div class="dropzone__icon">
+                                    <svg class="icon icon-doc" viewBox="0 0 16 16">
+                                        <use xlink:href="/app/icons/sprite.svg#doc"></use>
+                                    </svg>
+                                </div>
+                                <div class="dropzone__name"><span data-dz-name="data-dz-name"></span><span class="dropzone__size">&nbsp;(<span data-dz-size></span>)</span><span class="dropzone__status" data-dz-uploadprogress="data-dz-uploadprogress"><img class="dropzone__status-preload" src="/app/img/preload.svg" alt="" role="presentation"/><span class="progress-text"></span></span>
+                                    <span
+                                    class="dropzone__remove js-remove-file" data-dz-remove="data-dz-remove">
+                                        <svg class="icon icon-delete" viewBox="0 0 12 12">
+                                            <use xlink:href="/app/icons/sprite.svg#delete"></use>
+                                        </svg>
+                                        </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="dropzone__button border-button p strong js-dropzone-trigger" type="button">
+                    <div class="border-button__icon border-button__icon_clip">
+                        <img src="/app/img/clip.svg" alt="" role="presentation" />
+                    </div>
+                    <div class="border-button__text">Прикрепить файл</div>
+                </button>
+            </div>
+            <button class="modals__button btn js-modal" data-modal="#profile-thanks">
+                <div class="btn__text">Отправить</div>
+            </button>
+        </form>
+    </div>
+    <div class="modals modals_service modals_vertical modals_right mfp-hide" id="profile-thanks">
+        <div class="modals__inside">
+            <div class="modals__check">
+                <svg class="icon icon-thanksCheck" viewBox="0 0 68 52">
+                    <use xlink:href="/app/icons/sprite.svg#thanksCheck"></use>
+                </svg>
+            </div>
+            <div class="modals__name modals__name_small h2">Сообщение успешно отправлено</div>
+            <div class="modals__content content is-gray">
+                <p>Средства поступят на&nbsp;счет в&nbsp;течение 1-2 банковских дней</p>
+            </div>
+        </div>
+    </div>
+    <div class="modals modals_sms modals_vertical modals_right mfp-hide" id="sms">
+        <div class="modals__name h2">Введите код из&nbsp;SMS</div>
+        <form class="modals__form form flex">
+            <input class="modals__input-sms h2" type="text" tabindex="0" name="sms" />
+            <input class="modals__input-sms h2" type="text" tabindex="1" name="sms" />
+            <input class="modals__input-sms h2" type="text" tabindex="2" name="sms" />
+            <input class="modals__input-sms h2" type="text" tabindex="3" name="sms" />
+        </form>
+        <p class="modals__notification">Введенный код не верный</p>
+        <div class="modals__form-resend-wrapper"></div>
+    </div>
+    <div class="bill mfp-hide modals" id="bill">
+        <button class="bill__close-btn popup-close-btn js-close-modal" type="button">
+            <SPAN class="visually-hidden">Закрыть</SPAN>
+        </button><b class="bill__bill-title h2">Опишите услугу</b>
+        <form class="bill__form" action="/" method="POST" autocomplete="off" enctype="multipart/form-data">
+            <div class="bill__textarea-wrap">
+                <div class="bill__textarea-field-wrap"><span class="bill__error-message bill__error-message_textarea">Обязательное поле для&nbsp;заполнения</span>
+                    <textarea class="bill__textarea p css-scrollbar" type="text" placeholder="Введите описание услуги" name="billDescription" rows="3"
+                    maxlength="300"></textarea>
+                </div>
+                <div class="bill__chars-counter"><span class="bill__chars-current">0</span>/<span class="bill__chars-max">300</span>
+                </div>
+            </div>
+            <div class="bill__params-wrap">
+                <div class="bill__params-content-wrap bill__params-content-wrap_deadlines"><span class="bill__params-slogan">Укажите сроки выполнения</span>
+                    <div class="bill__deadlines"><span class="bill__params-text p">Сроки</span>
+                        <div class="bill__form-row flex flex_vertical">
+                            <div class="bill__form-label bill__form-label_select-country flex">
+                                <div class="bill__form-select bill__form-select_quantity slct">
+                                    <select name="how-much" id="how-much-field">
+                                        <option selected value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                    </select>
+                                </div>
+                                <div class="bill__form-select bill__form-select_hours-days slct">
+                                    <select name="hours-days" id="hours-days-field">
+                                        <option selected value="День">День</option>
+                                        <option value="Час">Час</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bill__params-content-wrap bill__params-content-wrap_price"><span class="bill__params-slogan bill__params-slogan_price">Укажите стоимость работ</span>
+                    <label class="bill__price-label"><span class="bill__params-text p">Сумма</span><span class="bill__price-input-wrap"><span class="bill__error-message bill__error-message_price">Обязательное поле для&nbsp;заполнения</span>
+                        <input class="bill__price-input p js-range-number"
+                        type="text" name="billPrice" id="price-field" placeholder="500" inputmode="numeric" /><span class="bill__price-char p">₽</span></span>
+                    </label>
+                </div>
+            </div>
+            <button class="bill__submit-btn p" type="submit">Отправить</button>
+        </form>
+    </div>
+    <div class="accept-order-popup mfp-hide modals" id="accept-order">
+        <button class="accept-order-popup__close-btn popup-close-btn js-close-modal" type="button">
+            <SPAN class="visually-hidden">Закрыть</SPAN>
+        </button>
+        <div class="accept-order-popup__content-wrap">
+            <div class="accept-order-popup__check-icon-wrap">
+                <svg class="icon icon-checkSquare" viewBox="0 0 68 52">
+                    <use xlink:href="/app/icons/sprite.svg#checkSquare"></use>
+                </svg>
+            </div>
+            <h2 class="accept-order-popup__title">Вы принимаете заказ?</h2>
+            <p class="accept-order-popup__slogan">Исполнитель получит оплату и&nbsp;заказ будет завершен.</p>
+            <form class="accept-order-popup__btns-wrap" action="/" method="POST">
+                <input class="accept-order-popup__accept-field" type="hidden" name="accept-order" />
+                <button class="accept-order-popup__cancel-btn btn btn_refuse is-regular js-close-modal">Отмена</button>
+                <button class="accept-order-popup__accept btn is-regular" type="submit">Принять</button>
+            </form>
+        </div>
+    </div>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="/app/js/app.js?v=1592402901843"></script>
+</body>
+
+</html>
