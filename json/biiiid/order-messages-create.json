@@ -1,130 +1,136 @@
-[
-  {
-    "orderType": "orderCreate",
-    "orderDate": "2020-04-20T20:00",
-    "usersMessages": {
-      "userId": "1",
-      "authorName": "Николай",
-      "userTime": "12:45",
-      "avatar": "avatar-eugene",
-      "messages": [
-        {
-          "messageAuthor": "me",
-          "messageId": "1",
-          "type": "inOrderCreate",
-          "text": "Привет, можете отправить пример того, что получится в итоге?",
-          "files": [],
-          "sendDate": "2020-04-20T20:00"
-        },
-        {
-          "messageAuthor": "customer",
-          "messageId": "2",
-          "type": "inOrderCreate",
-          "text": "Привет! Вот пример работы",
-          "files": [
-            {
-              "name": "test-awakening.mp4",
-              "prevImage": "test-awakening",
-              "type": "video",
-              "size": "200 МБ"
-            },
-            {
-              "name": "test-awakening.mp4",
-              "prevImage": "test-awakening",
-              "type": "video",
-              "size": "200 МБ"
-            }
-          ],
-          "sendDate": "2020-04-20T20:15"
-        }
-      ]
-    }
+{
+  "orderDetails": {
+
   },
 
-  {
-    "orderType": "orderReady",
-    "orderDate": "2020-04-20T20:00",
-    "usersMessages": {
-      "userId": "1",
-      "authorName": "Николай",
-      "userTime": "12:45",
-      "avatar": "avatar-eugene",
-      "messages": [
-        {
-          "messageAuthor": "customer",
-          "messageId": "2",
-          "type": "inOrderReady",
-          "text": "Привет! Записал файлы",
-          "files": [
-            {
-              "name": "test-awakening.mp4",
-              "prevImage": "test-awakening",
-              "type": "video",
-              "size": "200 МБ"
-            },
-            {
-              "name": "test-awakening.mp4",
-              "prevImage": "test-awakening",
-              "type": "video",
-              "size": "200 МБ"
-            },
-            {
-              "name": "test-awakening.mp4",
-              "prevImage": "test-awakening",
-              "type": "video",
-              "size": "200 МБ"
-            }
-          ],
-          "sendDate": "2020-04-22T20:25"
-        }
-      ]
-    }
-  },
-
-  {
-    "orderType": "orderDebug",
-    "orderDate": "2020-04-20T20:00",
-    "usersMessages": {
-      "userId": "1",
-      "authorName": "Николай",
-      "userTime": "12:45",
-      "avatar": "avatar-eugene",
-      "messages": [
-        {
-          "messageAuthor": "customer",
-          "messageId": "2",
-          "type": "inOrderDebug",
-          "text": "Привет! Записал файлы",
-          "files": [],
-          "sendDate": "2020-04-22T20:25"
-        }
-      ]
-    }
-  },
-
-  {
-    "orderType": "orderBill",
-    "orderDate": "2020-04-20T20:00",
-    "usersMessages": {
-      "userId": "1",
-      "authorName": "Николай",
-      "userTime": "12:45",
-      "avatar": "avatar-eugene",
-      "messages": [
-        {
-          "messageAuthor": "customer",
-          "messageId": "2",
-          "type": "inOrderBill",
-          "text": "",
-          "bill": {
-            "title": "Озвучить ролик про небо",
-            "price": "5000",
-            "time": "3 дня"
+  "dialog": [
+    {
+      "orderType": "orderCreate",
+      "orderDate": "2020-04-20T20:00",
+      "usersMessages": {
+        "userId": "1",
+        "authorName": "Николай",
+        "userTime": "12:45",
+        "avatar": "avatar-eugene",
+        "messages": [
+          {
+            "messageAuthor": "me",
+            "messageId": "1",
+            "type": "inOrderCreate",
+            "text": "Привет, можете отправить пример того, что получится в итоге?",
+            "files": [],
+            "sendDate": "2020-04-20T20:00"
           },
-          "files": [],
-          "sendDate": "2020-04-22T20:25"
-        }
-      ]
+          {
+            "messageAuthor": "customer",
+            "messageId": "2",
+            "type": "inOrderCreate",
+            "text": "Привет! Вот пример работы",
+            "files": [
+              {
+                "name": "test-awakening.mp4",
+                "prevImage": "test-awakening",
+                "type": "video",
+                "size": "200 МБ"
+              },
+              {
+                "name": "test-awakening.mp4",
+                "prevImage": "test-awakening",
+                "type": "video",
+                "size": "200 МБ"
+              }
+            ],
+            "sendDate": "2020-04-20T20:15"
+          }
+        ]
+      }
+    },
+
+    {
+      "orderType": "orderReady",
+      "orderDate": "2020-04-20T20:00",
+      "usersMessages": {
+        "userId": "1",
+        "authorName": "Николай",
+        "userTime": "12:45",
+        "avatar": "avatar-eugene",
+        "messages": [
+          {
+            "messageAuthor": "customer",
+            "messageId": "2",
+            "type": "inOrderReady",
+            "text": "Привет! Записал файлы",
+            "files": [
+              {
+                "name": "test-awakening.mp4",
+                "prevImage": "test-awakening",
+                "type": "video",
+                "size": "200 МБ"
+              },
+              {
+                "name": "test-awakening.mp4",
+                "prevImage": "test-awakening",
+                "type": "video",
+                "size": "200 МБ"
+              },
+              {
+                "name": "test-awakening.mp4",
+                "prevImage": "test-awakening",
+                "type": "video",
+                "size": "200 МБ"
+              }
+            ],
+            "sendDate": "2020-04-22T20:25"
+          }
+        ]
+      }
+    },
+
+    {
+      "orderType": "orderDebug",
+      "orderDate": "2020-04-20T20:00",
+      "usersMessages": {
+        "userId": "1",
+        "authorName": "Николай",
+        "userTime": "12:45",
+        "avatar": "avatar-eugene",
+        "messages": [
+          {
+            "messageAuthor": "customer",
+            "messageId": "2",
+            "type": "inOrderDebug",
+            "text": "Привет! Записал файлы",
+            "files": [],
+            "sendDate": "2020-04-22T20:25"
+          }
+        ]
+      }
+    },
+
+    {
+      "orderType": "orderBill",
+      "orderDate": "2020-04-20T20:00",
+      "usersMessages": {
+        "userId": "1",
+        "authorName": "Николай",
+        "userTime": "12:45",
+        "avatar": "avatar-eugene",
+        "messages": [
+          {
+            "messageAuthor": "customer",
+            "messageId": "2",
+            "type": "inOrderBill",
+            "text": "",
+            "bill": {
+              "title": "Озвучить ролик про небо",
+              "price": "5000",
+              "time": "3 дня"
+            },
+            "files": [],
+            "sendDate": "2020-04-22T20:25"
+          }
+        ]
+      }
     }
-  }
-]
+  ]
+}

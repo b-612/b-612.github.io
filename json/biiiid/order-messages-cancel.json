@@ -1,25 +1,31 @@
-[
-  {
-    "orderType": "orderCreate",
-    "orderDate": "2020-04-20T20:00",
-    "usersMessages": {
-      "userId": "1",
-      "authorName": "Николай",
-      "userTime": "12:45",
-      "avatar": "avatar-eugene",
-      "messages": []
-    }
+{
+  "orderDetails": {
+
   },
 
-  {
-    "orderType": "orderCancel",
-    "orderDate": "2020-04-20T21:00",
-    "usersMessages": {
-      "userId": "1",
-      "authorName": "Николай",
-      "userTime": "12:45",
-      "avatar": "avatar-eugene",
-      "messages": []
+  "dialog": [
+    {
+      "orderType": "orderCreate",
+      "orderDate": "2020-04-20T20:00",
+      "usersMessages": {
+        "userId": "1",
+        "authorName": "Николай",
+        "userTime": "12:45",
+        "avatar": "avatar-eugene",
+        "messages": []
+      }
+    },
+
+    {
+      "orderType": "orderCancel",
+      "orderDate": "2020-04-20T21:00",
+      "usersMessages": {
+        "userId": "1",
+        "authorName": "Николай",
+        "userTime": "12:45",
+        "avatar": "avatar-eugene",
+        "messages": []
+      }
     }
-  }
-]
+  ]
+}
