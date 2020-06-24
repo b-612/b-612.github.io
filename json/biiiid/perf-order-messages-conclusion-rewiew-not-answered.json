@@ -178,11 +178,7 @@
             "sendDate": "2020-04-23T20:25",
             "rating": "5",
             "portfolio": "",
-            "answer": {
-              "text": "Спасибо, я старался",
-              "author": "me",
-              "date": "2020-04-23T21:25"
-            }
+            "answer": {}
           },
           {
             "messageAuthor": "me",
@@ -193,7 +189,11 @@
             "sendDate": "2020-04-23T20:25",
             "rating": "4",
             "portfolio": "on",
-            "answer": {}
+            "answer": {
+              "text": "Спасибо, я старался",
+              "author": "me",
+              "date": "2020-04-23T21:25"
+            }
           }
         ]
       }
