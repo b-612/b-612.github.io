@@ -156,12 +156,12 @@
         "avatar": "avatar-eugene",
         "messages": [
           {
-            "messageAuthor": "customer",
+            "messageAuthor": "me",
             "messageId": "2",
             "type": "inOrderBill",
             "text": "",
             "bill": {
-              "title": "Озвучить ролик про небо",
+              "title": "Спеть песню",
               "price": "5000",
               "time": "3 дня"
             },
