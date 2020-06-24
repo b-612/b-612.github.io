@@ -53,7 +53,7 @@
         "avatar": "avatar-eugene",
         "messages": [
           {
-            "messageAuthor": "me",
+            "messageAuthor": "customer",
             "messageId": "1",
             "type": "inOrderCreate",
             "text": "Привет, можете отправить пример того, что получится в итоге?",
@@ -61,7 +61,7 @@
             "sendDate": "2020-04-20T20:00"
           },
           {
-            "messageAuthor": "customer",
+            "messageAuthor": "me",
             "messageId": "2",
             "type": "inOrderCreate",
             "text": "Привет! Вот пример работы",
@@ -95,7 +95,7 @@
         "avatar": "avatar-eugene",
         "messages": [
           {
-            "messageAuthor": "customer",
+            "messageAuthor": "me",
             "messageId": "2",
             "type": "inOrderReady",
             "text": "Привет! Записал файлы",
@@ -135,7 +135,7 @@
         "avatar": "avatar-eugene",
         "messages": [
           {
-            "messageAuthor": "customer",
+            "messageAuthor": "me",
             "messageId": "2",
             "type": "inOrderBill",
             "text": "",

@@ -76,7 +76,7 @@
         "avatar": "avatar-eugene",
         "messages": [
           {
-            "messageAuthor": "me",
+            "messageAuthor": "customer",
             "messageId": "1",
             "type": "inOrderCreate",
             "text": "Привет, можете отправить пример того, что получится в итоге?",
@@ -84,7 +84,7 @@
             "sendDate": "2020-04-20T20:00"
           },
           {
-            "messageAuthor": "customer",
+            "messageAuthor": "me",
             "messageId": "2",
             "type": "inOrderCreate",
             "text": "Привет! Вот пример работы",
@@ -118,7 +118,7 @@
         "avatar": "avatar-eugene",
         "messages": [
           {
-            "messageAuthor": "customer",
+            "messageAuthor": "me",
             "messageId": "2",
             "type": "inOrderReady",
             "text": "Привет! Записал файлы",
@@ -170,7 +170,7 @@
         "avatar": "avatar-eugene",
         "messages": [
           {
-            "messageAuthor": "me",
+            "messageAuthor": "customer",
             "messageId": "1",
             "type": "inOrderReview",
             "text": "Спасибо за работу, все было супер!",
@@ -180,12 +180,12 @@
             "portfolio": "",
             "answer": {
               "text": "Спасибо, я старался",
-              "author": "customer",
+              "author": "me",
               "date": "2020-04-23T21:25"
             }
           },
           {
-            "messageAuthor": "customer",
+            "messageAuthor": "me",
             "messageId": "2",
             "type": "inOrderReview",
             "text": "Адекватный заказчик",
