@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
     <title>Настройки профиля (уведомления)</title>
-    <link rel="stylesheet" href="/app/css/app.css?v=1592402931637">
+    <link rel="stylesheet" href="/app/css/app.css?v=1593125220537">
     <script>
         function canUseWebP(){var e=document.createElement("canvas");return!(!e.getContext||!e.getContext("2d"))&&0==e.toDataURL("image/webp").indexOf("data:image/webp")}var root=document.getElementsByTagName("html")[0];canUseWebP()?root.classList.add("ws"):root.classList.add("wn");
     </script>
@@ -1689,7 +1689,7 @@
             <button class="bill__submit-btn p" type="submit">Отправить</button>
         </form>
     </div>
-    <div class="accept-order-popup mfp-hide modals" id="accept-order">
+    <div class="accept-order-popup accept-order-popup_accept mfp-hide modals" id="accept-order">
         <button class="accept-order-popup__close-btn popup-close-btn js-close-modal" type="button">
             <SPAN class="visually-hidden">Закрыть</SPAN>
         </button>
@@ -1701,15 +1701,116 @@
             </div>
             <h2 class="accept-order-popup__title">Вы принимаете заказ?</h2>
             <p class="accept-order-popup__slogan">Исполнитель получит оплату и&nbsp;заказ будет завершен.</p>
-            <form class="accept-order-popup__btns-wrap" action="/" method="POST">
+            <form class="accept-order-popup__btns-wrap accept-order-popup__btns-wrap_accept" action="/" method="POST">
                 <input class="accept-order-popup__accept-field" type="hidden" name="accept-order" />
                 <button class="accept-order-popup__cancel-btn btn btn_refuse is-regular js-close-modal">Отмена</button>
-                <button class="accept-order-popup__accept btn is-regular" type="submit">Принять</button>
+                <button class="accept-order-popup__accept accept-order-popup__accept_accept btn is-regular" type="submit">Принять</button>
+            </form>
+        </div>
+    </div>
+    <div class="accept-order-popup accept-order-popup_debug mfp-hide modals" id="debug-order">
+        <button class="accept-order-popup__close-btn popup-close-btn js-close-modal" type="button">
+            <SPAN class="visually-hidden">Закрыть</SPAN>
+        </button>
+        <div class="accept-order-popup__content-wrap">
+            <h2 class="accept-order-popup__title">Отправить на&nbsp;доработку</h2>
+            <form class="accept-order-popup__btns-wrap accept-order-popup__btns-wrap_debug" action="/" method="POST">
+                <textarea class="accept-order-popup__accept-field" name="debugOrder" placeholder="Опишите, что нужно доработать исполнителю"></textarea>
+                <div class="accept-order-popup__bottom-wrap">
+                    <div class="accept-order-popup__drop-wrap input">
+                        <div class="accept-order-popup__upload-wrap">
+                            <button class="accept-order-popup__upload-btn js-dropzone-trigger js-without" type="button"><span class="accept-order-popup__icon-upload-wrap"><svg class="icon icon-clip" viewBox="0 0 18 22"><use xlink:href="/app/icons/sprite.svg#clip"></use></svg></span><span class="accept-order-popup__upload-text">Прикрепить файл</span>
+                            </button>
+                        </div>
+                        <div class="accept-order-popup__dropzone-wrap">
+                            <div class="accept-order-popup__dropzone dropzone js-dropzone">
+                                <div class="dropzone__drop-prev-scrollbar">
+                                    <div class="dropzone__drop-prev-bar"></div>
+                                </div>
+                                <div class="dropzone__area">
+                                    <input class="dropzone__file" name="file" type="file" multiple="multiple" />
+                                    <div class="dropzone__preview">
+                                        <div class="dropzone__item">
+                                            <div class="dropzone__row flex flex_vertical">
+                                                <div class="dropzone__icon">
+                                                    <svg class="icon icon-doc" viewBox="0 0 16 16">
+                                                        <use xlink:href="/app/icons/sprite.svg#doc"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="dropzone__name"><span data-dz-name="data-dz-name"></span><span class="dropzone__size">&nbsp;(<span data-dz-size></span>)</span><span class="dropzone__status" data-dz-uploadprogress="data-dz-uploadprogress"><img class="dropzone__status-preload" src="/app/img/preload.svg" alt="" role="presentation"/><span class="progress-text"></span></span>
+                                                    <span
+                                                    class="dropzone__remove js-remove-file" data-dz-remove="data-dz-remove">
+                                                        <svg class="icon icon-delete" viewBox="0 0 12 12">
+                                                            <use xlink:href="/app/icons/sprite.svg#delete"></use>
+                                                        </svg>
+                                                        </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="accept-order-popup__cancel-btn btn btn_refuse is-regular js-close-modal">Отменить</button>
+                    <button class="accept-order-popup__accept accept-order-popup__accept_debug btn is-regular" type="submit">Отправить</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="upload-order-files mfp-hide modals" id="upload-order-files">
+        <button class="upload-order-files__close-btn popup-close-btn js-close-modal" type="button">
+            <SPAN class="visually-hidden">Закрыть</SPAN>
+        </button>
+        <div class="upload-order-files__content-wrap">
+            <h2 class="upload-order-files__title">Добавьте файлы<br>выполненного заказа</h2>
+            <form class="upload-order-files__btns-wrap" action="/" method="POST">
+                <div class="upload-order-files__dropone-wrap">
+                    <div class="upload-order-files__drop-wrap input">
+                        <div class="upload-order-files__dropzone-wrap">
+                            <div class="upload-order-files__dropzone dropzone js-dropzone">
+                                <div class="dropzone__drop-prev-scrollbar">
+                                    <div class="dropzone__drop-prev-bar"></div>
+                                </div>
+                                <div class="dropzone__area">
+                                    <input class="dropzone__file" name="file" type="file" multiple="multiple" />
+                                    <div class="dropzone__preview">
+                                        <div class="dropzone__item">
+                                            <div class="dropzone__row flex flex_vertical">
+                                                <div class="dropzone__icon">
+                                                    <svg class="icon icon-doc" viewBox="0 0 16 16">
+                                                        <use xlink:href="/app/icons/sprite.svg#doc"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="dropzone__name"><span data-dz-name="data-dz-name"></span><span class="dropzone__size">&nbsp;(<span data-dz-size></span>)</span><span class="dropzone__status" data-dz-uploadprogress="data-dz-uploadprogress"><img class="dropzone__status-preload" src="/app/img/preload.svg" alt="" role="presentation"/><span class="progress-text"></span></span>
+                                                    <span
+                                                    class="dropzone__remove js-remove-file" data-dz-remove="data-dz-remove">
+                                                        <svg class="icon icon-delete" viewBox="0 0 12 12">
+                                                            <use xlink:href="/app/icons/sprite.svg#delete"></use>
+                                                        </svg>
+                                                        </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="upload-order-files__upload-wrap">
+                            <button class="upload-order-files__upload-btn js-dropzone-trigger js-without" type="button"><span class="upload-order-files__icon-upload-wrap"><svg class="icon icon-clip" viewBox="0 0 18 22"><use xlink:href="/app/icons/sprite.svg#clip"></use></svg></span><span class="upload-order-files__upload-text">Прикрепить файл</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="upload-order-files__bottom-wrap"><b class="upload-order-files__comment-title">Напишите комментарий</b>
+                    <textarea class="upload-order-files__comment-field" name="orderReadyComment" placeholder="Введите ваш комментарий"></textarea>
+                    <button class="upload-order-files__submit btn is-regular" type="submit">Отправить файлы заказа</button>
+                </div>
             </form>
         </div>
     </div>
     <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="/app/js/app.js?v=1592402931713"></script>
+    <script src="/app/js/app.js?v=1593125220628"></script>
 </body>
 
 </html>
