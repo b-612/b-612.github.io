@@ -123,6 +123,32 @@
           }
         ]
       }
+    },
+
+    {
+      "orderType": "orderBill",
+      "orderDate": "2020-04-20T20:00",
+      "usersMessages": {
+        "userId": "1",
+        "authorName": "Николай",
+        "userTime": "12:45",
+        "avatar": "avatar-eugene",
+        "messages": [
+          {
+            "messageAuthor": "customer",
+            "messageId": "2",
+            "type": "inOrderBill",
+            "text": "",
+            "bill": {
+              "title": "Озвучить ролик про небо",
+              "price": "5000",
+              "time": "3 дня"
+            },
+            "files": [],
+            "sendDate": "2020-04-22T20:25"
+          }
+        ]
+      }
     }
   ]
 }
