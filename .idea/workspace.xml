@@ -30,7 +30,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/css" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -39,8 +39,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Разработка\portfolio\b-612.github.io\app\css" />
       <recent name="D:\Разработка\portfolio\b-612.github.io" />
+      <recent name="D:\Разработка\portfolio\b-612.github.io\app\css" />
       <recent name="D:\Разработка\portfolio\b-612.github.io\enterra" />
       <recent name="D:\Разработка\portfolio\b-612.github.io\json\biiiid" />
       <recent name="D:\Разработка\portfolio\b-612.github.io\biiiind" />
@@ -157,7 +157,8 @@
       <workItem from="1594748793575" duration="878000" />
       <workItem from="1596984223332" duration="950000" />
       <workItem from="1596989510569" duration="757000" />
-      <workItem from="1601380441404" duration="1261000" />
+      <workItem from="1601380441404" duration="2061000" />
+      <workItem from="1601383578684" duration="611000" />
     </task>
     <servers />
   </component>
