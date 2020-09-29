@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2cbda44c-bbb3-46f8-845d-2459b20d1f97" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="2cbda44c-bbb3-46f8-845d-2459b20d1f97" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,7 +28,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/estonia" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -159,6 +157,7 @@
       <workItem from="1596989510569" duration="757000" />
       <workItem from="1601380441404" duration="2061000" />
       <workItem from="1601383578684" duration="611000" />
+      <workItem from="1601410898452" duration="302000" />
     </task>
     <servers />
   </component>
@@ -179,23 +178,10 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="2152" y="149" key="#Notifications" timestamp="1589366845740">
-      <screen x="1920" y="0" width="1280" height="984" />
-    </state>
-    <state x="2152" y="149" key="#Notifications/0.0.1920.1040/1920.0.1280.984@1920.0.1280.984" timestamp="1589366845740" />
-    <state x="2319" y="304" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1592226666664">
-      <screen x="1920" y="0" width="1280" height="984" />
-    </state>
-    <state x="655" y="321" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1588161660140" />
-    <state x="2319" y="304" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1280.984@1920.0.1280.984" timestamp="1592226666664" />
-    <state x="690" y="265" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1591114007595">
+    <state x="690" y="265" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1601411151684">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="265" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1591114007595" />
-    <state x="2328" y="408" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587669920677">
-      <screen x="1920" y="0" width="1280" height="984" />
-    </state>
-    <state x="2328" y="408" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.0.1280.984@1920.0.1280.984" timestamp="1587669920677" />
+    <state x="690" y="265" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1601411151684" />
     <state x="2132" y="188" width="855" height="608" key="find.popup" timestamp="1593027588296">
       <screen x="1920" y="0" width="1280" height="984" />
     </state>
