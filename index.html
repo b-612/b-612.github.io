@@ -1,43 +1,173 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
-    <meta charset="utf-8">
+    <title>Список всех старниц</title>
+    <meta name="format-detection" content="telephone=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
-    <link rel="preload" href="/app/css/app.css?v=1601381703803" as="style">
-    <link rel="preload" href="/app/js/app.js?v=1601381703803" as="script">
-    <link rel="preload" href="//code.jquery.com/jquery-3.3.1.min.js" as="script">
-    <link rel="preload" href="/app/fonts/intro-book-caps.woff2" as="font" crossorigin>
-    <title>Новости</title>
-    <link rel="icon" href="/app/img/favicon.png">
-    <link rel="stylesheet" href="/app/css/app.css?v=1601381703803">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/app/css/app.css?v=1601573108183">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <style>
+        body{
+            background-color: #212122;
+        	color: #fff;
+        	min-height: 100vh;
+        	font-family: Arial;		
+        	padding-top: 40px;
+        }
+        
+        .box{
+        	padding: 20px 40px;
+        	background-color: #000;		
+        }
+        .head-top{
+        	display: flex;
+        	flex-wrap: wrap;
+        	align-items: center;
+        	margin-top: 24px;
+        	margin-bottom: 40px;
+        	justify-content: space-between;
+        
+        }
+        
+        .head-title{
+        	
+        	
+        	font-size: 24px;
+        	line-height: 1.4em;
+            		
+        }
+        
+        .git-link{
+        	font-size: 12px;
+        	line-height: 1.2em;
+        	display: block;
+        	margin: 5px 0;
+        	transition: ease .2s;
+        	color: rgba(255,255,255, .2)!important;
+        }
+        
+        .git-link:hover{
+        	color:  #96fd8b!important;
+        }
+        
+        a{
+        	color: #fff;
+        	position: relative;
+        	display: inline-block;
+        	text-decoration: none;
+        	
+        
+        
+        }
+        
+        a::before{
+        	content: "";
+        	display: block;
+        	position: absolute;
+        	left: 0;
+        	bottom: 0;
+        	height: 1px;
+        	width: 100%;
+        	background-color: #fff;
+        	transition: ease .2s;
+        	transform: scale(0,1);
+        
+        }
+        a:hover::before{
+        	transform: scale(1, 1);
+        }
+        a:visited {
+            color: #96fd8b;
+        }
+        a:visited::before{
+        	background-color: #96fd8b;
+        }
+        ol{
+        	-webkit-column-count: 3;
+        	-moz-column-count: 3;
+        	column-count: 3;
+        	counter-reset: heading;
+        	padding: 0;
+        	margin-top: 16px;
+        	margin-bottom: 25px;
+        	margin-left: -25px;			
+        }
+        
+        li{
+        	font-size: 16px;
+        	margin-bottom: 8px;
+        	position: relative;
+        	padding-left: 30px;
+        	list-style: none;
+        	page-break-inside: avoid;		
+        	counter-increment: heading;	
+        }
+        
+        li::before{
+        	position: absolute;
+        	left: 0;
+        	top: 0;
+        	content: counter(heading) ".";
+        	font-size: 14px;
+            color: rgba(241,241,241,.5);
+        	display: inline-block;
+        	width: 25px;
+        	margin-right: 5px;
+        	text-align: right;
+        }
+        
+        
+        a:hover{
+        	text-decoration: none;
+        }
+        
+        /* Media */
+        @media only screen and (max-width: 1023px) {
+        	ol {
+        		-webkit-column-count: 3;
+        		-moz-column-count: 3;
+        		-column-count: 3;
+        	}
+        }
+        
+        @media only screen and (max-width: 767px) {
+        	ol {
+        		-webkit-column-count: 2;
+        		-moz-column-count: 2;
+        		-column-count: 2;
+        	}
+        }
+        
+        @media only screen and (max-width: 479px) {
+        	ol {
+        		-webkit-column-count: 1;
+        		-moz-column-count: 1;
+        		-column-count: 1;
+        	}
+        
+        	.head-title{
+        		order: 2;
+        	}
+        	.git-link{
+        		order: 1;
+        		margin-bottom: 15px;
+        		font-size: 10px;
+        	}
+        }
+    </style>
 </head>
 
 <body>
-    <header class="header">
-        <div class="header__wrap wrap">
-            <a class="header__logo" href="#">
-                <img src="/app/img/logo.png" class="header__logo-image" alt="Логотип" title="" />
-            </a>
-        </div>
-    </header>
-    <main class="content">
-        <section class="news">
-            <div class="news__wrap wrap">
-                <div class="news__image-wrap">
-                    <img src="/app/img/cucumbers.jpg" class="news__image" alt="Маринованные огурцы" title="" />
-                    <div class="news__data"><span class="news__time"><svg class="icon icon-wallClock" viewBox="0 0 512 512" width="" height=""><use xlink:href="/app/icons/sprite.svg#wallClock"></use></svg><SPAN class="js-time">28 сентября</SPAN></span><span class="news__reviews"><svg class="icon icon-fire" viewBox="0 0 512 512" width="" height=""><use xlink:href="/app/icons/sprite.svg#fire"></use></svg>28 3881</span>
-                    </div>
-                </div>
-                <div class="news__text-wrap">
-                    <H1>Врач: этим <br class="desktop-br">людям ни в&nbsp;<br class="desktop-br">коем случае <br class="desktop-br">нельзя есть <br class="desktop-br">маринованные</H1><a class="news__btn" href="#">Читать новость</a>
-                </div>
+    <div class="wrap">
+        <div class="box">
+            <div class="head-top">
+                <h3 class="head-title"> Страницы проекта <nobr>«veramed-01-10»:</nobr></h3><a class="git-link" href="https://github.com/CyberLess/cyberless_template" target="_blank">cyberless_template</a>
             </div>
-        </section>
-    </main>
-    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="/app/js/app.js?v=1601381703803"></script>
+            <ol><li><a href="/account.html" target="_blank">Профиль</a></li><li><a href="/breeding.html" target="_blank">Разводящая</a></li><li><a href="/cart-full.html" target="_blank">Корзина</a></li><li><a href="/cart.html" target="_blank">Пустая корзина</a></li><li><a href="/catalog.html" target="_blank">Каталог</a></li><li><a href="/checkout.html" target="_blank">Оформить заказ</a></li><li><a href="/contact.html" target="_blank">Контакты</a></li><li><a href="/dashboard.html" target="_blank">Личный кабинет</a></li><li><a href="/filter_hidden.html" target="_blank">Сайдбар v.2</a></li><li><a href="/filter.html" target="_blank">Фильтры</a></li><li><a href="/login.html" target="_blank">Регистрация</a></li><li><a href="/main.html" target="_blank">Главная</a></li><li><a href="/order-status.html" target="_blank">Заказ выполняется</a></li><li><a href="/order.html" target="_blank">Заказы</a></li><li><a href="/page.html" target="_blank">О компании</a></li><li><a href="/post.html" target="_blank">Новость</a></li><li><a href="/search.html" target="_blank">Поиск</a></li><li><a href="/security.html" target="_blank">Защита</a></li><li><a href="/single.html" target="_blank">Карточка</a></li><li><a href="/template.html" target="_blank">Шаблон договора</a></li></ol>
+        </div>
+    </div>
 </body>
 
 </html>
