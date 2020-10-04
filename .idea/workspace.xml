@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2cbda44c-bbb3-46f8-845d-2459b20d1f97" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="2cbda44c-bbb3-46f8-845d-2459b20d1f97" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,7 +28,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/oprosnik" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -39,8 +37,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Разработка\portfolio\b-612.github.io\oprosnik" />
       <recent name="D:\Разработка\portfolio\b-612.github.io" />
+      <recent name="D:\Разработка\portfolio\b-612.github.io\oprosnik" />
       <recent name="D:\Разработка\portfolio\b-612.github.io\technomart" />
       <recent name="D:\Разработка\portfolio\b-612.github.io\estonia" />
       <recent name="D:\Разработка\portfolio\b-612.github.io\app\css" />
@@ -164,7 +162,7 @@
       <workItem from="1601573515308" duration="2964000" />
       <workItem from="1601731604239" duration="737000" />
       <workItem from="1601745141899" duration="1300000" />
-      <workItem from="1601792828912" duration="1718000" />
+      <workItem from="1601792828912" duration="1974000" />
     </task>
     <servers />
   </component>
