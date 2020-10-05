@@ -30,7 +30,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/test-2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/test" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -42,8 +42,8 @@
       <recent name="D:\Разработка\portfolio\b-612.github.io" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Разработка\portfolio\b-612.github.io\test-2" />
       <recent name="D:\Разработка\portfolio\b-612.github.io\test" />
+      <recent name="D:\Разработка\portfolio\b-612.github.io\test-2" />
       <recent name="D:\Разработка\portfolio\b-612.github.io\oprosnik" />
       <recent name="D:\Разработка\portfolio\b-612.github.io" />
       <recent name="D:\Разработка\portfolio\b-612.github.io\technomart" />
@@ -169,7 +169,7 @@
       <workItem from="1601745141899" duration="1300000" />
       <workItem from="1601792828912" duration="3350000" />
       <workItem from="1601873849464" duration="873000" />
-      <workItem from="1601887615018" duration="508000" />
+      <workItem from="1601887615018" duration="1134000" />
     </task>
     <servers />
   </component>
