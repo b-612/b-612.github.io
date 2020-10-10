@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <link rel="preload" href="app/css/app.css?v=1602331202325" as="style">
+    <link rel="preload" href="app/js/app.js?v=1602331202325" as="script">
+    <link rel="preload" href="//code.jquery.com/jquery-3.3.1.min.js" as="script">
+    <link rel="preload" href="app/fonts/opensans-regular-webfont.woff2" as="font" crossorigin>
+    <link rel="preload" href="app/fonts/montserrat-bold-webfont.woff2" as="font" crossorigin>
+    <title>Квадрат</title>
+    <link rel="icon" href="app/img/favicon.png">
+    <link rel="stylesheet" href="app/css/app.css?v=1602331202325">
+    <script>
+        function canUseWebP(){var e=document.createElement("canvas");return!(!e.getContext||!e.getContext("2d"))&&0==e.toDataURL("image/webp").indexOf("data:image/webp")}var root=document.getElementsByTagName("html")[0];canUseWebP()?root.classList.add("ws"):root.classList.add("wn");
+    </script>
+</head>
+
+<body>
+    <div class="global-wrap">
+        <header class="header">
+            <div class="header__wrap wrap"><a class="header__logo-link logo clickable" href="/main.html">Geometria</a>
+                <nav class="header__nav nav">
+                    <div class="nav__mobile-wrap flex">
+                        <div class="nav__section-wrap"><b class="nav__title">Планиметрия</b>
+                            <ul class="nav__list no-circle-list flex">
+                                <li class="nav__item"><a class="nav__link nav__link_current">Квадрат</a>
+                                </li>
+                                <li class="nav__item"><a class="nav__link" href="/circle.html">Круг</a>
+                                </li>
+                                <li class="nav__item"><a class="nav__link" href="/triangle.html">Треугольник</a>
+                                </li>
+                                <li class="nav__item"><a class="nav__link" href="/rectangle.html">Прямоугольник</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="nav__section-wrap"><b class="nav__title">Стериометрия</b>
+                            <ul class="nav__list no-circle-list flex">
+                                <li class="nav__item"><a class="nav__link nav__link_current">Квадрат</a>
+                                </li>
+                                <li class="nav__item"><a class="nav__link" href="/circle.html">Круг</a>
+                                </li>
+                                <li class="nav__item"><a class="nav__link" href="/triangle.html">Треугольник</a>
+                                </li>
+                                <li class="nav__item"><a class="nav__link" href="/rectangle.html">Прямоугольник</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <div class="header__hamburger-wrap js-mobile-menu">
+                    <div class="header__hamburger hamburger hamburger--spin">
+                        <div class="hamburger-box">
+                            <div class="hamburger-inner"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="content">
+            <section class="square inner-section">
+                <div class="square__wrap wrap">
+                    <H1>Квадрат</H1>
+                    <div class="square__image-wrap image-wrap">
+                        <picture>
+                            <source type="image/webp" srcset="app/img/square.webp">
+                                <img src="app/img/square.png" class="square__image image" alt="Квадрат" title="" />
+                        </picture>
+                    </div>
+                    <div class="square__text-wrap">
+                        <P>Периметр квадрата равен сумме всех сторон. Поскольку у&nbsp;квадрата все стороны равны, то фармула для&nbsp;вычисления его периметра будет выглядеть следующим образом:</P>
+                        <P class="formula"><i>P</i> = 4 * <i>a</i>
+                        </P>
+                    </div>
+                    <div class="calc-wrap">
+                        <div class="calc-wrap__calc js-calc" data-calc="perimeter">
+                            <H2>Периметр квадрата</H2>
+                            <div class="calc-wrap__row flex">
+                                <div class="calc-wrap__cell calc-wrap__cell_left">
+                                    <div class="calc-wrap__top-row flex">
+                                        <label class="calc-wrap__input input flex flex_column"><span class="input__text">Сторона квадрата</span>
+                                            <input class="input__input-field js-input-number js-input-square" type="text" name="a" placeholder="5" autocomplete="off" />
+                                        </label>
+                                        <label class="calc-wrap__select-wrap select flex flex_column"><span class="select__text">Единица измерения</span>
+                                            <select class="select__select js-select">
+                                                <OPTION>см</OPTION>
+                                                <OPTION>дм</OPTION>
+                                                <OPTION>м</OPTION>
+                                            </select>
+                                        </label>
+                                    </div>
+                                    <div class="calc-wrap__bottom-row">
+                                        <button class="calc-wrap__btn btn js-count" type="button">Рассчитать</button>
+                                    </div>
+                                </div>
+                                <div class="calc-wrap__cell calc-wrap__cell_right">
+                                    <div class="calc-wrap__result-title h2">Результат:</div><span class="calc-wrap__result js-result"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="square__text-wrap">
+                        <P>Площадь квадрата – это численная характеристика, характеризующая размер плоскости, ограниченной четырьмя последовательно соединенными отрезками (сторонами) одинаковой длины, у&nbsp;которой противоположные стороны попарно параллельны,
+                            а&nbsp;угол между любыми двумя смежными сторонами равен 90 градусов.</P>
+                        <P>Для вычисления площади квадрата используется следующая формула:</P>
+                        <P class="formula"><i>S</i> = <i>a</i><sup>2</sup>
+                        </P>
+                    </div>
+                    <div class="calc-wrap">
+                        <div class="calc-wrap__calc js-calc" data-calc="square">
+                            <H2>Площадь квадрата</H2>
+                            <div class="calc-wrap__row flex">
+                                <div class="calc-wrap__cell calc-wrap__cell_left">
+                                    <div class="calc-wrap__top-row flex">
+                                        <label class="calc-wrap__input input flex flex_column"><span class="input__text">Сторона квадрата</span>
+                                            <input class="input__input-field js-input-number js-input-square" type="text" name="a" placeholder="5" autocomplete="off" />
+                                        </label>
+                                        <label class="calc-wrap__select-wrap select flex flex_column"><span class="select__text">Единица измерения</span>
+                                            <select class="select__select js-select">
+                                                <OPTION>см</OPTION>
+                                                <OPTION>дм</OPTION>
+                                                <OPTION>м</OPTION>
+                                            </select>
+                                        </label>
+                                    </div>
+                                    <div class="calc-wrap__bottom-row">
+                                        <button class="calc-wrap__btn btn js-count" type="button">Рассчитать</button>
+                                    </div>
+                                </div>
+                                <div class="calc-wrap__cell calc-wrap__cell_right">
+                                    <div class="calc-wrap__result-title h2">Результат:</div><span class="calc-wrap__result js-result"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__wrap wrap">
+                <P>Geometria 2020</P>
+            </div>
+        </footer>
+    </div>
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="app/js/app.js?v=1602331202325"></script>
+</body>
+
+</html>
