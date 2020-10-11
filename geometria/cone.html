@@ -5,14 +5,14 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
-    <link rel="preload" href="app/css/app.css?v=1602414409729" as="style">
-    <link rel="preload" href="app/js/app.js?v=1602414409729" as="script">
+    <link rel="preload" href="app/css/app.css?v=1602414407502" as="style">
+    <link rel="preload" href="app/js/app.js?v=1602414407502" as="script">
     <link rel="preload" href="//code.jquery.com/jquery-3.3.1.min.js" as="script">
     <link rel="preload" href="app/fonts/opensans-regular-webfont.woff2" as="font" crossorigin>
     <link rel="preload" href="app/fonts/montserrat-bold-webfont.woff2" as="font" crossorigin>
-    <title>Квадрат</title>
+    <title>Конус</title>
     <link rel="icon" href="app/img/favicon.png">
-    <link rel="stylesheet" href="app/css/app.css?v=1602414409729">
+    <link rel="stylesheet" href="app/css/app.css?v=1602414407502">
 </head>
 
 <body>
@@ -23,7 +23,7 @@
                     <div class="nav__mobile-wrap flex">
                         <div class="nav__section-wrap"><b class="nav__title">Планиметрия</b>
                             <ul class="nav__list no-circle-list flex">
-                                <li class="nav__item"><a class="nav__link nav__link_current">Квадрат</a>
+                                <li class="nav__item"><a class="nav__link" href="square.html">Квадрат</a>
                                 </li>
                                 <li class="nav__item"><a class="nav__link" href="circle.html">Круг</a>
                                 </li>
@@ -43,7 +43,7 @@
                                 </li>
                                 <li class="nav__item"><a class="nav__link" href="cylinder.html">Цилиндр</a>
                                 </li>
-                                <li class="nav__item"><a class="nav__link" href="cone.html">Конус</a>
+                                <li class="nav__item"><a class="nav__link nav__link_current">Конус</a>
                                 </li>
                             </ul>
                         </div>
@@ -61,23 +61,26 @@
         <main class="content">
             <section class="square inner-section">
                 <div class="square__wrap wrap">
-                    <H1>Квадрат</H1>
+                    <H1>Круглый конус</H1>
                     <div class="square__image-wrap image-wrap">
-                        <img src="app/img/square.png" class="square__image image" alt="Квадрат" title="" />
+                        <img src="app/img/cone.png" class="square__image image" alt="Конус" title="" />
                     </div>
                     <div class="square__text-wrap">
-                        <P>Периметр квадрата равен сумме всех сторон. Поскольку у&nbsp;квадрата все стороны равны, то фармула для&nbsp;вычисления его периметра будет выглядеть следующим образом:</P>
-                        <P class="formula"><i>P</i> = 4 * <i>a</i>
-                        </P>
+                        <P>Круглый конус может быть получен вращением прямоугольного треугольника вокруг одного из&nbsp;его катетов, поэтому круглый конус называют также конусом вращения.</P>
+                        <P>Полная площадь поверхности круглого конуса равна сумме площадей боковой поверхности конуса и&nbsp;его основания:</P>
+                        <P class="formula"><i>S</i> = πrl + πr<sup>2</sup> = πr(r + l)</P>
                     </div>
                     <div class="calc-wrap">
-                        <div class="calc-wrap__calc js-calc" data-calc="perimeter">
-                            <H2>Периметр квадрата</H2>
+                        <div class="calc-wrap__calc js-calc" data-calc="square">
+                            <H2>Площадь конуса</H2>
                             <div class="calc-wrap__row flex">
                                 <div class="calc-wrap__cell calc-wrap__cell_left">
                                     <div class="calc-wrap__top-row flex">
-                                        <label class="calc-wrap__input input flex flex_column"><span class="input__text">Сторона квадрата</span>
-                                            <input class="input__input-field js-input-number js-input-square" type="text" name="a" autocomplete="off" />
+                                        <label class="calc-wrap__input input flex flex_column"><span class="input__text">Радиус основания</span>
+                                            <input class="input__input-field js-input-number js-input-cone" type="text" name="r" autocomplete="off" />
+                                        </label>
+                                        <label class="calc-wrap__input input flex flex_column"><span class="input__text">Образующая «l»</span>
+                                            <input class="input__input-field js-input-number js-input-cone" type="text" name="l" autocomplete="off" />
                                         </label>
                                         <label class="calc-wrap__select-wrap select flex flex_column"><span class="select__text">Единица измерения</span>
                                             <select class="select__select js-select">
@@ -92,26 +95,26 @@
                                     </div>
                                 </div>
                                 <div class="calc-wrap__cell calc-wrap__cell_right">
-                                    <div class="calc-wrap__result-title h2">Результат:</div><span class="calc-wrap__result js-result"></span>
+                                    <div class="calc-wrap__result-title h2">Результат:</div><span class="calc-wrap__text-about">(округлен до&nbsp;2 знаков после точки)</span><span class="calc-wrap__result js-result"></span>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="square__text-wrap">
-                        <P>Площадь квадрата – это численная характеристика, характеризующая размер плоскости, ограниченной четырьмя последовательно соединенными отрезками (сторонами) одинаковой длины, у&nbsp;которой противоположные стороны попарно параллельны,
-                            а&nbsp;угол между любыми двумя смежными сторонами равен 90 градусов.</P>
-                        <P>Для вычисления площади квадрата используется следующая формула:</P>
-                        <P class="formula"><i>S</i> = <i>a</i><sup>2</sup>
-                        </P>
+                        <P>Объем круглого конуса равен трети произведения площади основания S на&nbsp;высоту H:</P>
+                        <P class="formula"><i>V</i> = 1/3 πr<sup>2</sup> h</P>
                     </div>
                     <div class="calc-wrap">
-                        <div class="calc-wrap__calc js-calc" data-calc="square">
-                            <H2>Площадь квадрата</H2>
+                        <div class="calc-wrap__calc js-calc" data-calc="volume">
+                            <H2>Объем конуса</H2>
                             <div class="calc-wrap__row flex">
                                 <div class="calc-wrap__cell calc-wrap__cell_left">
                                     <div class="calc-wrap__top-row flex">
-                                        <label class="calc-wrap__input input flex flex_column"><span class="input__text">Сторона квадрата</span>
-                                            <input class="input__input-field js-input-number js-input-square" type="text" name="a" autocomplete="off" />
+                                        <label class="calc-wrap__input input flex flex_column"><span class="input__text">Радиус основания</span>
+                                            <input class="input__input-field js-input-number js-input-cone" type="text" name="r" autocomplete="off" />
+                                        </label>
+                                        <label class="calc-wrap__input input flex flex_column"><span class="input__text">Высота</span>
+                                            <input class="input__input-field js-input-number js-input-cone" type="text" name="h" autocomplete="off" />
                                         </label>
                                         <label class="calc-wrap__select-wrap select flex flex_column"><span class="select__text">Единица измерения</span>
                                             <select class="select__select js-select">
@@ -126,7 +129,7 @@
                                     </div>
                                 </div>
                                 <div class="calc-wrap__cell calc-wrap__cell_right">
-                                    <div class="calc-wrap__result-title h2">Результат:</div><span class="calc-wrap__result js-result"></span>
+                                    <div class="calc-wrap__result-title h2">Результат:</div><span class="calc-wrap__text-about">(округлен до&nbsp;2 знаков после точки)</span><span class="calc-wrap__result js-result"></span>
                                 </div>
                             </div>
                         </div>
@@ -141,7 +144,7 @@
         </footer>
     </div>
     <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="app/js/app.js?v=1602414409729"></script>
+    <script src="app/js/app.js?v=1602414407502"></script>
 </body>
 
 </html>

@@ -3,6 +3,24 @@
   <component name="ChangeListManager">
     <list default="true" id="2cbda44c-bbb3-46f8-845d-2459b20d1f97" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/geometria/.htaccess" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/geometria/app/css/app.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/geometria/app/fonts/montserrat-bold-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/geometria/app/fonts/montserrat-bold-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/geometria/app/fonts/opensans-regular-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/geometria/app/fonts/opensans-regular-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/geometria/app/icons/sprite.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/geometria/app/img/circle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/geometria/app/img/circle.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/geometria/app/img/geometry.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/geometria/app/img/geometry.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/geometria/app/img/square.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/geometria/app/img/square.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/geometria/app/js/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/geometria/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/geometria/main.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/geometria/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/geometria/square.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +48,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/test" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/geometria" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -39,11 +57,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Разработка\portfolio\b-612.github.io\geometria" />
       <recent name="D:\Разработка\portfolio\b-612.github.io\test" />
       <recent name="D:\Разработка\portfolio\b-612.github.io\test-2" />
       <recent name="D:\Разработка\portfolio\b-612.github.io\oprosnik" />
       <recent name="D:\Разработка\portfolio\b-612.github.io" />
-      <recent name="D:\Разработка\portfolio\b-612.github.io\technomart" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Разработка\portfolio\b-612.github.io" />
@@ -171,6 +189,12 @@
       <workItem from="1601873849464" duration="873000" />
       <workItem from="1601887615018" duration="1134000" />
       <workItem from="1601890759989" duration="834000" />
+      <workItem from="1602331372596" duration="686000" />
+      <workItem from="1602338256596" duration="7000" />
+      <workItem from="1602338306076" duration="32000" />
+      <workItem from="1602338390974" duration="27000" />
+      <workItem from="1602338637883" duration="29000" />
+      <workItem from="1602415154773" duration="284000" />
     </task>
     <servers />
   </component>
