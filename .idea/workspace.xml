@@ -1,27 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2cbda44c-bbb3-46f8-845d-2459b20d1f97" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/geometria/.htaccess" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/geometria/app/css/app.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/geometria/app/fonts/montserrat-bold-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/geometria/app/fonts/montserrat-bold-webfont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/geometria/app/fonts/opensans-regular-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/geometria/app/fonts/opensans-regular-webfont.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/geometria/app/icons/sprite.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/geometria/app/img/circle.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/geometria/app/img/circle.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/geometria/app/img/geometry.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/geometria/app/img/geometry.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/geometria/app/img/square.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/geometria/app/img/square.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/geometria/app/js/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/geometria/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/geometria/main.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/geometria/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/geometria/square.html" beforeDir="false" />
-    </list>
+    <list default="true" id="2cbda44c-bbb3-46f8-845d-2459b20d1f97" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -194,7 +174,7 @@
       <workItem from="1602338306076" duration="32000" />
       <workItem from="1602338390974" duration="27000" />
       <workItem from="1602338637883" duration="29000" />
-      <workItem from="1602415154773" duration="284000" />
+      <workItem from="1602415154773" duration="597000" />
     </task>
     <servers />
   </component>
