@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registration form</title>
+    <link rel="preload" href="css/normalize.min.css" as="style">
+    <link rel="preload" href="css/style.min.css" as="style">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin>
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin>
+    <link href="css/normalize.min.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="global-wrap">
+      <div class="container">
+        <h1 class="page-title">Registration form</h1>
+
+        <form class="registration-form" action="http://dev.vk.edu.ee/~t124402/webrak/" method="post">
+          <div class="top">
+            <label class="input-wrap">
+              <span class="input-label">* Name:</span>
+              <input class="input" type="text" name="name" value="Brad" required autocomplete="off">
+            </label>
+            <label class="input-wrap">
+              <span class="input-label">* Surname:</span>
+              <input class="input" type="text" value="Pitt" name="surname" required autocomplete="off">
+            </label>
+            <label class="input-wrap">
+              <span class="input-label">* Nickname:</span>
+              <input class="input" type="text" value="Actor" name="nickname" required autocomplete="off">
+            </label>
+            <label class="input-wrap">
+              <span class="input-label">Position:</span>
+              <input class="input" type="text" value="Roy McBride" name="position" autocomplete="off">
+            </label>
+            <label class="input-wrap">
+              <span class="input-label">Slogan:</span>
+              <input class="input" type="text" value="Hello, World!" name="slogan" autocomplete="off">
+            </label>
+            <label class="input-wrap">
+              <span class="input-label">* Email:</span>
+              <input class="input" type="email" value="brad@holliwood.com" name="email" required autocomplete="off">
+            </label>
+            <label class="input-wrap">
+              <span class="input-label">* Password:</span>
+              <input class="input" type="password" name="password" value="testpassword" required autocomplete="off">
+            </label>
+          </div>
+
+          <div class="middle">
+            <label class="input-wrap">
+              <span class="input-label">Level:</span>
+              <select class="input select" name="level">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </label>
+            <label class="input-wrap">
+              <span class="input-label">Start date:</span>
+              <input class="input" type="date" name="date" value="2020-10-12" min="2020-10-12" max="2020-11-18">
+            </label>
+          </div>
+          <div class="bottom">
+            <button class="reset button" type="reset">Clean</button>
+            <button class="submit button" type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="js/reset-form.min.js"></script>
+  </body>
+</html>
