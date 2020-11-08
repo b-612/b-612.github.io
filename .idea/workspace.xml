@@ -30,7 +30,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/nvidia" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/nvidia/app/js" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -38,15 +38,15 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Разработка\portfolio\b-612.github.io" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Разработка\portfolio\b-612.github.io\nvidia\app\js" />
       <recent name="D:\Разработка\portfolio\b-612.github.io\nvidia" />
       <recent name="D:\Разработка\portfolio\b-612.github.io\form" />
       <recent name="D:\Разработка\portfolio\b-612.github.io\geometria" />
       <recent name="D:\Разработка\portfolio\b-612.github.io\test" />
-      <recent name="D:\Разработка\portfolio\b-612.github.io\test-2" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Разработка\portfolio\b-612.github.io" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -179,6 +179,7 @@
       <workItem from="1602415154773" duration="1298000" />
       <workItem from="1602445136592" duration="859000" />
       <workItem from="1604818252850" duration="591000" />
+      <workItem from="1604819694686" duration="650000" />
     </task>
     <servers />
   </component>
