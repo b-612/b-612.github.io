@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2cbda44c-bbb3-46f8-845d-2459b20d1f97" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nvidia/g-sync.html" beforeDir="false" afterPath="$PROJECT_DIR$/nvidia/g-sync.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,15 +38,15 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Разработка\portfolio\b-612.github.io" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Разработка\portfolio\b-612.github.io\nvidia" />
       <recent name="D:\Разработка\portfolio\b-612.github.io\form" />
       <recent name="D:\Разработка\portfolio\b-612.github.io\geometria" />
       <recent name="D:\Разработка\portfolio\b-612.github.io\test" />
       <recent name="D:\Разработка\portfolio\b-612.github.io\test-2" />
-      <recent name="D:\Разработка\portfolio\b-612.github.io\oprosnik" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Разработка\portfolio\b-612.github.io" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -179,7 +178,7 @@
       <workItem from="1602338637883" duration="29000" />
       <workItem from="1602415154773" duration="1298000" />
       <workItem from="1602445136592" duration="859000" />
-      <workItem from="1604818252850" duration="258000" />
+      <workItem from="1604818252850" duration="591000" />
     </task>
     <servers />
   </component>
