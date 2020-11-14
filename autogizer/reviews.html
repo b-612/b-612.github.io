@@ -1,0 +1,1146 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <link rel="preload" href="app/css/app.css?v=1605009071905" as="style">
+    <link rel="preload" href="app/js/app.js?v=1605009071905" as="script">
+    <link rel="preload" href="//code.jquery.com/jquery-3.3.1.min.js" as="script">
+    <link rel="preload" href="app/fonts/avantgardectt_bold.woff2" as="font" crossorigin>
+    <link rel="preload" href="app/fonts/futura-bold.woff2" as="font" crossorigin>
+    <link rel="preload" href="app/fonts/futura-light-light.woff2" as="font" crossorigin>
+    <link rel="preload" href="app/fonts/futurabookc.woff2" as="font" crossorigin>
+    <link rel="preload" href="app/fonts/futurademic.woff2" as="font" crossorigin>
+    <link rel="preload" href="app/fonts/futuralightc.woff2" as="font" crossorigin>
+    <title>Отзывы</title>
+    <link rel="icon" href="app/img/favicon.png">
+    <link rel="stylesheet" href="app/css/app.css?v=1605009071905">
+    <script>
+        function canUseWebP(){var e=document.createElement("canvas");return!(!e.getContext||!e.getContext("2d"))&&0==e.toDataURL("image/webp").indexOf("data:image/webp")}var root=document.getElementsByTagName("html")[0];canUseWebP()?root.classList.add("ws"):root.classList.add("wn");
+    </script>
+</head>
+
+<body>
+    <div class="global-wrap flex">
+        <div class="global-wrap__left">
+            <div class="sidebar flex css-scrollbar css-scrollbar_gray">
+                <a class="sidebar__logo logo no-content" href="#">
+                    <svg class="icon icon-logo" viewBox="0 0 340.2 347.3" width="90" height="91">
+                        <use xlink:href="app/icons/sprite.svg#logo"></use>
+                    </svg><span class="logo__title">Сеть автомоек</span>
+                </a>
+                <ul class="sidebar__list no-circle-list flex">
+                    <li class="sidebar__item"><a class="sidebar__link no-content" href="#">О компании</a>
+                    </li>
+                    <li class="sidebar__item"><a class="sidebar__link no-content" href="#">Адреса моек</a>
+                    </li>
+                    <li class="sidebar__item"><a class="sidebar__link no-content" href="#">Акции</a>
+                    </li>
+                    <li class="sidebar__item"><a class="sidebar__link no-content" href="#">Цены</a>
+                    </li>
+                </ul>
+                <div class="sidebar__info flex flex_vertical"><span class="sidebar__mark">24/7</span>
+                    <div class="sidebar__info-text">Круглосуточно
+                        <br>без&nbsp;выходных</div>
+                </div>
+                <div class="sidebar__copyright">© AquaGizer 2020.
+                    <br>Все права защищены</div>
+                <footer class="sidebar__footer aside-footer"><a class="aside-footer__link flex flex_center flex_vertical no-content" href="#"><span class="aside-footer__icon-wrap flex flex_center flex_vertical"><svg class="icon icon-marker" viewBox="0 0 512 512" width="15" height="20"><use xlink:href="app/icons/sprite.svg#marker"></use></svg></span><span class="aside-footer__text">Ближайшая мойка</span></a>
+                </footer>
+            </div>
+        </div>
+        <div class="global-wrap__right">
+            <header class="header flex flex_right">
+                <ul class="header__additional-nav additional-nav no-circle-list flex">
+                    <li class="additional-nav__item"><a class="additional-nav__link no-content" href="#">Частые вопросы</a>
+                    </li>
+                    <li class="additional-nav__item"><a class="additional-nav__link no-content" href="#">Отзывы</a>
+                    </li>
+                    <li class="additional-nav__item"><a class="additional-nav__link no-content" href="#">Оборудование</a>
+                    </li>
+                    <li class="additional-nav__item"><a class="additional-nav__link no-content" href="#">Клиентам</a>
+                    </li>
+                </ul>
+                <a class="header__logo header__logo_mobile logo logo_mobile no-content" href="#">
+                    <svg class="icon icon-logo" viewBox="0 0 340.2 347.3" width="40" height="41">
+                        <use xlink:href="app/icons/sprite.svg#logo"></use>
+                    </svg>
+                </a>
+                <div class="header__info flex"><span class="header__mark">24/7</span>
+                    <div class="header__text">Работаем круглосуточно и&nbsp;без выходных</div>
+                </div>
+                <nav class="header__nav main-nav flex"><span class="header__nav-title js-mobile-menu">Меню</span>
+                    <div class="header__hamburger-wrap flex flex_center flex_vertical">
+                        <div class="header__hamburger hamburger hamburger--spin js-mobile-menu js-burger">
+                            <div class="hamburger-box">
+                                <div class="hamburger-inner"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__navigation navigation js-nav">
+                        <div class="navigation__wrap wrap">
+                            <h2 class="navigation__title">Меню</h2>
+                            <ul class="navigation__menu no-circle-list flex flex_justify">
+                                <li class="navigation__section"><a class="navigation__submenu-title no-content" href="#">О компании</a>
+                                    <ul class="navigation__submenu no-circle-list flex">
+                                        <li class="navigation__item"><a class="navigation__link no-content" href="#">История компании</a>
+                                        </li>
+                                        <li class="navigation__item"><a class="navigation__link no-content" href="#">Наша команда</a>
+                                        </li>
+                                        <li class="navigation__item"><a class="navigation__link no-content" href="#">Вакансии</a>
+                                        </li>
+                                        <li class="navigation__item"><a class="navigation__link no-content" href="#">Официальный диллер WashTec</a>
+                                        </li>
+                                        <li class="navigation__item"><a class="navigation__link no-content" href="#">Новости</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="navigation__section"><a class="navigation__submenu-title no-content" href="#">Акции</a>
+                                    <ul class="navigation__submenu no-circle-list flex">
+                                        <li class="navigation__item"><a class="navigation__link no-content" href="#">История компании</a>
+                                        </li>
+                                        <li class="navigation__item"><a class="navigation__link no-content" href="#">Отзывы</a>
+                                        </li>
+                                        <li class="navigation__item"><a class="navigation__link no-content" href="#">Видео</a>
+                                        </li>
+                                        <li class="navigation__item"><a class="navigation__link no-content" href="#">Фотогалерея</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="navigation__section"><a class="navigation__submenu-title no-content" href="#">Прайс</a>
+                                    <ul class="navigation__submenu no-circle-list flex">
+                                        <li class="navigation__item"><a class="navigation__link no-content" href="#">Ручная мойка</a>
+                                        </li>
+                                        <li class="navigation__item"><a class="navigation__link no-content" href="#">Мойки самообслуживания</a>
+                                        </li>
+                                        <li class="navigation__item"><a class="navigation__link no-content" href="#">Конвейерная и&nbsp;портальные мойки</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="navigation__section"><a class="navigation__submenu-title no-content" href="#">Контакты</a>
+                                    <ul class="navigation__submenu no-circle-list flex">
+                                        <li class="navigation__item"><a class="navigation__link no-content" href="#">Партнерам</a>
+                                        </li>
+                                        <li class="navigation__item"><a class="navigation__link no-content" href="#">Корпоративным клиентам</a>
+                                        </li>
+                                        <li class="navigation__item"><a class="navigation__link no-content" href="#">Частые вопросы</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <main class="content">
+                <section class="reviews-description">
+                    <div class="reviews-description__heading inner-heading">
+                        <div class="inner-heading__wrap wrap">
+                            <ul class="inner-heading__breadcrumbs breadcrumbs no-circle-list flex">
+                                <li class="breadcrumbs__item"><a class="breadcrumbs__link no-content" href="#">Главная</a>
+                                </li>
+                                <li class="breadcrumbs__item"><a class="breadcrumbs__link no-content">Отзывы</a>
+                                </li>
+                            </ul>
+                            <h1 class="inner-heading__title h1">Отзывы</h1>
+                        </div>
+                    </div>
+                    <div class="reviews-description__wrap wrap content">
+                        <div class="reviews-description__top">
+                            <div class="reviews-description__info info flex">
+                                <div class="info__icon-wrap">
+                                    <svg class="icon icon-info" viewBox="0 0 512 512" width="41" height="41">
+                                        <use xlink:href="app/icons/sprite.svg#info"></use>
+                                    </svg>
+                                </div>
+                                <div class="info__text-wrap">
+                                    <P>Самая большая ценность для&nbsp;нас — это ваша обратная связь.
+                                        <br>Вы не раз по&nbsp;достоинству оценили качество услуг, современные технологии мойки и&nbsp;высокий уровень сервиса компании Aquagizer.</P>
+                                    <div class="info__bottom">
+                                        <div class="info__bottom-text">Благодарим вас за&nbsp;ваш выбор!</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews-description__bottom">
+                            <div class="reviews-description__text-wrapper flex"><span class="reviews-description__percent">74%</span>
+                                <P>наших клиентов приехали к&nbsp;нам по&nbsp;рекомендации</P>
+                            </div>
+                            <picture>
+                                <source type="image/webp" srcset="app/img/reviews-description-bg.webp">
+                                    <img src="app/img/reviews-description-bg.png" class="reviews-description__image" alt="Клиенты выбирают нас" title="" />
+                            </picture>
+                        </div>
+                        <div class="reviews-description__video-wrap video-frame js-video-youtube">
+                            <div class="video-frame__prev flex flex_center flex_vertical js-prev-youtube"><a class="video-frame__play flex no-content js-play-youtube" data-video-id="reviews" href="javascript: void(0)"><span class="video-frame__play-icon-wrap flex flex_center flex_vertical js-play-wrap"><svg class="icon icon-play" viewBox="0 0 44.8 89.6" width="26" height="32"><use xlink:href="app/icons/sprite.svg#play"></use></svg></span></a>
+                                <picture>
+                                    <source type="image/webp" srcset="app/img/short-about-bg.webp">
+                                        <img src="app/img/short-about-bg.jpg" class="video-frame__back-image video-frame__back-image_darken object-fit" alt="Видео" title="" />
+                                </picture>
+                                <div class="video-frame__logo-wrap">
+                                    <svg class="icon icon-logoNoColor" viewBox="0 0 340.2 347.3" width="40" height="41">
+                                        <use xlink:href="app/icons/sprite.svg#logoNoColor"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <iframe class="video-frame__video js-lazyYT" id="reviews" src="https://www.youtube.com/embed/ChOhcHD8fBA?enablejsapi=1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
+                        </div>
+                    </div>
+                </section>
+                <section class="rating">
+                    <div class="rating__wrap wrap">
+                        <div class="rating__cell rating__cell_left content">
+                            <H2>Независимые <span class="color-blue">рейтинги</span></H2>
+                            <H3>Объективные отзывы и&nbsp;мнения</H3>
+                            <P>Хотите получить максимально полную информацию о&nbsp;наших услугах и&nbsp;сервисе от&nbsp;клиентов? Изучите мнение о&nbsp;нас на&nbsp;независимых авторитетных интернет-ресурсах.</P>
+                        </div>
+                        <div class="rating__rating-list flex rating-list">
+                            <ul class="rating-list__list no-circle-list flex">
+                                <li class="rating-list__item flex">
+                                    <div class="rating-list__text-wrap flex">
+                                        <h4 class="rating-list__title">Zoon</h4><span class="rating-list__label">Рейтинг</span><span class="rating-list__text">3.8 из&nbsp;5</span>
+                                    </div>
+                                    <div class="rating-list__stars flex">
+                                        <div class="rating-list__star-wrap">
+                                            <svg class="icon icon-ratingStar" viewBox="0 0 512.002 512.002" width="13" height="13">
+                                                <use xlink:href="app/icons/sprite.svg#ratingStar"></use>
+                                            </svg>
+                                            <div class="rating-list__back-star-wrap">
+                                                <svg class="icon icon-ratingStar" viewBox="0 0 512.002 512.002" width="13" height="13">
+                                                    <use xlink:href="app/icons/sprite.svg#ratingStar"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="rating-list__star-wrap">
+                                            <svg class="icon icon-ratingStar" viewBox="0 0 512.002 512.002" width="13" height="13">
+                                                <use xlink:href="app/icons/sprite.svg#ratingStar"></use>
+                                            </svg>
+                                            <div class="rating-list__back-star-wrap">
+                                                <svg class="icon icon-ratingStar" viewBox="0 0 512.002 512.002" width="13" height="13">
+                                                    <use xlink:href="app/icons/sprite.svg#ratingStar"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="rating-list__star-wrap">
+                                            <svg class="icon icon-ratingStar" viewBox="0 0 512.002 512.002" width="13" height="13">
+                                                <use xlink:href="app/icons/sprite.svg#ratingStar"></use>
+                                            </svg>
+                                            <div class="rating-list__back-star-wrap">
+                                                <svg class="icon icon-ratingStar" viewBox="0 0 512.002 512.002" width="13" height="13">
+                                                    <use xlink:href="app/icons/sprite.svg#ratingStar"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="rating-list__star-wrap">
+                                            <svg class="icon icon-ratingStar" viewBox="0 0 512.002 512.002" width="13" height="13" style="clip-path: polygon(0 0, 76% 0, 76% 100%, 0 100%)">
+                                                <use xlink:href="app/icons/sprite.svg#ratingStar"></use>
+                                            </svg>
+                                            <div class="rating-list__back-star-wrap">
+                                                <svg class="icon icon-ratingStar" viewBox="0 0 512.002 512.002" width="13" height="13">
+                                                    <use xlink:href="app/icons/sprite.svg#ratingStar"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="rating-list__star-wrap">
+                                            <svg class="icon icon-ratingStar" viewBox="0 0 512.002 512.002" width="13" height="13" style="clip-path: polygon(0 0, 0% 0, 0% 100%, 0 100%)">
+                                                <use xlink:href="app/icons/sprite.svg#ratingStar"></use>
+                                            </svg>
+                                            <div class="rating-list__back-star-wrap">
+                                                <svg class="icon icon-ratingStar" viewBox="0 0 512.002 512.002" width="13" height="13">
+                                                    <use xlink:href="app/icons/sprite.svg#ratingStar"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="rating-list__item flex">
+                                    <div class="rating-list__text-wrap flex">
+                                        <h4 class="rating-list__title">Yandex</h4><span class="rating-list__label">Рейтинг</span><span class="rating-list__text">4.4 из&nbsp;5</span>
+                                    </div>
+                                    <div class="rating-list__stars flex">
+                                        <div class="rating-list__star-wrap">
+                                            <svg class="icon icon-ratingStar" viewBox="0 0 512.002 512.002" width="13" height="13">
+                                                <use xlink:href="app/icons/sprite.svg#ratingStar"></use>
+                                            </svg>
+                                            <div class="rating-list__back-star-wrap">
+                                                <svg class="icon icon-ratingStar" viewBox="0 0 512.002 512.002" width="13" height="13">
+                                                    <use xlink:href="app/icons/sprite.svg#ratingStar"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="rating-list__star-wrap">
+                                            <svg class="icon icon-ratingStar" viewBox="0 0 512.002 512.002" width="13" height="13">
+                                                <use xlink:href="app/icons/sprite.svg#ratingStar"></use>
+                                            </svg>
+                                            <div class="rating-list__back-star-wrap">
+                                                <svg class="icon icon-ratingStar" viewBox="0 0 512.002 512.002" width="13" height="13">
+                                                    <use xlink:href="app/icons/sprite.svg#ratingStar"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="rating-list__star-wrap">
+                                            <svg class="icon icon-ratingStar" viewBox="0 0 512.002 512.002" width="13" height="13">
+                                                <use xlink:href="app/icons/sprite.svg#ratingStar"></use>
+                                            </svg>
+                                            <div class="rating-list__back-star-wrap">
+                                                <svg class="icon icon-ratingStar" viewBox="0 0 512.002 512.002" width="13" height="13">
+                                                    <use xlink:href="app/icons/sprite.svg#ratingStar"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="rating-list__star-wrap">
+                                            <svg class="icon icon-ratingStar" viewBox="0 0 512.002 512.002" width="13" height="13">
+                                                <use xlink:href="app/icons/sprite.svg#ratingStar"></use>
+                                            </svg>
+                                            <div class="rating-list__back-star-wrap">
+                                                <svg class="icon icon-ratingStar" viewBox="0 0 512.002 512.002" width="13" height="13">
+                                                    <use xlink:href="app/icons/sprite.svg#ratingStar"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="rating-list__star-wrap">
+                                            <svg class="icon icon-ratingStar" viewBox="0 0 512.002 512.002" width="13" height="13" style="clip-path: polygon(0 0, 88% 0, 88% 100%, 0 100%)">
+                                                <use xlink:href="app/icons/sprite.svg#ratingStar"></use>
+                                            </svg>
+                                            <div class="rating-list__back-star-wrap">
+                                                <svg class="icon icon-ratingStar" viewBox="0 0 512.002 512.002" width="13" height="13">
+                                                    <use xlink:href="app/icons/sprite.svg#ratingStar"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="rating-list__item flex">
+                                    <div class="rating-list__text-wrap flex">
+                                        <h4 class="rating-list__title">Google</h4><span class="rating-list__label">Рейтинг</span><span class="rating-list__text">4 из&nbsp;5</span>
+                                    </div>
+                                    <div class="rating-list__stars flex">
+                                        <div class="rating-list__star-wrap">
+                                            <svg class="icon icon-ratingStar" viewBox="0 0 512.002 512.002" width="13" height="13">
+                                                <use xlink:href="app/icons/sprite.svg#ratingStar"></use>
+                                            </svg>
+                                            <div class="rating-list__back-star-wrap">
+                                                <svg class="icon icon-ratingStar" viewBox="0 0 512.002 512.002" width="13" height="13">
+                                                    <use xlink:href="app/icons/sprite.svg#ratingStar"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="rating-list__star-wrap">
+                                            <svg class="icon icon-ratingStar" viewBox="0 0 512.002 512.002" width="13" height="13">
+                                                <use xlink:href="app/icons/sprite.svg#ratingStar"></use>
+                                            </svg>
+                                            <div class="rating-list__back-star-wrap">
+                                                <svg class="icon icon-ratingStar" viewBox="0 0 512.002 512.002" width="13" height="13">
+                                                    <use xlink:href="app/icons/sprite.svg#ratingStar"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="rating-list__star-wrap">
+                                            <svg class="icon icon-ratingStar" viewBox="0 0 512.002 512.002" width="13" height="13">
+                                                <use xlink:href="app/icons/sprite.svg#ratingStar"></use>
+                                            </svg>
+                                            <div class="rating-list__back-star-wrap">
+                                                <svg class="icon icon-ratingStar" viewBox="0 0 512.002 512.002" width="13" height="13">
+                                                    <use xlink:href="app/icons/sprite.svg#ratingStar"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="rating-list__star-wrap">
+                                            <svg class="icon icon-ratingStar" viewBox="0 0 512.002 512.002" width="13" height="13">
+                                                <use xlink:href="app/icons/sprite.svg#ratingStar"></use>
+                                            </svg>
+                                            <div class="rating-list__back-star-wrap">
+                                                <svg class="icon icon-ratingStar" viewBox="0 0 512.002 512.002" width="13" height="13">
+                                                    <use xlink:href="app/icons/sprite.svg#ratingStar"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="rating-list__star-wrap">
+                                            <svg class="icon icon-ratingStar" viewBox="0 0 512.002 512.002" width="13" height="13" style="clip-path: polygon(0 0, 0% 0, 0% 100%, 0 100%)">
+                                                <use xlink:href="app/icons/sprite.svg#ratingStar"></use>
+                                            </svg>
+                                            <div class="rating-list__back-star-wrap">
+                                                <svg class="icon icon-ratingStar" viewBox="0 0 512.002 512.002" width="13" height="13">
+                                                    <use xlink:href="app/icons/sprite.svg#ratingStar"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="rating-list__item flex">
+                                    <div class="rating-list__text-wrap flex">
+                                        <h4 class="rating-list__title">2gis</h4><span class="rating-list__label">Рейтинг</span><span class="rating-list__text">3.7 из&nbsp;5</span>
+                                    </div>
+                                    <div class="rating-list__stars flex">
+                                        <div class="rating-list__star-wrap">
+                                            <svg class="icon icon-ratingStar" viewBox="0 0 512.002 512.002" width="13" height="13">
+                                                <use xlink:href="app/icons/sprite.svg#ratingStar"></use>
+                                            </svg>
+                                            <div class="rating-list__back-star-wrap">
+                                                <svg class="icon icon-ratingStar" viewBox="0 0 512.002 512.002" width="13" height="13">
+                                                    <use xlink:href="app/icons/sprite.svg#ratingStar"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="rating-list__star-wrap">
+                                            <svg class="icon icon-ratingStar" viewBox="0 0 512.002 512.002" width="13" height="13">
+                                                <use xlink:href="app/icons/sprite.svg#ratingStar"></use>
+                                            </svg>
+                                            <div class="rating-list__back-star-wrap">
+                                                <svg class="icon icon-ratingStar" viewBox="0 0 512.002 512.002" width="13" height="13">
+                                                    <use xlink:href="app/icons/sprite.svg#ratingStar"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="rating-list__star-wrap">
+                                            <svg class="icon icon-ratingStar" viewBox="0 0 512.002 512.002" width="13" height="13">
+                                                <use xlink:href="app/icons/sprite.svg#ratingStar"></use>
+                                            </svg>
+                                            <div class="rating-list__back-star-wrap">
+                                                <svg class="icon icon-ratingStar" viewBox="0 0 512.002 512.002" width="13" height="13">
+                                                    <use xlink:href="app/icons/sprite.svg#ratingStar"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="rating-list__star-wrap">
+                                            <svg class="icon icon-ratingStar" viewBox="0 0 512.002 512.002" width="13" height="13" style="clip-path: polygon(0 0, 74% 0, 74% 100%, 0 100%)">
+                                                <use xlink:href="app/icons/sprite.svg#ratingStar"></use>
+                                            </svg>
+                                            <div class="rating-list__back-star-wrap">
+                                                <svg class="icon icon-ratingStar" viewBox="0 0 512.002 512.002" width="13" height="13">
+                                                    <use xlink:href="app/icons/sprite.svg#ratingStar"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="rating-list__star-wrap">
+                                            <svg class="icon icon-ratingStar" viewBox="0 0 512.002 512.002" width="13" height="13" style="clip-path: polygon(0 0, 0% 0, 0% 100%, 0 100%)">
+                                                <use xlink:href="app/icons/sprite.svg#ratingStar"></use>
+                                            </svg>
+                                            <div class="rating-list__back-star-wrap">
+                                                <svg class="icon icon-ratingStar" viewBox="0 0 512.002 512.002" width="13" height="13">
+                                                    <use xlink:href="app/icons/sprite.svg#ratingStar"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="rating-list__average flex">
+                                <h4 class="rating-list__average-title">Средний <br>рейтинг</h4>
+                                <div class="rating-list__average-text flex">4 <sup>из&nbsp;5</sup>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="reviews-insta">
+                    <div class="reviews-insta__wrap flex">
+                        <div class="reviews-insta__cell reviews-insta__cell_left content">
+                            <H2>Отзывы <br>в&nbsp;instagram</H2>
+                            <H3>Спасибо, что выбираете нас!</H3>
+                            <P>Лучшая награда для&nbsp;команды Aquagizer —
+                                <br>это теплые отзывы наших довольных клиентов, автомобили которых мы сделали чуть чище!</P>
+                            <P>Мы искренне признательны вам за&nbsp;то, что вы выбираете нас и&nbsp;рекомендуете наши услуги своим друзьям и&nbsp;знакомым!</P>
+                            <P>Спасибо вам!</P>
+                        </div>
+                        <div class="reviews-insta__cell reviews-insta__cell_right">
+                            <div class="reviews-insta__slider-wrap">
+                                <div class="reviews-insta__counter js-insta-counter"></div>
+                                <picture>
+                                    <source type="image/webp" srcset="app/img/phone-insta.webp">
+                                        <img src="app/img/phone-insta.png" class="reviews-insta__phone-image" alt="Отзывы в&nbsp;instagram" title="" />
+                                </picture>
+                                <div class="reviews-insta__slider flex js-insta-slider">
+                                    <div class="reviews-insta__item js-insta-item" data-dot="&lt;svg class=&quot;autoplay-border&quot; viewBox=&quot;30 30 60 60&quot;&gt;&lt;circle class=&quot;autoplay-border__path&quot; cx=&quot;60&quot; cy=&quot;60&quot; r=&quot;29&quot; fill=&quot;none&quot;&gt;&lt;/circle&gt;&lt;/svg&gt;&lt;div class=&quot;dot-center&quot;&gt;&lt;/div&gt;">
+                                        <a class="reviews-insta__link no-content" href="#">
+                                            <picture>
+                                                <source type="image/webp" srcset="app/img/married.webp">
+                                                    <img src="app/img/married.jpg" class="reviews-insta__image" alt="Петр и&nbsp;Олеся" title="" />
+                                            </picture>
+                                        </a>
+                                    </div>
+                                    <div class="reviews-insta__item js-insta-item" data-dot="&lt;svg class=&quot;autoplay-border&quot; viewBox=&quot;30 30 60 60&quot;&gt;&lt;circle class=&quot;autoplay-border__path&quot; cx=&quot;60&quot; cy=&quot;60&quot; r=&quot;29&quot; fill=&quot;none&quot;&gt;&lt;/circle&gt;&lt;/svg&gt;&lt;div class=&quot;dot-center&quot;&gt;&lt;/div&gt;">
+                                        <a class="reviews-insta__link no-content" href="#">
+                                            <picture>
+                                                <source type="image/webp" srcset="app/img/dogs.webp">
+                                                    <img src="app/img/dogs.jpg" class="reviews-insta__image" alt="Собаки шоферы" title="" />
+                                            </picture>
+                                        </a>
+                                    </div>
+                                    <div class="reviews-insta__item js-insta-item" data-dot="&lt;svg class=&quot;autoplay-border&quot; viewBox=&quot;30 30 60 60&quot;&gt;&lt;circle class=&quot;autoplay-border__path&quot; cx=&quot;60&quot; cy=&quot;60&quot; r=&quot;29&quot; fill=&quot;none&quot;&gt;&lt;/circle&gt;&lt;/svg&gt;&lt;div class=&quot;dot-center&quot;&gt;&lt;/div&gt;">
+                                        <a class="reviews-insta__link no-content" href="#">
+                                            <picture>
+                                                <source type="image/webp" srcset="app/img/married.webp">
+                                                    <img src="app/img/married.jpg" class="reviews-insta__image" alt="Петр и&nbsp;Олеся" title="" />
+                                            </picture>
+                                        </a>
+                                    </div>
+                                    <div class="reviews-insta__item js-insta-item" data-dot="&lt;svg class=&quot;autoplay-border&quot; viewBox=&quot;30 30 60 60&quot;&gt;&lt;circle class=&quot;autoplay-border__path&quot; cx=&quot;60&quot; cy=&quot;60&quot; r=&quot;29&quot; fill=&quot;none&quot;&gt;&lt;/circle&gt;&lt;/svg&gt;&lt;div class=&quot;dot-center&quot;&gt;&lt;/div&gt;">
+                                        <a class="reviews-insta__link no-content" href="#">
+                                            <picture>
+                                                <source type="image/webp" srcset="app/img/dogs.webp">
+                                                    <img src="app/img/dogs.jpg" class="reviews-insta__image" alt="Собаки шоферы" title="" />
+                                            </picture>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="reviews-insta__nav-wrap flex flex_vertical">
+                                    <div class="reviews-insta__nav js-insta-nav flex"></div>
+                                    <div class="reviews-insta__dots js-insta-dots flex"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="feedback">
+                    <div class="feedback__wrap wrap flex content">
+                        <div class="feedback__cell feedback__cell_left">
+                            <div class="feedback__top">
+                                <H2>Оставьте ваш отзыв</H2>
+                                <P>Пусть другие узнают о&nbsp;ваших впечалениях от&nbsp;посещения автомойки Aquagizer</P>
+                            </div>
+                            <div class="feedback__bottom">
+                                <P>Оставляйте справедливый отзыв заполнив форму,он влияет на&nbsp;качество наших услуг</P>
+                            </div>
+                        </div>
+                        <div class="feedback__cell feedback__cell_right">
+                            <form class="feedback__form flex" action="/" method="POST" enctype="multipart/form-data">
+                                <div class="feedback__fields-cell feedback__fields-cell_left">
+                                    <input class="feedback__input input" type="text" placeholder="Введите ваше имя" name="name" />
+                                    <input class="feedback__input input" type="text" name="phone" placeholder="+7 (___) ___-__-__" />
+                                    <div class="feedback__stars-wrap rating-stars flex">
+                                        <div class="rating-stars__stars">
+                                            <input class="rating-stars__star-input visually-hidden" type="radio" id="star-5" value="5" name="rating" />
+                                            <label class="rating-stars__star-label" for="star-5" title="Оценка «5»"><span class="rating-stars__star-wrap"><svg class="icon icon-ratingStar" viewBox="0 0 512.002 512.002" width="13" height="13"><use xlink:href="app/icons/sprite.svg#ratingStar"></use></svg></span>
+                                            </label>
+                                            <input class="rating-stars__star-input visually-hidden" type="radio" id="star-4" value="4" name="rating" />
+                                            <label class="rating-stars__star-label" for="star-4" title="Оценка «4»"><span class="rating-stars__star-wrap"><svg class="icon icon-ratingStar" viewBox="0 0 512.002 512.002" width="13" height="13"><use xlink:href="app/icons/sprite.svg#ratingStar"></use></svg></span>
+                                            </label>
+                                            <input class="rating-stars__star-input visually-hidden" type="radio" id="star-3" value="3" name="rating" />
+                                            <label class="rating-stars__star-label" for="star-3" title="Оценка «3»"><span class="rating-stars__star-wrap"><svg class="icon icon-ratingStar" viewBox="0 0 512.002 512.002" width="13" height="13"><use xlink:href="app/icons/sprite.svg#ratingStar"></use></svg></span>
+                                            </label>
+                                            <input class="rating-stars__star-input visually-hidden" type="radio" id="star-2" value="2" name="rating" />
+                                            <label class="rating-stars__star-label" for="star-2" title="Оценка «2»"><span class="rating-stars__star-wrap"><svg class="icon icon-ratingStar" viewBox="0 0 512.002 512.002" width="13" height="13"><use xlink:href="app/icons/sprite.svg#ratingStar"></use></svg></span>
+                                            </label>
+                                            <input class="rating-stars__star-input visually-hidden" type="radio" id="star-1" value="1" name="rating" />
+                                            <label class="rating-stars__star-label" for="star-1" title="Оценка «1»"><span class="rating-stars__star-wrap"><svg class="icon icon-ratingStar" viewBox="0 0 512.002 512.002" width="13" height="13"><use xlink:href="app/icons/sprite.svg#ratingStar"></use></svg></span>
+                                            </label>
+                                        </div>
+                                        <div class="rating-stars__rating-counter js-rating-counter"><span class="current">1</span>/<span class="all">5</span>
+                                        </div>
+                                    </div>
+                                    <label class="feedback__upload-wrap flex flex_vertical">
+                                        <input class="feedback__file-input visually-hidden" type="file" accept="image/*" name="file" multiple="multiple" /><span class="feedback__upload-btn"><svg class="icon icon-arrowIn" viewBox="0 0 512 512" width="20" height="20"><use xlink:href="app/icons/sprite.svg#arrowIn"></use></svg></span><span class="feedback__upload-text">Загрузить фото</span>
+                                    </label>
+                                    <div class="feedback__upload-list js-upload-list"><span class="feedback__upload-title">Загруженные файлы</span>
+                                        <DIV class="files-container css-scrollbar css-scrollbar_gray"></DIV>
+                                    </div>
+                                </div>
+                                <div class="feedback__fields-cell feedback__fields-cell_right">
+                                    <textarea class="feedback__textarea input" placeholder="Расскажите о&nbsp;себе" name="message"></textarea>
+                                    <div class="feedback__fields-bottom flex">
+                                        <button class="feedback__submit btn btn_arrow no-content js-btn-circle" type="submit"><span class="feedback__circles circles js-circles"><SPAN class="b-circle"></SPAN>
+                                            <SPAN class="b-circle"></SPAN>
+                                            </span>Отправить</button>
+                                        <label class="feedback__checkbox-label checkbox-label checkbox-label_dark-on-gray flex flex_vertical">
+                                            <input class="checkbox-label__input visually-hidden" type="checkbox" name="consent" checked="checked" /><span class="checkbox-label__check-wrap"><svg class="icon icon-check" viewBox="0 0 12 9" width="12" height="9"><use xlink:href="app/icons/sprite.svg#check"></use></svg></span><span class="checkbox-label__text">Даю согласие&nbsp;на&nbsp;обработку&#32;<a class="checkbox-label__data-link no-content" href="#"><u>персональных данных</u></a></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+                <section class="write-director">
+                    <div class="write-director__wrap wrap flex content">
+                        <div class="write-director__cell write-director__cell_left">
+                            <H2>Написать <br>директору</H2>
+                            <div class="write-director__director-wrap flex flex_vertical">
+                                <div class="write-director__director-image-wrap">
+                                    <picture>
+                                        <source type="image/webp" srcset="app/img/director-round.webp">
+                                            <img src="app/img/director-round.png" class="write-director__director-image" alt="Директор Илья Евгеньевич" title="" />
+                                    </picture>
+                                </div>
+                                <div class="write-director__director-text-wrap"><b class="write-director__director-name">Илья Евгеньевич</b><span class="write-director__director-label">Директор</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="write-director__cell write-director__cell_right">
+                            <P>Для улучшения качества сервиса - вы можете написать свои замечания и&nbsp;пожелания руководству. Гарантируем быструю обратную связь и&nbsp;оперативную реакцию.</P>
+                            <div class="write-director__write-link-wrap"><a class="write-director__write-link link-arrow no-content" href="#">Написать директору</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="where-we where-we_gray">
+                    <div class="where-we__wrap wrap content flex">
+                        <div class="where-we__cell where-we__cell_left">
+                            <H2>Хотите убедиться <br>в&nbsp;нашем качестве? <br><span class="color-blue">Приезжайте!</span></H2>
+                        </div>
+                        <div class="where-we__cell where-we__cell_right">
+                            <P>Наши автомойки работают 24 часа в&nbsp;сутки 7 дней в&nbsp;неделю 365 дней в&nbsp;году. Ждем Вас!</P>
+                        </div>
+                    </div>
+                    <div class="where-we__map map">
+                        <div class="map__map-wrap" id="map"></div>
+                        <div class="map__wrap wrap">
+                            <div class="map__top">
+                                <ul class="map__addresses no-circle-list flex flex_justify">
+                                    <li class="map__item"><address class="map__address js-address" data-lat="56.818316" data-long="60.592911" data-services="Портальная мойка, Полировка, Мойка самообслуживания">Шейкмана, 123Б</address><a class="map__phone no-content" href="tel:+73432010100">+7 (343) 201-01-00</a>
+                                    </li>
+                                    <li class="map__item"><address class="map__address js-address" data-lat="56.853858" data-long="60.620552" data-services="Полировка, Мойка самообслуживания">Восточная, 5В/1</address><a class="map__phone no-content" href="tel:+73433880809">+ 7 (343) 388-08-09</a>
+                                    </li>
+                                    <li class="map__item"><address class="map__address active js-address" data-lat="56.909510" data-long="60.626122" data-services="Портальная мойка, Полировка, Ручная мойка, Мойка самообслуживания">Таганская, 66:</address><a class="map__phone no-content"
+                                        href="tel:+73433828866">+ 7 (343) 382-88-66</a>
+                                    </li>
+                                    <li class="map__item"><address class="map__address js-address" data-lat="56.848434" data-long="60.558281" data-services="Портальная мойка, Полировка, Ручная мойка">Бебеля, 29А</address><a class="map__phone no-content" href="tel:+73432016000">+ 7 (343) 201-60-00</a>
+                                    </li>
+                                    <li class="map__item"><address class="map__address js-address" data-lat="56.762700" data-long="60.583335" data-services="Портальная мойка, Ручная мойка, Мойка самообслуживания">Умельцев, 5А</address><a class="map__phone no-content" href="tel:+73432027000">+7 (343) 202-70-00</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="map__bottom flex flex_bottom">
+                                <div class="map__cell map__cell_left flex flex_column"><span class="map__bottom-address">Таганская 66</span><span class="map__bottom-text">Виды услуг</span>
+                                </div>
+                                <div class="map__cell map__cell_right">
+                                    <ul class="map__services-list no-circle-list flex js-services-list"></ul>
+                                </div>
+                            </div><a class="map__btn btn btn_arrow no-content no-content_blue js-btn-circle js-look-on-map no-content" data-lat-go="56.909510" data-long-go="60.626122" target="_blank" data-zoom="false"><span class="map__circles circles js-circles"><SPAN class="b-circle"></SPAN><SPAN class="b-circle"></SPAN></span><span class="map__text js-text">Смотреть на&nbsp;карте</span></a>
+                            <div
+                            class="map__arrows flex">
+                                <div class="map__map-arrow map__map-arrow_prev js-map-prev">
+                                    <SPAN class="arrow arrow_prev"></SPAN>
+                                </div>
+                                <div class="map__map-arrow map__map-arrow_next js-map-next">
+                                    <SPAN class="arrow arrow_next"></SPAN>
+                                </div>
+                        </div>
+                    </div>
+        </div>
+        </section>
+        <section class="subscription">
+            <div class="subscription__wrap wrap flex">
+                <div class="subscription__cell subscription__cell_left content">
+                    <H2>Подпишитесь на&nbsp;рассылку</H2>
+                    <P>Чтобы быть в&nbsp;курсе всех акций и&nbsp;событий</P>
+                    <form class="subscription__form flex" action="https://echo.htmlacademy.ru" method="POST" data-success="#thanksSubscribe">
+                        <div class="subscription__fields-wrap flex">
+                            <input class="subscription__input input" type="email" placeholder="Укажите Ваш Email" name="email" />
+                            <button class="subscription__submit btn btn_arrow js-btn-circle" type="submit"><span class="subscription__circles circles js-circles"><SPAN class="b-circle"></SPAN>
+                                <SPAN class="b-circle"></SPAN>
+                                </span>Подписаться</button>
+                        </div>
+                        <label class="subscription__checkbox-label checkbox-label flex flex_vertical">
+                            <input class="checkbox-label__input visually-hidden" type="checkbox" name="consent" checked="checked" /><span class="checkbox-label__check-wrap"><svg class="icon icon-check" viewBox="0 0 12 9" width="12" height="9"><use xlink:href="app/icons/sprite.svg#check"></use></svg></span><span class="checkbox-label__text">Даю согласие на&nbsp;обработку&nbsp;<a class="checkbox-label__data-link no-content" href="#"><u>персональных данных</u></a></span>
+                        </label>
+                    </form>
+                </div>
+                <div class="subscription__cell subscription__cell_right">
+                    <div class="subscription__socials-wrap">
+                        <picture>
+                            <source type="image/webp" srcset="app/img/phone.webp">
+                                <img src="app/img/phone.png" class="subscription__socials-image" alt="Мы в&nbsp;соц. сетях" title="" />
+                        </picture>
+                        <div class="subscription__socials flex">
+                            <div class="subscription__socials-title">Пишите нам</div>
+                            <ul class="subscription__socials-list no-circle-list flex flex_justify flex_vertical">
+                                <li class="subscription__social-item"><a class="subscription__social social no-content" href="#"><SPAN class="visually-hidden">Мы вконтакте</SPAN><svg class="icon icon-vk" viewBox="0 0 243.5 137.8" width="21" height="11"><use xlink:href="app/icons/sprite.svg#vk"></use></svg></a>
+                                </li>
+                                <li class="subscription__social-item"><a class="subscription__social social no-content" href="#"><SPAN class="visually-hidden">Мы в&nbsp;инстаграм</SPAN><svg class="icon icon-insta" viewBox="0 0 241 241" width="20" height="20"><use xlink:href="app/icons/sprite.svg#insta"></use></svg></a>
+                                </li>
+                                <li class="subscription__social-item"><a class="subscription__social social no-content" href="#"><SPAN class="visually-hidden">Мы в&nbsp;фейсбук</SPAN><svg class="icon icon-facebook" viewBox="0 0 41.6 76.9" width="11" height="19"><use xlink:href="app/icons/sprite.svg#facebook"></use></svg></a>
+                                </li>
+                                <li class="subscription__social-item"><a class="subscription__social social no-content" href="#"><SPAN class="visually-hidden">Наш канал на&nbsp;YouTube</SPAN><svg class="icon icon-youtube" viewBox="0 0 512 358.5" width="21" height="15"><use xlink:href="app/icons/sprite.svg#youtube"></use></svg></a>
+                                </li>
+                            </ul>
+                            <div class="subscription__socials-slogan">Подписывайтесь</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__top">
+                <div class="footer__wrap wrap">
+                    <ul class="footer__menu no-circle-list flex flex_justify">
+                        <li class="footer__section"><a class="footer__submenu-title no-content" href="#">О компании</a>
+                            <ul class="footer__submenu no-circle-list flex">
+                                <li class="footer__item"><a class="footer__link no-content" href="#">История компании</a>
+                                </li>
+                                <li class="footer__item"><a class="footer__link no-content" href="#">Наша команда</a>
+                                </li>
+                                <li class="footer__item"><a class="footer__link no-content" href="#">Вакансии</a>
+                                </li>
+                                <li class="footer__item"><a class="footer__link no-content" href="#">Официальный диллер WashTec</a>
+                                </li>
+                                <li class="footer__item"><a class="footer__link no-content" href="#">Новости</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="footer__section"><a class="footer__submenu-title no-content" href="#">Акции</a>
+                            <ul class="footer__submenu no-circle-list flex">
+                                <li class="footer__item"><a class="footer__link no-content" href="#">История компании</a>
+                                </li>
+                                <li class="footer__item"><a class="footer__link no-content" href="#">Отзывы</a>
+                                </li>
+                                <li class="footer__item"><a class="footer__link no-content" href="#">Видео</a>
+                                </li>
+                                <li class="footer__item"><a class="footer__link no-content" href="#">Фотогалерея</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="footer__section"><a class="footer__submenu-title no-content" href="#">Прайс</a>
+                            <ul class="footer__submenu no-circle-list flex">
+                                <li class="footer__item"><a class="footer__link no-content" href="#">Ручная мойка</a>
+                                </li>
+                                <li class="footer__item"><a class="footer__link no-content" href="#">Мойки самообслуживания</a>
+                                </li>
+                                <li class="footer__item"><a class="footer__link no-content" href="#">Конвейерная и&nbsp;портальные мойки</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="footer__section"><a class="footer__submenu-title no-content" href="#">Контакты</a>
+                            <ul class="footer__submenu no-circle-list flex">
+                                <li class="footer__item"><a class="footer__link no-content" href="#">Партнерам</a>
+                                </li>
+                                <li class="footer__item"><a class="footer__link no-content" href="#">Корпоративным клиентам</a>
+                                </li>
+                                <li class="footer__item"><a class="footer__link no-content" href="#">Частые вопросы</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__wrap wrap flex flex_justify flex_vertical">
+                    <div class="footer__payment flex flex_vertical">
+                        <div class="footer__payment-text">Принимаем к&nbsp;оплате</div>
+                        <div class="footer__payment-cards flex flex_vertical">
+                            <svg class="icon icon-mastercard" viewBox="0 0 146.8 120.41">
+                                <use xlink:href="app/icons/sprite.svg#mastercard"></use>
+                            </svg>
+                            <svg class="icon icon-visa" viewBox="0 0 504 504">
+                                <use xlink:href="app/icons/sprite.svg#visa"></use>
+                            </svg>
+                        </div>
+                    </div><a class="footer__privacy-policy no-content" href="#">Политика конфиденциальности</a><span class="footer__development">Разоработка сайта:<a class="footer__dev-link no-content" href="#"></a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+    </div>
+    <div class="modals modals_vacancies content flex flex_column mfp-hide" id="manager">
+        <div class="modals__content css-scrollbar css-scrollbar_gray">
+            <p>Сеть автомоек AquaGizer существует с&nbsp;1999 года. За это время мы помыли сотни тысяч машин. При этом мы не расслабляемся и&nbsp;каждый год ставим перед&nbsp;собой не менее амбициозные цели.. Сейчас мы ищем одного управляющего на&nbsp;2
+                мойки самообслуживания: ул. Вилонова и&nbsp;ул. Умельцев. Нам нужен лучший в&nbsp;своём деле.</p>
+            <p>Если Вы привыкли выполнять свою работу не просто "хорошо", а&nbsp;"очень хорошо", то мы с&nbsp;удовольствием примем Вас в&nbsp;наш дружный коллектив!</p>
+            <b class="color-blue">Требования:</b>
+            <ul>
+                <li>опыт управления людьми от&nbsp;5-ти лет;</li>
+                <li>грамотная устная и&nbsp;письменная речь;</li>
+                <li>целеустремлённость;</li>
+                <li>инициативность;</li>
+                <li>умение работать в&nbsp;режиме многозадачности;</li>
+                <li>очень приветствуется технический склад ума или&nbsp;опыт работы в&nbsp;технических профессиях.</li>
+            </ul>
+            <b class="color-blue">Обязанности:</b>
+            <ul>
+                <li>управление объектом на&nbsp;ул. Вилонова и&nbsp;Умельцев;</li>
+                <li>организация производственного процесса;</li>
+                <li>подбор персонала;</li>
+                <li>работа с&nbsp;претензиями клиентов;</li>
+                <li>контроль качества услуг</li>
+            </ul>
+            <b class="color-blue">Условия:</b>
+            <ul>
+                <li>оклад 40 000 + % от&nbsp;выручки автомойки (в&nbsp;конечном итоге получается сумма не меньше 43 000);</li>
+                <li>официальное трудоустройство;</li>
+                <li>внутреннее обучение;</li>
+                <li>график: пн. - пт., 9:00 - 18:00;</li>
+                <li>тринадцатая зарплата;</li>
+                <li>оплата ГСМ;</li>
+                <li>корпоративная культура;</li>
+                <li>здоровый корпоративный климат;</li>
+                <li>возможность влиять на&nbsp;свой доход;</li>
+                <li>предоставление услуг компании бесплатно</li>
+            </ul>
+        </div>
+        <div class="modals__vacancies-bottom"><a class="modals__resume btn btn_arrow no-content js-btn-circle js-modal" href="#sendResume"><span class="modals__circles circles js-circles"><SPAN class="b-circle"></SPAN><SPAN class="b-circle"></SPAN></span>Отправить резюме</a>
+        </div>
+    </div>
+    <div class="modals modals_vacancies content flex flex_column mfp-hide" id="technician">
+        <div class="modals__content css-scrollbar css-scrollbar_gray">
+            <p>Сеть автомоек AquaGizer существует с&nbsp;1999 года. За это время мы помыли сотни тысяч машин. При этом мы не расслабляемся и&nbsp;каждый год ставим перед&nbsp;собой не менее амбициозные цели.. Сейчас мы ищем одного управляющего на&nbsp;2
+                мойки самообслуживания: ул. Вилонова и&nbsp;ул. Умельцев. Нам нужен лучший в&nbsp;своём деле.</p>
+            <p>Если Вы привыкли выполнять свою работу не просто "хорошо", а&nbsp;"очень хорошо", то мы с&nbsp;удовольствием примем Вас в&nbsp;наш дружный коллектив!</p>
+            <b class="color-blue">Требования:</b>
+            <ul>
+                <li>опыт управления людьми от&nbsp;5-ти лет;</li>
+                <li>грамотная устная и&nbsp;письменная речь;</li>
+                <li>целеустремлённость;</li>
+                <li>инициативность;</li>
+                <li>умение работать в&nbsp;режиме многозадачности;</li>
+                <li>очень приветствуется технический склад ума или&nbsp;опыт работы в&nbsp;технических профессиях.</li>
+            </ul>
+            <b class="color-blue">Обязанности:</b>
+            <ul>
+                <li>управление объектом на&nbsp;ул. Вилонова и&nbsp;Умельцев;</li>
+                <li>организация производственного процесса;</li>
+                <li>подбор персонала;</li>
+                <li>работа с&nbsp;претензиями клиентов;</li>
+                <li>контроль качества услуг</li>
+            </ul>
+            <b class="color-blue">Условия:</b>
+            <ul>
+                <li>оклад 40 000 + % от&nbsp;выручки автомойки (в&nbsp;конечном итоге получается сумма не меньше 43 000);</li>
+                <li>официальное трудоустройство;</li>
+                <li>внутреннее обучение;</li>
+                <li>график: пн. - пт., 9:00 - 18:00;</li>
+                <li>тринадцатая зарплата;</li>
+                <li>оплата ГСМ;</li>
+                <li>корпоративная культура;</li>
+                <li>здоровый корпоративный климат;</li>
+                <li>возможность влиять на&nbsp;свой доход;</li>
+                <li>предоставление услуг компании бесплатно</li>
+            </ul>
+        </div>
+        <div class="modals__vacancies-bottom"><a class="modals__resume btn btn_arrow no-content js-btn-circle js-modal" href="#sendResume"><span class="modals__circles circles js-circles"><SPAN class="b-circle"></SPAN><SPAN class="b-circle"></SPAN></span>Отправить резюме</a>
+        </div>
+    </div>
+    <div class="modals modals_vacancies content flex flex_column mfp-hide" id="administrator">
+        <div class="modals__content css-scrollbar css-scrollbar_gray">
+            <p>Сеть автомоек AquaGizer существует с&nbsp;1999 года. За это время мы помыли сотни тысяч машин. При этом мы не расслабляемся и&nbsp;каждый год ставим перед&nbsp;собой не менее амбициозные цели.. Сейчас мы ищем одного управляющего на&nbsp;2
+                мойки самообслуживания: ул. Вилонова и&nbsp;ул. Умельцев. Нам нужен лучший в&nbsp;своём деле.</p>
+            <p>Если Вы привыкли выполнять свою работу не просто "хорошо", а&nbsp;"очень хорошо", то мы с&nbsp;удовольствием примем Вас в&nbsp;наш дружный коллектив!</p>
+            <b class="color-blue">Требования:</b>
+            <ul>
+                <li>опыт управления людьми от&nbsp;5-ти лет;</li>
+                <li>грамотная устная и&nbsp;письменная речь;</li>
+                <li>целеустремлённость;</li>
+                <li>инициативность;</li>
+                <li>умение работать в&nbsp;режиме многозадачности;</li>
+                <li>очень приветствуется технический склад ума или&nbsp;опыт работы в&nbsp;технических профессиях.</li>
+            </ul>
+            <b class="color-blue">Обязанности:</b>
+            <ul>
+                <li>управление объектом на&nbsp;ул. Вилонова и&nbsp;Умельцев;</li>
+                <li>организация производственного процесса;</li>
+                <li>подбор персонала;</li>
+                <li>работа с&nbsp;претензиями клиентов;</li>
+                <li>контроль качества услуг</li>
+            </ul>
+            <b class="color-blue">Условия:</b>
+            <ul>
+                <li>оклад 40 000 + % от&nbsp;выручки автомойки (в&nbsp;конечном итоге получается сумма не меньше 43 000);</li>
+                <li>официальное трудоустройство;</li>
+                <li>внутреннее обучение;</li>
+                <li>график: пн. - пт., 9:00 - 18:00;</li>
+                <li>тринадцатая зарплата;</li>
+                <li>оплата ГСМ;</li>
+                <li>корпоративная культура;</li>
+                <li>здоровый корпоративный климат;</li>
+                <li>возможность влиять на&nbsp;свой доход;</li>
+                <li>предоставление услуг компании бесплатно</li>
+            </ul>
+        </div>
+        <div class="modals__vacancies-bottom"><a class="modals__resume btn btn_arrow no-content js-btn-circle js-modal" href="#sendResume"><span class="modals__circles circles js-circles"><SPAN class="b-circle"></SPAN><SPAN class="b-circle"></SPAN></span>Отправить резюме</a>
+        </div>
+    </div>
+    <div class="modals modals_resume flex flex_column content mfp-hide" id="sendResume">
+        <H2>Отправить резюме</H2>
+        <form class="modals__form form-popup feedback flex content" action="/" method="POST" enctype="multipart/form-data">
+            <input class="feedback__input input" type="text" placeholder="Введите ваше имя" name="name" />
+            <input class="feedback__input input" type="text" name="phone" placeholder="+7 (___) ___-__-__" />
+            <textarea class="feedback__textarea input" placeholder="Введите текст" name="message"></textarea>
+            <label class="feedback__upload-wrap flex flex_vertical">
+                <input class="feedback__file-input visually-hidden" type="file" accept="image/*" name="file" multiple="multiple" /><span class="feedback__upload-btn"><svg class="icon icon-arrowIn" viewBox="0 0 512 512" width="20" height="20"><use xlink:href="app/icons/sprite.svg#arrowIn"></use></svg></span><span class="feedback__upload-text">Загрузить фото</span>
+                <span
+                class="feedback__upload-list js-upload-list"><span class="feedback__upload-title">Загруженные файлы</span>
+                    <DIV class="files-container css-scrollbar css-scrollbar_gray"></DIV>
+                    </span>
+            </label>
+            <button class="feedback__submit btn btn_arrow no-content js-btn-circle" type="submit"><span class="feedback__circles circles js-circles"><SPAN class="b-circle"></SPAN>
+                <SPAN class="b-circle"></SPAN>
+                </span>Отправить</button>
+            <label class="feedback__checkbox-label checkbox-label checkbox-label_dark-on-gray flex flex_vertical">
+                <input class="checkbox-label__input visually-hidden" type="checkbox" name="consent" checked="checked" /><span class="checkbox-label__check-wrap"><svg class="icon icon-check" viewBox="0 0 12 9" width="12" height="9"><use xlink:href="app/icons/sprite.svg#check"></use></svg></span><span class="checkbox-label__text">Даю согласие&nbsp;на&nbsp;обработку&#32;<a class="checkbox-label__data-link no-content" href="#"><u>персональных данных</u></a></span>
+            </label>
+        </form>
+    </div>
+    <div class="modals modals_video flex flex_column mfp-hide" id="videoContent">
+        <div class="modals__video-wrap video-modal content">
+            <div class="video-modal__content">
+                <B class="h3">Мерседес</B>
+                <P>Видеогалерея компании Aquagizer — все полезные видео об&nbsp;услугах компании, собранные для&nbsp;вас в&nbsp;одном разделе. Смотрите видео и&nbsp;получайте знания о&nbsp;всех тонкостях мытья машин.</P>
+                <div class="video-modal__image-wrap">
+                    <picture>
+                        <source type="image/webp" srcset="app/img/mercedes-popup.webp">
+                            <img src="app/img/mercedes-popup.jpg" class="object-fit" alt="Изображение мерседеса" />
+                    </picture>
+                </div>
+            </div>
+            <div class="video-modal__additional-video">
+                <B class="h3">Смотрите также:</B>
+                <div class="video-modal__additional-row portfolio flex">
+                    <div class="portfolio__item">
+                        <div class="portfolio__no-content-wrap">
+                            <div class="portfolio__video-wrap video-frame js-video-youtube">
+                                <div class="video-frame__prev flex flex_center flex_vertical js-prev-youtube"><a class="video-frame__play flex no-content js-play-youtube" data-video-id="video-1" href="javascript: void(0)"><span class="video-frame__play-icon-wrap flex flex_center flex_vertical js-play-wrap"><svg class="icon icon-play" viewBox="0 0 44.8 89.6" width="26" height="32"><use xlink:href="app/icons/sprite.svg#play"></use></svg></span></a>
+                                    <picture>
+                                        <source type="image/webp" srcset="app/img/white-mercedes.webp">
+                                            <img src="app/img/white-mercedes.jpg" class="video-frame__back-image object-fit" alt="Видео" title="" />
+                                    </picture>
+                                </div>
+                                <iframe class="video-frame__video js-lazyYT" id="video-1" src="https://www.youtube.com/embed/8Z1eMy2FoX4?enablejsapi=1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
+                            </div>
+                        </div>
+                        <div class="portfolio__text-wrap">
+                            <H3><span>Видео 1</span></H3>
+                        </div>
+                    </div>
+                    <div class="portfolio__item">
+                        <div class="portfolio__no-content-wrap">
+                            <div class="portfolio__video-wrap video-frame js-video-youtube">
+                                <div class="video-frame__prev flex flex_center flex_vertical js-prev-youtube"><a class="video-frame__play flex no-content js-play-youtube" data-video-id="video-2" href="javascript: void(0)"><span class="video-frame__play-icon-wrap flex flex_center flex_vertical js-play-wrap"><svg class="icon icon-play" viewBox="0 0 44.8 89.6" width="26" height="32"><use xlink:href="app/icons/sprite.svg#play"></use></svg></span></a>
+                                    <picture>
+                                        <source type="image/webp" srcset="app/img/black-mercedes.webp">
+                                            <img src="app/img/black-mercedes.jpg" class="video-frame__back-image object-fit" alt="Видео" title="" />
+                                    </picture>
+                                </div>
+                                <iframe class="video-frame__video js-lazyYT" id="video-2" src="https://www.youtube.com/embed/ZU1fJFDdC34?enablejsapi=1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
+                            </div>
+                        </div>
+                        <div class="portfolio__text-wrap">
+                            <H3><span>Видео 2</span></H3>
+                        </div>
+                    </div>
+                    <div class="portfolio__item">
+                        <div class="portfolio__no-content-wrap">
+                            <div class="portfolio__video-wrap video-frame js-video-youtube">
+                                <div class="video-frame__prev flex flex_center flex_vertical js-prev-youtube"><a class="video-frame__play flex no-content js-play-youtube" data-video-id="video-3" href="javascript: void(0)"><span class="video-frame__play-icon-wrap flex flex_center flex_vertical js-play-wrap"><svg class="icon icon-play" viewBox="0 0 44.8 89.6" width="26" height="32"><use xlink:href="app/icons/sprite.svg#play"></use></svg></span></a>
+                                    <picture>
+                                        <source type="image/webp" srcset="app/img/volvo.webp">
+                                            <img src="app/img/volvo.jpg" class="video-frame__back-image object-fit" alt="Видео" title="" />
+                                    </picture>
+                                </div>
+                                <iframe class="video-frame__video js-lazyYT" id="video-3" src="https://www.youtube.com/embed/8Z1eMy2FoX4?enablejsapi=1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
+                            </div>
+                        </div>
+                        <div class="portfolio__text-wrap">
+                            <H3><span>Видео 3</span></H3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modals modals_processing content flex flex_column mfp-hide" id="processingRed">
+        <div class="modals__processing popup-processing flex flex_vertical">
+            <div class="popup-processing__cell popup-processing__cell_left">
+                <picture>
+                    <source type="image/webp" srcset="app/img/support-red.webp">
+                        <img src="app/img/support-red.png" class="popup-processing__image" alt="Ваша заявка в&nbsp;обработке" title="" />
+                </picture>
+            </div>
+            <div class="popup-processing__cell popup-processing__cell_right">
+                <H2>Ваша заявка<br>принята в&nbsp;обработку!</H2>
+                <P>В ближайшее время наш менеджер свяжется с&nbsp;вами и&nbsp;ответит на&nbsp;все интересусющие Вас вопросы</P>
+            </div>
+        </div>
+    </div>
+    <div class="modals modals_processing content flex flex_column mfp-hide" id="processingBlue">
+        <div class="modals__processing popup-processing flex flex_vertical">
+            <div class="popup-processing__cell popup-processing__cell_left">
+                <picture>
+                    <source type="image/webp" srcset="app/img/support-blue.webp">
+                        <img src="app/img/support-blue.png" class="popup-processing__image" alt="Ваша заявка в&nbsp;обработке" title="" />
+                </picture>
+            </div>
+            <div class="popup-processing__cell popup-processing__cell_right">
+                <H2>Ваша заявка<br>принята в&nbsp;обработку!</H2>
+                <P>В ближайшее время наш менеджер свяжется с&nbsp;вами и&nbsp;ответит на&nbsp;все интересусющие Вас вопросы</P>
+            </div>
+        </div>
+    </div>
+    <div class="modals modals_resume flex flex_column content mfp-hide" id="sendQuestion">
+        <H2>Задать вопрос</H2>
+        <form class="modals__form form-popup feedback flex content" action="https://echo.htmlacademy.ru" method="POST" enctype="multipart/form-data" data-success="#processingRed">
+            <input class="feedback__input input" type="text" placeholder="Введите ваше имя" name="name" />
+            <input class="feedback__input input" type="text" name="phone" placeholder="+7 (___) ___-__-__" />
+            <textarea class="feedback__textarea input" placeholder="Введите текст вопроса" name="message"></textarea>
+            <label class="feedback__upload-wrap flex flex_vertical">
+                <input class="feedback__file-input visually-hidden" type="file" accept="image/*" name="file" multiple="multiple" /><span class="feedback__upload-btn"><svg class="icon icon-arrowIn" viewBox="0 0 512 512" width="20" height="20"><use xlink:href="app/icons/sprite.svg#arrowIn"></use></svg></span><span class="feedback__upload-text">Загрузить фото</span>
+                <span
+                class="feedback__upload-list js-upload-list"><span class="feedback__upload-title">Загруженные файлы</span>
+                    <DIV class="files-container css-scrollbar css-scrollbar_gray"></DIV>
+                    </span>
+            </label>
+            <button class="feedback__submit btn btn_arrow no-content js-btn-circle" type="submit"><span class="feedback__circles circles js-circles"><SPAN class="b-circle"></SPAN>
+                <SPAN class="b-circle"></SPAN>
+                </span>Отправить</button>
+            <label class="feedback__checkbox-label checkbox-label checkbox-label_dark-on-gray flex flex_vertical">
+                <input class="checkbox-label__input visually-hidden" type="checkbox" name="consent" checked="checked" /><span class="checkbox-label__check-wrap"><svg class="icon icon-check" viewBox="0 0 12 9" width="12" height="9"><use xlink:href="app/icons/sprite.svg#check"></use></svg></span><span class="checkbox-label__text">Даю согласие&nbsp;на&nbsp;обработку&#32;<a class="checkbox-label__data-link no-content" href="#"><u>персональных данных</u></a></span>
+            </label>
+        </form>
+    </div>
+    <div class="modals modals_processing content flex flex_column mfp-hide" id="success">
+        <div class="modals__processing popup-processing flex flex_vertical">
+            <div class="popup-processing__cell popup-processing__cell_left">
+                <picture>
+                    <source type="image/webp" srcset="app/img/support-red.webp">
+                        <img src="app/img/support-red.png" class="popup-processing__image" alt="Ваша заявка в&nbsp;обработке" title="" />
+                </picture>
+            </div>
+            <div class="popup-processing__cell popup-processing__cell_right">
+                <H2 class="color-blue">Успешно отправлено!</H2>
+                <P>В течение 24 часов наш менеджер свяжется с&nbsp;Вами и&nbsp;ответит на&nbsp;все интересующие вас вопросы</P>
+            </div>
+        </div>
+    </div>
+    <div class="modals modals_resume flex flex_column content mfp-hide" id="sendMessage">
+        <H2>Написать сообщение</H2>
+        <form class="modals__form form-popup feedback flex content" action="/" method="POST" enctype="multipart/form-data">
+            <input class="feedback__input input" type="text" placeholder="Введите ваше имя" name="name" />
+            <input class="feedback__input input" type="text" name="phone" placeholder="+7 (___) ___-__-__" />
+            <textarea class="feedback__textarea input" placeholder="Введите текст отзыва" name="message"></textarea>
+            <label class="feedback__upload-wrap flex flex_vertical">
+                <input class="feedback__file-input visually-hidden" type="file" accept="image/*" name="file" multiple="multiple" /><span class="feedback__upload-btn"><svg class="icon icon-arrowIn" viewBox="0 0 512 512" width="20" height="20"><use xlink:href="app/icons/sprite.svg#arrowIn"></use></svg></span><span class="feedback__upload-text">Загрузить фото</span>
+                <span
+                class="feedback__upload-list js-upload-list"><span class="feedback__upload-title">Загруженные файлы</span>
+                    <DIV class="files-container css-scrollbar css-scrollbar_gray"></DIV>
+                    </span>
+            </label>
+            <button class="feedback__submit btn btn_arrow no-content js-btn-circle" type="submit"><span class="feedback__circles circles js-circles"><SPAN class="b-circle"></SPAN>
+                <SPAN class="b-circle"></SPAN>
+                </span>Отправить</button>
+            <label class="feedback__checkbox-label checkbox-label checkbox-label_dark-on-gray flex flex_vertical">
+                <input class="checkbox-label__input visually-hidden" type="checkbox" name="consent" checked="checked" /><span class="checkbox-label__check-wrap"><svg class="icon icon-check" viewBox="0 0 12 9" width="12" height="9"><use xlink:href="app/icons/sprite.svg#check"></use></svg></span><span class="checkbox-label__text">Даю согласие&nbsp;на&nbsp;обработку&#32;<a class="checkbox-label__data-link no-content" href="#"><u>персональных данных</u></a></span>
+            </label>
+        </form>
+    </div>
+    <div class="modals modals_vacancies content flex flex_column mfp-hide" id="news">
+        <div class="modals__news news-modal css-scrollbar css-scrollbar_blue">
+            <H2>Установили новое оборудование</H2>
+            <P>Событие привлечёт любителей путешествий, поклонников фотографии и&nbsp;ценителей открытого и&nbsp;искреннего общения. Выставка — это авторский взгляд на&nbsp;мир. Представленные фотографии — результат путешествий-коммуникаций за&nbsp;последние
+                10 лет. Пётр не признает и&nbsp;не знает ограничений: его объективу совершенно не важен социальный статус, пол, возраст, достаток. Непритязательную красоту и&nbsp;подлинную романтику он находит в&nbsp;хмуром российском утре, на&nbsp;одичалых
+                бодой.</P>
+            <div class="news-modal__image-wrap">
+                <picture>
+                    <source type="image/webp" srcset="app/img/news-popup-image.webp">
+                        <img src="app/img/news-popup-image.jpg" alt="Мойка машины" />
+                </picture>
+            </div>
+            <P>Событие привлечёт любителей путешествий, поклонников фотографии и&nbsp;ценителей открытого и&nbsp;искреннего общения. Выставка — это авторский взгляд на&nbsp;мир. Представленные фотографии — результат путешествий-коммуникаций за&nbsp;последние
+                10 лет.</P>
+            <div class="news-modal__news-list-wrap news">
+                <H2>Читайте также:</H2>
+                <ul class="news__news no-circle-list">
+                    <li class="news__item"><a class="news__link flex no-content" href="#"><span class="news__item-image-wrap"><picture>
+		                            <source type="image/webp" srcset="app/img/equipment.webp">
+		                            <img src="app/img/equipment.jpg" class="news__item-image" alt="Установили новое оборудование" title="" />
+		                        </picture></span><div class="news__item-text-wrap flex"><time class="news__time" datetime="2019-01-26">26.01.19</time><h3 class="news__title">Установили новое оборудование</h3><span class="news__detail link-arrow">Подробнее</span></div></a>
+                    </li>
+                    <li class="news__item"><a class="news__link flex no-content" href="#"><span class="news__item-image-wrap"><picture>
+		                            <source type="image/webp" srcset="app/img/technic.webp">
+		                            <img src="app/img/technic.jpg" class="news__item-image" alt="Трагическое как художественный идеал" title="" />
+		                        </picture></span><div class="news__item-text-wrap flex"><time class="news__time" datetime="2019-01-18">18.01.19</time><h3 class="news__title">Трагическое как художественный идеал</h3><span class="news__detail link-arrow">Подробнее</span></div></a>
+                    </li>
+                    <li class="news__item"><a class="news__link flex no-content" href="#"><span class="news__item-image-wrap"><picture>
+		                            <source type="image/webp" srcset="app/img/use.webp">
+		                            <img src="app/img/use.jpg" class="news__item-image" alt="Какое оборудование лучше использовать" title="" />
+		                        </picture></span><div class="news__item-text-wrap flex"><time class="news__time" datetime="2019-01-16">16.01.19</time><h3 class="news__title">Какое оборудование лучше использовать</h3><span class="news__detail link-arrow">Подробнее</span></div></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="modals modals_processing content flex flex_column mfp-hide" id="thanks">
+        <div class="modals__processing popup-processing flex flex_vertical">
+            <div class="popup-processing__cell popup-processing__cell_left">
+                <div class="popup-processing__icon-wrap">
+                    <svg class="icon icon-chatLove" viewBox="0 0 60 47">
+                        <use xlink:href="app/icons/sprite.svg#chatLove"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="popup-processing__cell popup-processing__cell_right">
+                <H2>Спасибо<br>за&nbsp;ваш отзыв!</H2>
+                <P>В ближайшее время мы с&nbsp;ним обязательно ознакомимся и&nbsp;дадим обратную связь</P>
+            </div>
+        </div>
+    </div>
+    <div class="modals modals_sale flex flex_column content mfp-hide" id="sale">
+        <div class="sale-top flex">
+            <div class="sale-top__cell sale-top__cell_left">
+                <H2>Получить скидку</H2>
+                <P>Укажите пожалуйста вашу <b>почту и&nbsp;ваш номер телефона</b>, чтобы мы могли прислать вам купон на&nbsp;<b class="color-blue">скидку в&nbsp;20%</b> при&nbsp;первом посещении нашей мойки</P>
+            </div>
+            <div class="sale-top__cell sale-top__cell_right">
+                <picture>
+                    <source type="image/webp" srcset="app/img/aquagizer-cards.webp">
+                        <img src="app/img/aquagizer-cards.png" class="sale-top__image" alt="Карточка" title="" />
+                </picture>
+            </div>
+        </div>
+        <form class="modals__form form-popup feedback flex content" action="/" method="POST" enctype="multipart/form-data">
+            <div class="feedback__top-row-fields flex">
+                <input class="feedback__input input" type="email" placeholder="Укажите Ваш email" name="email" />
+                <input class="feedback__input input" type="text" name="phone" placeholder="+7 (___) ___-__-__" />
+            </div>
+            <div class="feedback__fields-bottom flex">
+                <button class="feedback__submit btn btn_arrow no-content js-btn-circle" type="submit"><span class="feedback__circles circles js-circles"><SPAN class="b-circle"></SPAN>
+                    <SPAN class="b-circle"></SPAN>
+                    </span>Получить ссылку</button>
+                <label class="feedback__checkbox-label checkbox-label checkbox-label_dark-on-gray flex flex_vertical">
+                    <input class="checkbox-label__input visually-hidden" type="checkbox" name="consent" checked="checked" /><span class="checkbox-label__check-wrap"><svg class="icon icon-check" viewBox="0 0 12 9" width="12" height="9"><use xlink:href="app/icons/sprite.svg#check"></use></svg></span><span class="checkbox-label__text">Даю согласие&nbsp;на&nbsp;обработку&#32;<a class="checkbox-label__data-link no-content" href="#"><u>персональных данных</u></a></span>
+                </label>
+            </div>
+        </form>
+    </div>
+    <div class="modals modals_processing content flex flex_column mfp-hide" id="thanksSubscribe">
+        <div class="modals__processing popup-processing flex flex_vertical">
+            <div class="popup-processing__cell popup-processing__cell_left">
+                <div class="popup-processing__icon-wrap popup-processing__icon-wrap_blue">
+                    <svg class="icon icon-letter" viewBox="0 0 511.991 511.991">
+                        <use xlink:href="app/icons/sprite.svg#letter"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="popup-processing__cell popup-processing__cell_right">
+                <H2>Благодарим<br>за&nbsp;подписку!</H2>
+                <P>В ближайшие 30 минут на&nbsp;вашу почту придет список наших акций и&nbsp;предложений</P>
+            </div>
+        </div>
+    </div>
+    <div class="modals modals_resume flex flex_column content mfp-hide" id="partner">
+        <H2>Стать партнером</H2>
+        <form class="modals__form form-popup feedback flex content" action="/" method="POST" enctype="multipart/form-data">
+            <input class="feedback__input input" type="email" placeholder="Укажите Ваш Email" name="email" />
+            <input class="feedback__input input" type="text" name="phone" placeholder="+7 (___) ___-__-__" />
+            <textarea class="feedback__textarea input" placeholder="Ваше предложение" name="message"></textarea>
+            <label class="feedback__upload-wrap flex flex_vertical">
+                <input class="feedback__file-input visually-hidden" type="file" accept="image/*" name="file" multiple="multiple" /><span class="feedback__upload-btn"><svg class="icon icon-arrowIn" viewBox="0 0 512 512" width="20" height="20"><use xlink:href="app/icons/sprite.svg#arrowIn"></use></svg></span><span class="feedback__upload-text">Загрузить фото</span>
+                <span
+                class="feedback__upload-list js-upload-list"><span class="feedback__upload-title">Загруженные файлы</span>
+                    <DIV class="files-container css-scrollbar css-scrollbar_gray"></DIV>
+                    </span>
+            </label>
+            <button class="feedback__submit btn btn_arrow no-content js-btn-circle" type="submit"><span class="feedback__circles circles js-circles"><SPAN class="b-circle"></SPAN>
+                <SPAN class="b-circle"></SPAN>
+                </span>Отправить</button>
+            <label class="feedback__checkbox-label checkbox-label checkbox-label_dark-on-gray flex flex_vertical">
+                <input class="checkbox-label__input visually-hidden" type="checkbox" name="consent" checked="checked" /><span class="checkbox-label__check-wrap"><svg class="icon icon-check" viewBox="0 0 12 9" width="12" height="9"><use xlink:href="app/icons/sprite.svg#check"></use></svg></span><span class="checkbox-label__text">Даю согласие&nbsp;на&nbsp;обработку&#32;<a class="checkbox-label__data-link no-content" href="#"><u>персональных данных</u></a></span>
+            </label>
+        </form>
+    </div>
+    <script src="//api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&amp;lang=ru-RU"></script>
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="app/js/app.js?v=1605009071905"></script>
+</body>
+
+</html>
