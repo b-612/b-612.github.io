@@ -30,7 +30,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/nvidia" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/autogizer" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -206,10 +206,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="265" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1601411151684" />
-    <state x="437" y="237" width="1287" height="639" key="find.popup" timestamp="1604841819789">
+    <state x="437" y="237" width="1287" height="639" key="find.popup" timestamp="1605361424789">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="437" y="237" width="1287" height="639" key="find.popup/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1604841819789" />
+    <state x="437" y="237" width="1287" height="639" key="find.popup/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1605361424789" />
     <state x="2211" y="224" width="858" height="604" key="find.popup/0.0.1920.1040/1920.0.1280.984@1920.0.1280.984" timestamp="1604832232222" />
   </component>
 </project>
