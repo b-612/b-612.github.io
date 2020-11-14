@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <link rel="preload" href="app/css/app.css?v=1605354790483" as="style">
+    <link rel="preload" href="app/js/app.js?v=1605354790483" as="script">
+    <link rel="preload" href="//code.jquery.com/jquery-3.3.1.min.js" as="script">
+    <link rel="preload" href="app/fonts/museo-sans-regular.woff2" as="font" crossorigin>
+    <link rel="preload" href="app/fonts/museosanscyrl300.woff2" as="font" crossorigin>
+    <link rel="preload" href="app/fonts/RFTone-Bold.woff2" as="font" crossorigin>
+    <link rel="preload" href="app/fonts/RFTone-Regular.woff2" as="font" crossorigin>
+    <title>Страница входа</title>
+    <link rel="icon" href="app/img/favicon.png">
+    <link rel="stylesheet" href="app/css/app.css?v=1605354790483">
+    <script>
+        function canUseWebP(){var e=document.createElement("canvas");return!(!e.getContext||!e.getContext("2d"))&&0==e.toDataURL("image/webp").indexOf("data:image/webp")}var root=document.getElementsByTagName("html")[0];canUseWebP()?root.classList.add("ws"):root.classList.add("wn");
+    </script>
+</head>
+
+<body>
+    <header class="header header_inner-page header_border">
+        <div class="header__wrap wrap">
+            <div class="header__top-navigation flex flex_vertical">
+                <nav class="header__menu flex flex_vertical">
+                    <div class="header__nav catalog-nav flex" tabindex="0">
+                        <div class="catalog-nav__hamburger hamburger hamburger--spin js-menu">
+                            <div class="hamburger-box">
+                                <div class="hamburger-inner"></div>
+                            </div>
+                        </div><span class="catalog-nav__nav-title js-nav-title">Каталог</span>
+                        <div class="catalog-nav__catalog no-display js-nav">
+                            <div class="catalog-nav__wrap wrap flex">
+                                <div class="catalog-nav__cell catalog-nav__cell_left flex">
+                                    <ul class="catalog-nav__main-list no-circle-list js-nav-items">
+                                        <li class="catalog-nav__main-item"><a class="catalog-nav__main-link catalog-nav__main-link_nested js-nav-link" href="#">Игрушки</a>
+                                            <ul class="catalog-nav__nested-list no-circle-list">
+                                                <li class="catalog-nav__nested-item"><a class="catalog-nav__nested-link js-nav-nested-link" href="#">Деревянные</a>
+                                                    <ul class="catalog-nav__nested-list catalog-nav__nested-list_second no-circle-list">
+                                                        <li class="catalog-nav__nested-item"><a class="catalog-nav__nested-link" href="#">Игрушки</a>
+                                                        </li>
+                                                        <li class="catalog-nav__nested-item"><a class="catalog-nav__nested-link" href="#">Мебель</a>
+                                                        </li>
+                                                        <li class="catalog-nav__nested-item"><a class="catalog-nav__nested-link" href="#">Подарки</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="catalog-nav__nested-item"><a class="catalog-nav__nested-link js-nav-nested-link" href="#">Мягкие</a>
+                                                    <ul class="catalog-nav__nested-list catalog-nav__nested-list_second no-circle-list">
+                                                        <li class="catalog-nav__nested-item"><a class="catalog-nav__nested-link" href="#">Игрушки</a>
+                                                        </li>
+                                                        <li class="catalog-nav__nested-item"><a class="catalog-nav__nested-link" href="#">Подушки</a>
+                                                        </li>
+                                                        <li class="catalog-nav__nested-item"><a class="catalog-nav__nested-link" href="#">Музыкальные</a>
+                                                        </li>
+                                                        <li class="catalog-nav__nested-item"><a class="catalog-nav__nested-link" href="#">Игрушка брелок</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="catalog-nav__nested-item"><a class="catalog-nav__nested-link js-nav-nested-link" href="#">Вязанные</a>
+                                                </li>
+                                                <li class="catalog-nav__nested-item"><a class="catalog-nav__nested-link js-nav-nested-link" href="#">Для ванной</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="catalog-nav__main-item"><a class="catalog-nav__main-link catalog-nav__main-link_nested js-nav-link" href="#">Органайзеры</a>
+                                            <ul class="catalog-nav__nested-list no-circle-list">
+                                                <li class="catalog-nav__nested-item"><a class="catalog-nav__nested-link js-nav-nested-link" href="#">Школьные</a>
+                                                </li>
+                                                <li class="catalog-nav__nested-item"><a class="catalog-nav__nested-link js-nav-nested-link" href="#">Мягкие</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="catalog-nav__main-item"><a class="catalog-nav__main-link js-nav-link" href="#">Коврики игровые</a>
+                                        </li>
+                                        <li class="catalog-nav__main-item"><a class="catalog-nav__main-link js-nav-link" href="#">Наборы посуды</a>
+                                        </li>
+                                        <li class="catalog-nav__main-item"><a class="catalog-nav__main-link js-nav-link" href="#">Часы</a>
+                                        </li>
+                                        <li class="catalog-nav__main-item"><a class="catalog-nav__main-link js-nav-link" href="#">Рюкзаки</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="catalog-nav__cell catalog-nav__cell_right">
+                                    <div class="catalog-nav__info-wrap flex flex_column">
+                                        <div class="catalog-nav__contacts-wrap flex flex_column">
+                                            <div class="catalog-nav__email-wrap flex"><span class="catalog-nav__email-text">E-mail:</span><a class="catalog-nav__email" href="mailto:ask@multi-fan.ru">ask@multi-fan.ru</a>
+                                            </div>
+                                        </div>
+                                        <div class="catalog-nav__sales-wrap flex flex_column"><span class="catalog-nav__sale-title">SALE <span class="red-text">%</span></span><span class="catalog-nav__sale-text">-25% на&nbsp;органайзеры</span><span class="catalog-nav__sale-text">- 40% на&nbsp;деревянные <br>игрушки</span>
+                                        </div>
+                                        <div class="catalog-nav__mobile-menu">
+                                            <ul class="catalog-nav__main-list no-circle-list js-nav-items">
+                                                <li class="catalog-nav__main-item"><a class="catalog-nav__main-link js-nav-link" href="#">Каталог</a>
+                                                </li>
+                                                <li class="catalog-nav__main-item"><a class="catalog-nav__main-link js-nav-link" href="#">Доставка  и&nbsp;оплата</a>
+                                                </li>
+                                                <li class="catalog-nav__main-item"><a class="catalog-nav__main-link js-nav-link" href="#">О компании</a>
+                                                </li>
+                                                <li class="catalog-nav__main-item"><a class="catalog-nav__main-link js-nav-link" href="#">Акции</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="catalog-nav__overlay js-nav-overlay"></div>
+                        </div>
+                    </div>
+                    <ul class="header__menu-list no-circle-list flex flex_vertical">
+                        <li class="header__menu-item"><a class="header__menu-link" href="#">Доставка и&nbsp;оплата</a>
+                        </li>
+                        <li class="header__menu-item"><a class="header__menu-link" href="#">О компании</a>
+                        </li>
+                    </ul>
+                </nav><a class="header__logo" href="#"><span class="header__logo-icon-wrap header__logo-icon-wrap_desktop"><svg class="icon icon-logo" viewBox="0 0 244 62"><use xlink:href="app/icons/sprite.svg#logo"></use></svg></span><span class="header__logo-icon-wrap header__logo-icon-wrap_mobile"><svg class="icon icon-logoMobile" viewBox="0 0 63 34"><use xlink:href="app/icons/sprite.svg#logoMobile"></use></svg></span></a>
+                <div
+                class="header__features-wrap flex">
+                    <div class="header__search-form-wrap">
+                        <a class="header__button top-feature-wrap search-button js-modal" href="#search">
+                            <svg class="icon icon-loupe" viewBox="0 0 31 30">
+                                <use xlink:href="app/icons/sprite.svg#loupe"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <a class="header__account top-feature-wrap" href="#">
+                        <svg class="icon icon-account" viewBox="0 0 32 33">
+                            <use xlink:href="app/icons/sprite.svg#account"></use>
+                        </svg>
+                    </a>
+                    <div class="header__cart top-feature-wrap js-cart-toggle">
+                        <svg class="icon icon-cart" viewBox="0 0 26 32">
+                            <use xlink:href="app/icons/sprite.svg#cart"></use>
+                        </svg>
+                        <div class="header__cart-quantity">2</div>
+                        <div class="header__cart-popup cart-popup js-cart-popup">
+                            <div class="cart-popup__products css-scrollbar css-scrollbar_red">
+                                <div class="cart-popup__product flex">
+                                    <div class="cart-popup__image-wrap">
+                                        <picture>
+                                            <source type="image/webp" srcset="app/img/inner-blue-tractor-profile-small.webp">
+                                                <img src="app/img/inner-blue-tractor-profile-small.jpg" class="cart-popup__image object-fit" alt="Синий трактор" title="" />
+                                        </picture>
+                                    </div>
+                                    <div class="cart-popup__text-wrap flex flex_column"><b class="cart-popup__product-name">Рюкзак «Синий трактор» с&nbsp;карманами по&nbsp;бокам</b>
+                                        <div class="cart-popup__price-wrap flex flex_bottom">
+                                            <div class="cart-popup__price">2 676 ₽</div>
+                                            <div class="cart-popup__old-price">4 100 ₽</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cart-popup__product flex">
+                                    <div class="cart-popup__image-wrap">
+                                        <picture>
+                                            <source type="image/webp" srcset="app/img/inner-blue-tractor-profile-small.webp">
+                                                <img src="app/img/inner-blue-tractor-profile-small.jpg" class="cart-popup__image object-fit" alt="Синий трактор" title="" />
+                                        </picture>
+                                    </div>
+                                    <div class="cart-popup__text-wrap flex flex_column"><b class="cart-popup__product-name">Рюкзак «Синий трактор» с&nbsp;карманами по&nbsp;бокам</b>
+                                        <div class="cart-popup__price-wrap flex flex_bottom">
+                                            <div class="cart-popup__price">2 676 ₽</div>
+                                            <div class="cart-popup__old-price">4 100 ₽</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cart-popup__product flex">
+                                    <div class="cart-popup__image-wrap">
+                                        <picture>
+                                            <source type="image/webp" srcset="app/img/inner-blue-tractor-profile-small.webp">
+                                                <img src="app/img/inner-blue-tractor-profile-small.jpg" class="cart-popup__image object-fit" alt="Синий трактор" title="" />
+                                        </picture>
+                                    </div>
+                                    <div class="cart-popup__text-wrap flex flex_column"><b class="cart-popup__product-name">Рюкзак «Синий трактор» с&nbsp;карманами по&nbsp;бокам</b>
+                                        <div class="cart-popup__price-wrap flex flex_bottom">
+                                            <div class="cart-popup__price">2 676 ₽</div>
+                                            <div class="cart-popup__old-price">4 100 ₽</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cart-popup__product flex">
+                                    <div class="cart-popup__image-wrap">
+                                        <picture>
+                                            <source type="image/webp" srcset="app/img/inner-blue-tractor-profile-small.webp">
+                                                <img src="app/img/inner-blue-tractor-profile-small.jpg" class="cart-popup__image object-fit" alt="Синий трактор" title="" />
+                                        </picture>
+                                    </div>
+                                    <div class="cart-popup__text-wrap flex flex_column"><b class="cart-popup__product-name">Рюкзак «Синий трактор» с&nbsp;карманами по&nbsp;бокам</b>
+                                        <div class="cart-popup__price-wrap flex flex_bottom">
+                                            <div class="cart-popup__price">2 676 ₽</div>
+                                            <div class="cart-popup__old-price">4 100 ₽</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart-popup__bottom flex flex_column">
+                                <div class="cart-popup__total-wrap flex flex_vertical flex_justify"><span class="cart-popup__total-text">Итого:</span><span class="cart-popup__total-price">5 352 ₽</span>
+                                </div><a class="cart-popup__add-to-cart btn flex flex_vertical js-btn-circle" href="#"><span class="cart-popup__circles circles js-circles"><SPAN class="b-circle"></SPAN><SPAN class="b-circle"></SPAN></span><span class="cart-popup__submit-text">Перейти в&nbsp;корзину</span><span class="cart-popup__submit-icon"><svg class="icon icon-productCart" viewBox="0 0 33 30"><use xlink:href="app/icons/sprite.svg#productCart"></use></svg></span></a>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        </div>
+    </header>
+    <main class="content">
+        <section class="login flex flex_vertical flex_center">
+            <div class="login__wrap flex flex_column">
+                <h1 class="login__heading">Войти в&nbsp;аккаунт</h1>
+                <form class="login__form flex flex_column" action="/" method="POST">
+                    <label class="login__input-wrap input flex flex_column"><span class="input__label-text-wrap flex"><span class="input__reqired-star">*</span><span class="input__label-text">E-mail:</span></span><span class="input__wrap-input"><input class="input__field" type="email" name="email" placeholder="example@gmail.com" required="required"/><span class="input__success-wrap"><svg class="icon icon-fieldSuccess" viewBox="0 0 29 28"><use xlink:href="app/icons/sprite.svg#fieldSuccess"></use></svg></span>
+                        <span
+                        class="input__error-wrap">
+                            <svg class="icon icon-fieldError" viewBox="0 0 28 28">
+                                <use xlink:href="app/icons/sprite.svg#fieldError"></use>
+                            </svg>
+                            </span>
+                            </span>
+                    </label>
+                    <label class="login__input-wrap input flex flex_column"><span class="input__label-text-wrap flex"><span class="input__label-text">Пароль:</span></span><span class="input__wrap-input"><input class="input__field" type="password" name="password" placeholder="Ваш пароль"/></span>
+                    </label>
+                    <button class="login__submit btn js-btn-circle" type="submit">Войти</button>
+                </form><a class="login__link js-modal" href="#">Зарегистрироваться</a><a class="login__link js-modal" href="#">Забыли пароль?</a>
+            </div>
+            <DIV class="login-bg-icon-wrap">
+                <svg class="icon icon-loginBg" viewBox="0 0 1920 979">
+                    <use xlink:href="app/icons/sprite.svg#loginBg"></use>
+                </svg>
+            </DIV>
+        </section>
+    </main>
+    <div class="modals modals_one-click-buy one-click-buy flex mfp-hide" id="card">
+        <div class="one-click-buy__cell one-click-buy__cell_left">
+            <div class="one-click-buy__logo-wrap">
+                <svg class="icon icon-sliderLogo" viewBox="0 0 90 49">
+                    <use xlink:href="app/icons/sprite.svg#sliderLogo"></use>
+                </svg>
+            </div>
+            <picture>
+                <source type="image/webp" srcset="app/img/tractor-popup.webp">
+                    <img src="app/img/tractor-popup.jpg" class="one-click-buy__image object-fit" alt="Синий трактор" title="" />
+            </picture><span class="one-click-buy__size">22 x 16 х 12,6 см</span>
+        </div>
+        <div class="one-click-buy__cell one-click-buy__cell_right"><b class="one-click-buy__title h1">Игрушка из&nbsp;дерева «Синий трактор»</b>
+            <form class="one-click-buy__form flex flex_column" action="/" method="POST">
+                <div class="one-click-buy__radio-wrap flex">
+                    <label class="one-click-buy__method-wrap flex flex_vertical">
+                        <input class="one-click-buy__input visually-hidden" type="radio" name="size" value="small" /><span class="one-click-buy__item-text">Малый</span>
+                    </label>
+                    <label class="one-click-buy__method-wrap flex flex_vertical">
+                        <input class="one-click-buy__input visually-hidden" type="radio" name="size" value="middle" /><span class="one-click-buy__item-text">Средний</span>
+                    </label>
+                    <label class="one-click-buy__method-wrap flex flex_vertical">
+                        <input class="one-click-buy__input visually-hidden" type="radio" name="size" value="big" checked="checked" /><span class="one-click-buy__item-text">Большой</span>
+                    </label>
+                </div>
+                <div class="one-click-buy__middle-wrap flex flex_vertical">
+                    <div class="one-click-buy__quantity quantity flex flex_vertical flex_justify js-quantity">
+                        <button class="quantity__quantity-btn quantity__quantity-btn_minus js-minus" type="button"></button>
+                        <input class="quantity__quantity-input js-quantity-input" type="number" name="quantity" value="1" step="1" min="1" />
+                        <button class="quantity__quantity-btn quantity__quantity-btn_plus js-plus" type="button"></button>
+                    </div><span class="one-click-buy__article">арт. BT-MF009</span>
+                </div>
+                <div class="one-click-buy__bottom flex flex_vertical">
+                    <button class="one-click-buy__submit btn js-btn-circles" type="submit">Перейти в&nbsp;корзину</button>
+                    <div class="one-click-buy__price-wrap flex flex_column"><span class="one-click-buy__old-price">4 100 ₽</span><span class="one-click-buy__price">2 676 ₽</span>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="modals modals_add-to-cart add-to-cart flex mfp-hide" id="cart">
+        <div class="add-to-cart__cell add-to-cart__cell_left">
+            <svg class="icon icon-addCart" viewBox="0 0 137 200">
+                <use xlink:href="app/icons/sprite.svg#addCart"></use>
+            </svg>
+        </div>
+        <div class="add-to-cart__cell add-to-cart__cell_right"><b class="add-to-cart__text h3">Товар добавлен в&nbsp;корзину</b><a class="add-to-cart__btn btn js-btn-circle" href="#"><span class="add-to-cart__circles circles js-circles"><SPAN class="b-circle"></SPAN><SPAN class="b-circle"></SPAN></span>Перейти в&nbsp;корзину</a>
+        </div>
+    </div>
+    <div class="modals modals_order-status order-status flex flex_column flex_vertical mfp-hide" id="order-processing">
+        <div class="order-status__icon-processing">
+            <svg class="icon icon-orderProcessing" viewBox="0 0 171 174">
+                <use xlink:href="app/icons/sprite.svg#orderProcessing"></use>
+            </svg>
+        </div><b class="order-status__title h3">Обработка заказа</b><span class="order-status__text">Подождите пару минут, пока мы обрабатываем Ваш заказ</span>
+    </div>
+    <div class="modals modals_order-status order-status flex flex_column flex_vertical mfp-hide" id="order-error">
+        <div class="order-status__icon-error">
+            <svg class="icon icon-orderError" viewBox="0 0 164 164">
+                <use xlink:href="app/icons/sprite.svg#orderError"></use>
+            </svg>
+        </div><b class="order-status__title h3">Обработка заказа</b><span class="order-status__text">Что-то пошло не так... Мы стараемся устранить возникшую проблему</span>
+    </div>
+    <div class="modals modals_search search mfp-hide" id="search">
+        <div class="search__wrap wrap">
+            <form class="search__field-wrap" action="/" method="GET">
+                <label class="search__input-wrap input flex flex_column"><span class="input__label-text-wrap flex"><span class="input__label-text"></span></span><span class="input__wrap-input"><input class="input__field" type="search" name="search" placeholder="Поиск по&nbsp;сайту"/></span>
+                </label>
+                <button class="search__submit" type="submit">
+                    <svg class="icon icon-loupe" viewBox="0 0 31 30">
+                        <use xlink:href="app/icons/sprite.svg#loupe"></use>
+                    </svg>
+                </button>
+            </form>
+        </div>
+    </div>
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="app/js/app.js?v=1605354790483"></script>
+</body>
+
+</html>
