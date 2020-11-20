@@ -6,7 +6,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/app/css/app.css?v=1605442922387">
+    <link rel="stylesheet" href="app/css/app.css?v=1605849185634">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <style>
         body {
@@ -16,12 +16,12 @@
         	font-family: Arial;
         	padding-top: 40px;
         }
-        
+
         .box {
         	padding: 20px 40px;
         	background-color: #000;
         }
-        
+
         .head-top {
         	display: flex;
         	flex-wrap: wrap;
@@ -30,13 +30,13 @@
         	margin-bottom: 40px;
         	justify-content: space-between;
         }
-        
+
         .head-title {
         	font-size: 24px;
         	line-height: 1.4em;
-        
+
         }
-        
+
         .git-link {
         	font-size: 12px;
         	line-height: 1.2em;
@@ -45,20 +45,20 @@
         	transition: ease .2s;
         	color: rgba(255, 255, 255, .2) !important;
         }
-        
+
         .git-link:hover {
         	color: #96fd8b !important;
         }
-        
+
         a {
         	color: #fff;
         	position: relative;
         	display: inline-block;
         	text-decoration: none;
-        
-        
+
+
         }
-        
+
         a::before {
         	content: "";
         	display: block;
@@ -70,21 +70,21 @@
         	background-color: #fff;
         	transition: ease .2s;
         	transform: scale(0, 1);
-        
+
         }
-        
+
         a:hover::before {
         	transform: scale(1, 1);
         }
-        
+
         a:visited {
         	color: #96fd8b;
         }
-        
+
         a:visited::before {
         	background-color: #96fd8b;
         }
-        
+
         ol {
         	-webkit-column-count: 3;
         	-moz-column-count: 3;
@@ -95,7 +95,7 @@
         	margin-bottom: 25px;
         	margin-left: -25px;
         }
-        
+
         li {
         	font-size: 16px;
         	margin-bottom: 8px;
@@ -105,7 +105,7 @@
         	page-break-inside: avoid;
         	counter-increment: heading;
         }
-        
+
         li::before {
         	position: absolute;
         	left: 0;
@@ -118,12 +118,12 @@
         	margin-right: 5px;
         	text-align: right;
         }
-        
-        
+
+
         a:hover {
         	text-decoration: none;
         }
-        
+
         /* Media */
         @media only screen and (max-width: 1023px) {
         	ol {
@@ -132,7 +132,7 @@
         		-column-count: 3;
         	}
         }
-        
+
         @media only screen and (max-width: 767px) {
         	ol {
         		-webkit-column-count: 2;
@@ -140,18 +140,18 @@
         		-column-count: 2;
         	}
         }
-        
+
         @media only screen and (max-width: 479px) {
         	ol {
         		-webkit-column-count: 1;
         		-moz-column-count: 1;
         		-column-count: 1;
         	}
-        
+
         	.head-title {
         		order: 2;
         	}
-        
+
         	.git-link {
         		order: 1;
         		margin-bottom: 15px;
