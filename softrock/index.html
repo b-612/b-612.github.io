@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
-    <link rel="preload" href="/app/css/app.css?v=1610290164720" as="style">
-    <link rel="preload" href="/app/js/app.js?v=1610290164720" as="script">
+    <link rel="preload" href="/app/css/app.css?v=1610292163346" as="style">
+    <link rel="preload" href="/app/js/app.js?v=1610292163346" as="script">
     <link rel="preload" href="//code.jquery.com/jquery-3.3.1.min.js" as="script">
     <link rel="preload" href="/app/fonts/opensans-regular-webfont.woff2" as="font" crossorigin>
     <link rel="preload" href="/app/fonts/opensans-light-webfont.woff2" as="font" crossorigin>
@@ -14,7 +14,7 @@
     <link rel="preload" href="/app/fonts/merriweather-regular-webfont.woff2" as="font" crossorigin>
     <title>SOFTROCK. Каменный финиш. Декоративная штукатурка</title>
     <link rel="icon" href="/app/img/favicon.png">
-    <link rel="stylesheet" href="/app/css/app.css?v=1610290164720">
+    <link rel="stylesheet" href="/app/css/app.css?v=1610292163346">
     <script>
         function canUseWebP(){var e=document.createElement("canvas");return!(!e.getContext||!e.getContext("2d"))&&0==e.toDataURL("image/webp").indexOf("data:image/webp")}var root=document.getElementsByTagName("html")[0];canUseWebP()?root.classList.add("ws"):root.classList.add("wn");
     </script>
@@ -32,13 +32,13 @@
         <nav class="header__nav nav">
             <div class="nav__mobile-wrap flex flex_vertical">
                 <ul class="nav__list no-circle-list flex js-nav">
-                    <li class="nav__item"><a class="nav__link" href="/">Сравнительная таблица</a>
+                    <li class="nav__item"><a class="nav__link js-scroll" href="table">Сравнительная таблица</a>
                     </li>
-                    <li class="nav__item"><a class="nav__link" href="/">Частые вопросы</a>
+                    <li class="nav__item"><a class="nav__link js-scroll" href="questions">Частые вопросы</a>
                     </li>
-                    <li class="nav__item"><a class="nav__link" href="/">Инструкция</a>
+                    <li class="nav__item"><a class="nav__link js-scroll" href="instruction">Инструкция</a>
                     </li>
-                    <li class="nav__item"><a class="nav__link" href="/">Контакты</a>
+                    <li class="nav__item"><a class="nav__link js-scroll" href="contacts">Контакты</a>
                     </li>
                 </ul><a class="nav__btn btn btn_blue js-modal" href="#modal-recall"><span class="btn__text">Заказать звонок</span></a>
             </div>
@@ -172,7 +172,7 @@
             </ul>
         </div>
     </section>
-    <section class="comparison">
+    <section class="comparison js-scroll-to" data-scroll="table">
         <div class="comparison__wrap wrap">
             <div class="comparison__lines lines"></div>
             <h2 class="comparison__title section-title">Сравнение</h2>
@@ -779,7 +779,7 @@
             </ul>
         </div>
     </section>
-    <section class="how-to-apply">
+    <section class="how-to-apply js-scroll-to" data-scroll="instruction">
         <div class="how-to-apply__wrap wrap">
             <div class="how-to-apply__lines lines"></div>
             <div class="how-to-apply__title-wrap flex">
@@ -1087,7 +1087,7 @@
             </ul>
         </div>
     </section>
-    <section class="questions">
+    <section class="questions js-scroll-to" data-scroll="questions">
         <div class="questions__wrap wrap">
             <div class="questions__lines lines"></div>
             <div class="questions__title section-title">Частые вопросы</div>
@@ -1183,8 +1183,8 @@
             <ul class="price__list no-circle-list flex">
                 <li class="price__item flex flex_column flex_center">
                     <picture>
-                        <source type="image/webp" srcset="/app/img/price-1.webp">
-                        <img src="/app/img/price-1.png" class="price__image" alt="SoftRock. Каменное финишное покрытие. Декоративная штукатурка. Ведро 1 кг" title="" />
+                        <source type="image/webp" srcset="/app/img/price-small.webp">
+                        <img src="/app/img/price-small.png" class="price__image" alt="SoftRock. Каменное финишное покрытие. Декоративная штукатурка. Ведро 1 кг" title="" />
                     </picture><b class="price__item-title"><span class="product-name">SoftRock</span><br>Маленькое ведро</b>
                     <table class="price__table">
                         <TR>
@@ -1208,8 +1208,8 @@
                 </li>
                 <li class="price__item flex flex_column flex_center">
                     <picture>
-                        <source type="image/webp" srcset="/app/img/price-2.webp">
-                        <img src="/app/img/price-2.png" class="price__image" alt="SoftRock. Каменное финишное покрытие. Декоративная штукатурка. Ведро 5 кг" title="" />
+                        <source type="image/webp" srcset="/app/img/price-middle.webp">
+                        <img src="/app/img/price-middle.png" class="price__image" alt="SoftRock. Каменное финишное покрытие. Декоративная штукатурка. Ведро 5 кг" title="" />
                     </picture><b class="price__item-title"><span class="product-name">SoftRock</span><br>Среднее ведро</b>
                     <table class="price__table">
                         <TR>
@@ -1233,8 +1233,8 @@
                 </li>
                 <li class="price__item flex flex_column flex_center">
                     <picture>
-                        <source type="image/webp" srcset="/app/img/price-3.webp">
-                        <img src="/app/img/price-3.png" class="price__image" alt="SoftRock. Каменное финишное покрытие. Декоративная штукатурка. Ведро 17 кг" title="" />
+                        <source type="image/webp" srcset="/app/img/price-big.webp">
+                        <img src="/app/img/price-big.png" class="price__image" alt="SoftRock. Каменное финишное покрытие. Декоративная штукатурка. Ведро 17 кг" title="" />
                     </picture><b class="price__item-title"><span class="product-name">SoftRock</span><br>Большое ведро</b>
                     <table class="price__table">
                         <TR>
@@ -1259,7 +1259,7 @@
             </ul>
         </div>
     </section>
-    <section class="contacts">
+    <section class="contacts js-scroll-to" data-scroll="contacts">
         <div class="contacts__wrap wrap">
             <div class="contacts__lines lines"></div>
             <h2 class="contacts__title section-title">Связаться с&nbsp;нами</h2>
@@ -1332,7 +1332,7 @@
         <p class="footer__text">ООО «Завод Фасадных Материалов». 2021</p>
     </div>
 </footer>
-<div class="modals modals_recall" id="modal-recall">
+<div class="modals modals_recall mfp-hide" id="modal-recall">
     <h2 class="modals__title">Заполните и&nbsp;отправьте форму. <br class="br-desktop">Мы позвоним в&nbsp;удобное для&nbsp;Вас время</h2>
     <form class="modals__form" action="https://docs.google.com/forms/u/4/d/e/1FAIpQLSdDBX8IXxTe6jOgVTtWG8l88Ek-vbMwyT421tiCZPPngI0tSA/formResponse" method="POST" id="mG61Hd" jsmodel="TOfxwf Q91hve" data-response="%.@.[]]" data-first-entry="0" data-last-entry="4"
           data-is-first-page="true" target="hidden_iframe" onsubmit="submitted=true">
@@ -1352,7 +1352,7 @@
         </button>
     </form>
 </div>
-<div class="modals modals_recall" id="modal-order">
+<div class="modals modals_recall mfp-hide" id="modal-order">
     <h2 class="modals__title">Заполните и&nbsp;отправьте форму. <br class="br-desktop">Мы позвоним в&nbsp;удобное для&nbsp;Вас время</h2>
     <form class="modals__form" action="https://docs.google.com/forms/u/4/d/e/1FAIpQLSdDBX8IXxTe6jOgVTtWG8l88Ek-vbMwyT421tiCZPPngI0tSA/formResponse" method="POST" id="mG61Hd" jsmodel="TOfxwf Q91hve" data-response="%.@.[]]" data-first-entry="0" data-last-entry="4"
           data-is-first-page="true" target="hidden_iframe" onsubmit="submitted=true">
@@ -1373,7 +1373,7 @@
     </form>
 </div>
 <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
-<script src="/app/js/app.js?v=1610290164720"></script>
+<script src="/app/js/app.js?v=1610292163346"></script>
 </body>
 
 </html>
