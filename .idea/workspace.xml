@@ -30,7 +30,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/multifan" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -38,15 +38,15 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Разработка\portfolio\b-612.github.io" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Разработка\portfolio\b-612.github.io\app" />
+      <recent name="D:\Разработка\portfolio\b-612.github.io\softrock" />
       <recent name="D:\Разработка\portfolio\b-612.github.io\multifan" />
       <recent name="D:\Разработка\portfolio\b-612.github.io\autogizer" />
       <recent name="D:\Разработка\portfolio\b-612.github.io\nvidia" />
-      <recent name="D:\Разработка\portfolio\b-612.github.io\nvidia\app\js" />
-      <recent name="D:\Разработка\portfolio\b-612.github.io\form" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Разработка\portfolio\b-612.github.io" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -187,6 +187,7 @@
       <workItem from="1605443270847" duration="234000" />
       <workItem from="1605849050965" duration="976000" />
       <workItem from="1605859419939" duration="272000" />
+      <workItem from="1610289472428" duration="685000" />
     </task>
     <servers />
   </component>
