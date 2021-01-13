@@ -3,6 +3,117 @@
   <component name="ChangeListManager">
     <list default="true" id="2cbda44c-bbb3-46f8-845d-2459b20d1f97" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/css/app.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/fonts/UniSansHeavyCaps.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/fonts/UniSansHeavyCaps.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/fonts/montserrat-v15-latin_cyrillic-500.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/fonts/montserrat-v15-latin_cyrillic-500.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/fonts/montserrat-v15-latin_cyrillic-700.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/fonts/montserrat-v15-latin_cyrillic-700.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/fonts/montserrat-v15-latin_cyrillic-900.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/fonts/montserrat-v15-latin_cyrillic-900.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/fonts/montserrat-v15-latin_cyrillic-regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/fonts/montserrat-v15-latin_cyrillic-regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/fonts/oswald-v35-latin_cyrillic-700.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/fonts/oswald-v35-latin_cyrillic-700.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/fonts/oswald-v35-latin_cyrillic-regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/fonts/oswald-v35-latin_cyrillic-regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/icons/sprite.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/covering@1x.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/covering@1x.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/home.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/logo-softrock@1x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/logo-softrock@1x.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/logo-softrock@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/logo-softrock@2x.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/logo@1x.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/logo@1x.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/logo@2x.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/logo@2x.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/look-like-0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/look-like-0.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/look-like-01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/look-like-01.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/look-like-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/look-like-1.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/look-like-2-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/look-like-2-1.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/look-like-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/look-like-2.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/look-like-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/look-like-3.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/look-like-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/look-like-4.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/look-like-5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/look-like-5.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/look-like-6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/look-like-6.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/look-like-7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/look-like-7.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/look-like-8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/look-like-8.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/look-like-new-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/look-like-new-1.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/look-like-new-10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/look-like-new-10.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/look-like-new-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/look-like-new-2.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/look-like-new-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/look-like-new-3.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/look-like-new-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/look-like-new-4.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/look-like-new-5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/look-like-new-5.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/look-like-new-6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/look-like-new-6.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/look-like-new-7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/look-like-new-7.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/look-like-new-8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/look-like-new-8.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/look-like-new-9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/look-like-new-9.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/price-big.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/price-big.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/price-middle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/price-middle.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/price-small.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/price-small.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/product-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/product-bg.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/softrock@1x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/softrock@1x.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/softrock@2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/softrock@2x.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/video-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/video-1.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/video-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/video-2.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/video-application.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/video-application.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/video-back-ready.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/video-back-ready.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/video-back.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/video-back.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/video-dop.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/video-dop.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/video-effect.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/video-effect.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/video-fasad.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/video-fasad.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/video-gun.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/video-gun.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/video-hotel-stars.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/video-hotel-stars.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/video-quality.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/video-quality.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/video-recovery.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/video-recovery.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/video-setting.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/video-setting.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/video-tara.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/video-tara.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/js/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/softrock/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/softrock/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -188,6 +299,8 @@
       <workItem from="1605849050965" duration="976000" />
       <workItem from="1605859419939" duration="272000" />
       <workItem from="1610289472428" duration="2342000" />
+      <workItem from="1610474367176" duration="669000" />
+      <workItem from="1610528462945" duration="1235000" />
     </task>
     <servers />
   </component>
